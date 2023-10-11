@@ -60,7 +60,6 @@ hist(rowSums(ndrdd_df_zeroed_ci))
 
 table(rowSums(ndrdd_df))
 table(rowSums(ndrdd_df_zeroed_ci))
-hist(as.vector(ndrdd_df))
 
 ########################################################################################################
 # Set the values in the matrix to zero based on proportion of included edges in bootstrap replications #
@@ -69,12 +68,12 @@ hist(as.vector(ndrdd_df))
 dim(ndrdd_df_bootp)
 hist(ndrdd_df_bootp$eip)
 
-ndrdd_df_bootp$below_50 <- ndrdd_df_bootp$eip < 0.5
-table(ndrdd_df_bootp$below_50)
-table(ndrdd_df_bootp$below_50) / dim(ndrdd_df_bootp)[1]
+ndrdd_df_bootp$below_95 <- ndrdd_df_bootp$eip < 0.95
+table(ndrdd_df_bootp$below_95)
+table(ndrdd_df_bootp$below_95) / dim(ndrdd_df_bootp)[1]
 
 ndrdd_df_zeroed_boot <- ndrdd_df
-ndrdd_df_zeroed_boot[upper_triangle] <- ndrdd_df[upper_triangle] * !ndrdd_df_bootp$below_50
+ndrdd_df_zeroed_boot[upper_triangle] <- ndrdd_df[upper_triangle] * !ndrdd_df_bootp$below_95
 
 rowSums(ndrdd_df) == rowSums(ndrdd_df_zeroed_boot)
 
@@ -84,8 +83,11 @@ hist(rowSums(ndrdd_df_zeroed_boot))
 
 table(rowSums(ndrdd_df))
 table(rowSums(ndrdd_df_zeroed_boot))
-hist(as.vector(ndrdd_df))
 
+#####Zeroed boot and negative 
+
+ndrdd_df_zeroed_boot_nonegs <- ndrdd_df_zeroed_boot
+ndrdd_df_zeroed_boot_nonegs[ndrdd_df_zeroed_boot_nonegs < 0] <- 0 
 
 
 
@@ -107,13 +109,22 @@ rownames(zero_ci_mat) <- colnames(ndrdd_df_zeroed_ci)
 
 zero_ci_graph <- graph_from_adjacency_matrix(as.matrix(zero_ci_mat), weighted = T, mode = "upper")
 zero_ci_graph
-
+########################
 
 zero_boot_mat <- as.matrix(ndrdd_df_zeroed_boot)
 colnames(zero_boot_mat) <- colnames(ndrdd_df_zeroed_boot)
 rownames(zero_boot_mat) <- colnames(ndrdd_df_zeroed_boot)
 zero_boot_graph <- graph_from_adjacency_matrix(as.matrix(zero_boot_mat), weighted = T, mode = "upper")
 zero_boot_graph
+
+########################
+zero_boot_mat <- as.matrix(ndrdd_df_zeroed_boot)
+colnames(zero_boot_mat) <- colnames(ndrdd_df_zeroed_boot)
+rownames(zero_boot_mat) <- colnames(ndrdd_df_zeroed_boot)
+zero_boot_graph <- graph_from_adjacency_matrix(as.matrix(zero_boot_mat), weighted = T, mode = "upper")
+zero_boot_graph
+
+########################
 
 V(zero_ci_graph)$name
 E(zero_ci_graph)$weight
@@ -126,28 +137,90 @@ plot(zero_boot_graph)
 degree(zero_boot_graph)
 
 V(zero_boot_graph)$node.size <- degree(zero_boot_graph)
-E(zero_boot_graph)$weight <- degree(zero_boot_graph)
 
-install.packages("qgraph")
-library(qgraph)
-
-autograph(zero_boot_graph)
 
 edge_colors <- ifelse(E(zero_boot_graph)$weight > 0, "blue", "red")
 E(zero_boot_graph)$weight <- abs(E(zero_boot_graph)$weight)
 node_degree <- degree(zero_boot_graph)
 
+library(scales)
+
 # Plot the graph
+min_size <- 0.5
+max_size <- 1
+
+# Scale node degrees to be between min_size and max_size
+scaled_node_degree <- rescale(node_degree, center = FALSE, to = c(min_size, max_size))
+
 plot(
   zero_boot_graph,
   edge.color=edge_colors,
-  edge.label=E(zero_boot_graph)$weight,
+  edge.width=E(zero_boot_graph)$weight,
   main="Network with Positive and Negative Edge Weights",
   vertex.size = 0,
-  vertex.label.cex = node_degree  * 0.005
+  vertex.label.cex = scaled_node_degree
 )
 
-plot(zero_boot_graph, vertex.size=V(zero_boot_graph)$node.size, 
-     edge.arrow.size = 0.1)
+#############################################
+
+zero_boot_nonegs_mat <- as.matrix(ndrdd_df_zeroed_boot_nonegs)
+colnames(zero_boot_nonegs_mat) <- colnames(ndrdd_df_zeroed_boot_nonegs)
+rownames(zero_boot_nonegs_mat) <- colnames(ndrdd_df_zeroed_boot_nonegs)
+zero_boot_nonegs_graph <- graph_from_adjacency_matrix(as.matrix(zero_boot_nonegs_mat), weighted = T, mode = "upper")
+zero_boot_nonegs_graph
+
+########################
+
+
+edge_density(rawgraph)
+edge_density(zero_ci_graph)
+edge_density(zero_boot_graph)
+edge_density(zero_boot_nonegs_graph)
+
+V(zero_boot_nonegs_graph)$node.size <- degree(zero_boot_nonegs_graph)
+
+edge_colors <- ifelse(E(zero_boot_nonegs_graph)$weight > 0, "blue", "white")
+E(zero_boot_nonegs_graph)$weight <- abs(E(zero_boot_nonegs_graph)$weight)
+node_degree <- degree(zero_boot_nonegs_graph)
+
+library(scales)
+
+# Plot the graph
+min_size <- 0.5
+max_size <- 1
+
+# Scale node degrees to be between min_size and max_size
+scaled_node_degree <- rescale(node_degree, center = FALSE, to = c(min_size, max_size))
+
+plot(
+  zero_boot_nonegs_graph,
+  edge.color=edge_colors,
+  edge.width=E(zero_boot_graph)$weight,
+  main="Network with Positive and Negative Edge Weights",
+  vertex.size = 0,
+  vertex.label.cex = scaled_node_degree
+)
+
+
+
+
+
+
+
+#install.packages("writexl")
+library(writexl)
+ndrdd_df_zeroed_boot$nodes <- colnames(ndrdd_df_zeroed_boot)
+library(dplyr)
+ndrdd_df_zeroed_boot <- ndrdd_df_zeroed_boot %>%
+  select(nodes, everything())
+
+write_xlsx(ndrdd_df_zeroed_boot, "ndrdd matrix zeroed under 95 percent.xlsx")
+
+
+ndrdd_df_zeroed_boot_nonegs$nodes <- colnames(ndrdd_df_zeroed_boot_nonegs)
+ndrdd_df_zeroed_boot_nonegs <- ndrdd_df_zeroed_boot_nonegs %>%
+  select(nodes, everything())
+
+write_xlsx(ndrdd_df_zeroed_boot_nonegs, "ndrdd matrix zeroed under 95 percent no negative ties.xlsx")
 
 
