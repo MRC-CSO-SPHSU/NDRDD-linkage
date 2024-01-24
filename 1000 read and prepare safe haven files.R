@@ -35,8 +35,8 @@ setwd(wd)
 full_link_df <- read.csv("full_link weighted adjacency with obs above 20.csv")
 full_link_df_cis <- read.csv("full_link weighted adjacency CIs with obs above 20.csv")
 full_link_df_bootp <- read.csv("full_link weighted adjacency bootstrap proportions with obs above 20.csv")
-
-
+# 
+# 
 
 dim(full_link_df)
 names(full_link_df)
@@ -44,15 +44,18 @@ names(full_link_df)
 rownames(full_link_df) <- full_link_df$X
 full_link_df$X <- NULL
 
-dim(full_link_df_cis)
-dim(full_link_df_bootp)
+ dim(full_link_df_cis)
+ dim(full_link_df_bootp)
 
-names(full_link_df_cis) <- c("Tri_location", "lci", "uci")
-###Check if confidence interval contains zero
-full_link_df_cis$contains_zero = (full_link_df_cis['lci'] <= 0) & (full_link_df_cis['uci'] >= 0)
+ names(full_link_df_cis) <- c("Tri_location", "lci", "uci")
+ ###Check if confidence interval contains zero
+ full_link_df_cis$contains_zero = (full_link_df_cis['lci'] <= 0) & (full_link_df_cis['uci'] >= 0)
 
 ##Set matrix to zero where CI contains null
 upper_triangle <- upper.tri(full_link_df)
+
+length(as.vector(as.matrix(upper_triangle)))
+
 # Set the values in the matrix to zero based on the 'contains_zero' column
 full_link_df_zeroed_ci <- full_link_df
 full_link_df_zeroed_ci[upper_triangle] <- full_link_df[upper_triangle] * !full_link_df_cis$contains_zero
@@ -88,45 +91,27 @@ library(dplyr)
 
 # Your data
 data <- data.frame(x = upper_triangle_vector, y = full_link_df_bootp$eip)
-
 # Specify the fraction of data to keep (adjust as needed)
 sample_fraction <- 0.1
-
 # Take a random sample of the data
 sampled_data <- data %>% sample_frac(sample_fraction)
-
 # Create the ggplot object
 p <- ggplot(sampled_data, aes(x = x, y = y)) +
   geom_point() +
   labs(x = "X-axis", y = "Y-axis") +
   theme_minimal()
-
 # Add more x-axis ticks
 p + scale_x_continuous(breaks = seq(-1, 1, by = 0.1))
-
 # Function to add red vertical lines
 add_red_vertical_line_ggplot <- function(p, position) {
   p + geom_vline(xintercept = position, color = "red")
 }
-
 # Call the function with the desired positions
 p_with_lines <- add_red_vertical_line_ggplot(p, -0.1)
 p_with_lines <- add_red_vertical_line_ggplot(p_with_lines, 0.1)
-
 # Display the plot
 print(p_with_lines)
-
-
 ####################
-
-
-
-
-
-
-dim(upper.tri(full_link_df))
-
-dim(full_link_df)
 
 full_link_df_bootp$below_95 <- full_link_df_bootp$eip < 0.95
 table(full_link_df_bootp$below_95)
@@ -197,6 +182,124 @@ writexl::write_xlsx(edge_list, path = "full_link zeroed below 0.2.xlsx")
 
 hist(as.numeric(edge_list$edge_weights))
 table(as.numeric(edge_list$edge_weights))
+
+
+
+#Manuscript Table 2: Descriptions of subsystems and most strongly connected factors in each subsystem,
+# identified using the louvain algorithm in the co-occurence network for linked administrative data
+#  relatind to *** drug deaths in Scotland **Date** to **Date 
+table.df <- readxl::read_excel("Linked data with labelled communities subsystems.xlsx")
+names(table.df)[1] <- "variable"
+
+###### Fill in columns of the table 
+###First row of table - Names of subsystems
+
+table2 <- as.data.frame((sort(table(table.df$`Community label`), decreasing = T)))
+table2$central_factor_1     <- NA
+table2$central_factor_deg_1 <- NA
+table2$central_factor_btw_1 <- NA
+table2$central_factor_2     <- NA
+table2$central_factor_deg_2 <- NA
+table2$central_factor_btw_2 <- NA
+table2$central_factor_3     <- NA
+table2$central_factor_deg_3 <- NA
+table2$central_factor_btw_3 <- NA
+
+table2$central_factor_4     <- NA
+table2$central_factor_deg_4 <- NA
+table2$central_factor_btw_4 <- NA
+
+table2$central_factor_5     <- NA
+table2$central_factor_deg_5 <- NA
+table2$central_factor_btw_5 <- NA
+
+
+names(table2)
+for (i in table2$Var1){
+  table2$central_factor_1[which(table2$Var1 == i)] <- table.df[which(table.df$`Community label` == i),][1,1]
+  table2$central_factor_deg_1[which(table2$Var1 == i)] <- table.df[which(table.df$`Community label` == i),][1,3]
+
+  table2$central_factor_2[which(table2$Var1 == i)] <- table.df[which(table.df$`Community label` == i),][2,1]
+  table2$central_factor_deg_2[which(table2$Var1 == i)] <- table.df[which(table.df$`Community label` == i),][2,3]
+
+  table2$central_factor_3[which(table2$Var1 == i)] <- table.df[which(table.df$`Community label` == i),][3,1]
+  table2$central_factor_deg_3[which(table2$Var1 == i)] <- table.df[which(table.df$`Community label` == i),][3,3]
+
+  table2$central_factor_4[which(table2$Var1 == i)] <- table.df[which(table.df$`Community label` == i),][4,1]
+  table2$central_factor_deg_4[which(table2$Var1 == i)] <- table.df[which(table.df$`Community label` == i),][4,3]
+
+  table2$central_factor_5[which(table2$Var1 == i)] <- table.df[which(table.df$`Community label` == i),][4,1]
+  table2$central_factor_deg_5[which(table2$Var1 == i)] <- table.df[which(table.df$`Community label` == i),][4,3]
+
+  table2$central_factor_btw_1[which(table2$Var1 == i)] <- round(table.df[which(table.df$`Community label` == i),][1,"betweenness"],2)
+  table2$central_factor_btw_2[which(table2$Var1 == i)] <- round(table.df[which(table.df$`Community label` == i),][2,"betweenness"],2)
+  table2$central_factor_btw_3[which(table2$Var1 == i)] <- round(table.df[which(table.df$`Community label` == i),][3,"betweenness"],2)
+  table2$central_factor_btw_4[which(table2$Var1 == i)] <- round(table.df[which(table.df$`Community label` == i),][4,"betweenness"],2)
+  table2$central_factor_btw_5[which(table2$Var1 == i)] <- round(table.df[which(table.df$`Community label` == i),][5,"betweenness"],2)
+
+  }
+names(table2)[1:2] <- c("Subsystem","Number of factors")
+
+
+table2$central_factor_1 <- sapply(table2$central_factor_1, function(x) paste(x, collapse = ','))
+table2$central_factor_2 <- sapply(table2$central_factor_2, function(x) paste(x, collapse = ','))
+table2$central_factor_3 <- sapply(table2$central_factor_3, function(x) paste(x, collapse = ','))
+table2$central_factor_4 <- sapply(table2$central_factor_4, function(x) paste(x, collapse = ','))
+table2$central_factor_5 <- sapply(table2$central_factor_5, function(x) paste(x, collapse = ','))
+table2$central_factor_deg_1 <- sapply(table2$central_factor_deg_1, function(x) paste(x, collapse = ','))
+table2$central_factor_deg_2 <- sapply(table2$central_factor_deg_2, function(x) paste(x, collapse = ','))
+table2$central_factor_deg_3 <- sapply(table2$central_factor_deg_3, function(x) paste(x, collapse = ','))
+table2$central_factor_deg_4 <- sapply(table2$central_factor_deg_4, function(x) paste(x, collapse = ','))
+table2$central_factor_deg_5 <- sapply(table2$central_factor_deg_5, function(x) paste(x, collapse = ','))
+
+table2$central_factor_btw_1 <- sapply(table2$central_factor_btw_1, function(x) paste(x, collapse = ','))
+table2$central_factor_btw_2 <- sapply(table2$central_factor_btw_2, function(x) paste(x, collapse = ','))
+table2$central_factor_btw_3 <- sapply(table2$central_factor_btw_3, function(x) paste(x, collapse = ','))
+table2$central_factor_btw_4 <- sapply(table2$central_factor_btw_4, function(x) paste(x, collapse = ','))
+table2$central_factor_btw_5 <- sapply(table2$central_factor_btw_5, function(x) paste(x, collapse = ','))
+
+
+write.csv(table2, file = "linked data subsystems and 5 central factors.csv")
+names(table2)
+
+####New long format
+factors <-  dplyr::select(table2,
+                   c("Subsystem","Number of factors",
+                     "central_factor_1",     
+                     "central_factor_2",  
+                     "central_factor_3",
+                     "central_factor_4",   
+                     "central_factor_5"))
+degs <-  dplyr::select(table2,
+                   c("Subsystem","Number of factors",
+                     "central_factor_deg_1", 
+                     "central_factor_deg_2", 
+                     "central_factor_deg_3",
+                     "central_factor_deg_4",
+                     "central_factor_deg_5")) 
+
+btws <-  dplyr::select(table2,
+                   c("Subsystem","Number of factors",
+                     "central_factor_btw_1",
+                     "central_factor_btw_2",
+                     "central_factor_btw_3",   
+                     "central_factor_btw_4",     
+                     "central_factor_btw_5"))
+
+factors <- reshape2::melt(factors, id.vars = c("Subsystem", "Number of factors"), value.name = "factor" )
+degs    <- reshape2::melt(degs   , id.vars = c("Subsystem", "Number of factors"), value.name = "degree" )
+btws    <- reshape2::melt(btws   , id.vars = c("Subsystem", "Number of factors"), value.name = "betweenness" )
+
+factors$variable <- as.numeric(factors$variable)
+degs$variable    <- as.numeric(degs$variable)
+btws$variable    <- as.numeric(btws$variable)
+
+tt <- dplyr::full_join(factors, degs)
+tt <- dplyr::full_join(tt, btws)
+table2 <- tt[order(tt$`Number of factors` , tt$Subsystem , decreasing = T),]
+
+
+write.csv(table2, file = "Table 2 linked data subsystems and 5 factors.csv")
 
 # 
 # 

@@ -26,13 +26,11 @@ library("openxlsx")
 # Working directory as an object 
 getwd()
 
+if (Sys.info()[4] == "DESKTOP-2CKTEEO") wd <- "C:/Users/mmc78h/OneDrive - University of Glasgow/DRD/GGMnonreg"
 
-wd_path <- (paste0("C:/___Rosie_local/My One Drive/",
-                   "OneDrive - University of Glasgow/ndrdd/ndrdd_paper/co_produced_map"))
+#wd <- "C:/Users/mmc78h/Downloads"
 
-wd_path <- "C:/Users/mmc78h/Downloads"
-
-setwd(wd_path)
+setwd(wd)
 dir()
 
 #Load raw data from comato Read.Yed
@@ -86,6 +84,7 @@ addWorksheet(wb = kumu_file, sheetName = "Connections")
 writeData(wb = kumu_file, sheet = "Connections", x = node_names)
 
 # Save the XLSX file
+unlink("DRD_Kumu_file.xlsx")
 saveWorkbook(kumu_file, file = "DRD_Kumu_file.xlsx")
 
 # node names into igraph object for graphing
@@ -110,7 +109,7 @@ ggraph(graph_raw_data, layout = "fr") +
 
 # community detection and vertex attributes
 # cfg <- igraph::cluster_fast_greedy(as.undirected(graph_raw_data))
-
+set.seed(2121)
 cfg <- igraph::cluster_louvain(as.undirected(graph_raw_data))
 
 plot1 <- plot(cfg, as.undirected(graph_raw_data))
@@ -122,7 +121,10 @@ V(graph_raw_data)$closeness <- igraph::closeness(graph_raw_data,
 V(graph_raw_data)$in_degree <- igraph::degree(graph_raw_data, mode = "in")
 V(graph_raw_data)$out_degree <- igraph::degree(graph_raw_data, mode = "out")
 
-colrs_vertex <- rainbow(10)
+colrs_vertex <- c("#e41a1c","#377eb8","#4daf4a","#984ea3","#ff7f00","#ffff33","#a65628")
+
+
+
 colr_edges <- "#808080"
 
 E(graph_raw_data)$color <- "808080"
@@ -141,7 +143,7 @@ community_graph <- ggraph(graph_raw_data,
   geom_node_point(aes(size = V(graph_raw_data)$size), color = "white") +
   geom_node_point(aes(size = V(graph_raw_data)$size), 
                    color = colrs_vertex[V(graph_raw_data)$community], 
-                   alpha = 0.5, shape = 20) +
+                   alpha = 0.7, shape = 20) +
   geom_node_text(aes(label = V(graph_raw_data)$name),
                  repel = TRUE, max.overlaps = Inf, 
                  color = "black", size = 2) +
@@ -152,10 +154,10 @@ community_graph <- ggraph(graph_raw_data,
 
 community_graph
 
-ggsave(paste0(wd_path,"/CoProducedCommunityDectection.pdf"),
+ggsave(paste0(wd,"/CoProducedCommunityDectection.pdf"),
               device = "pdf", width = 13.9, height = 10.3, units = "in")
 
-ggsave(paste0(wd_path,"/CoProducedCommunityDectection.jpeg"),
+ggsave(paste0(wd,"/CoProducedCommunityDectection.jpeg"),
        device = "jpeg", width = 13.9, height = 10.3, units = "in")
 
 as.data.frame(V(graph_raw_data)$community)
@@ -170,6 +172,107 @@ community_data_frame <- as.data.frame(list(vertex=V(graph_raw_data),
                                       betweeness = igraph::betweenness(graph_raw_data, directed = TRUE, normalized = TRUE), 
                                       avg_path_length = igraph::mean_distance(graph_raw_data, directed = TRUE),
                                       density = igraph::graph.density(graph_raw_data)))
+
+
+######Table 1: Subsystems returned from community detection algorithms 
+#  applied to the system map, and factors in each within highest degree
+
+table1 <- as.data.frame((sort(table(V(graph_raw_data)$community), decreasing = T)))
+#table(table1$Var1, as.numeric(as.character(table1$Var1)))
+#Convert to numeric
+table1$Var1 <- as.numeric(as.character(table1$Var1))
+
+table1$central_factor_1     <- NA
+table1$central_factor_1_deg <- NA
+table1$central_factor_1_btw <- NA
+table1$central_factor_2     <- NA
+table1$central_factor_2_deg <- NA
+table1$central_factor_2_btw <- NA
+table1$central_factor_3     <- NA
+table1$central_factor_3_deg <- NA
+table1$central_factor_3_btw <- NA
+table1$central_factor_4     <- NA
+table1$central_factor_4_deg <- NA
+table1$central_factor_4_btw <- NA
+table1$central_factor_5     <- NA
+table1$central_factor_5_deg <- NA
+table1$central_factor_5_btw <- NA
+
+
+
+for (i in table1$Var1){
+  ##Store name of var
+  temp_comm_df <- community_data_frame[which(community_data_frame$community == i),]
+  temp_comm_df <- temp_comm_df[order(temp_comm_df$deg , decreasing = T),]
+  
+  table1$central_factor_1[which(table1$Var1     == i)] <- rownames(temp_comm_df)[1]
+  #Store degree of var
+  table1$central_factor_1_deg[which(table1$Var1 == i)] <- temp_comm_df[1,"degree"]
+  table1$central_factor_1_btw[which(table1$Var1 == i)] <- round(temp_comm_df[1,"betweeness"],2)
+
+  table1$central_factor_2[which(table1$Var1     == i)] <- rownames(temp_comm_df)[2]
+  table1$central_factor_2_deg[which(table1$Var1 == i)] <- temp_comm_df[2,"degree"]
+  table1$central_factor_2_btw[which(table1$Var1 == i)] <- round(temp_comm_df[2,"betweeness"],2)
+
+  table1$central_factor_3[which(table1$Var1     == i)] <- rownames(temp_comm_df)[3]
+  table1$central_factor_3_deg[which(table1$Var1 == i)] <- temp_comm_df[3,"degree"]
+  table1$central_factor_3_btw[which(table1$Var1 == i)] <- round(temp_comm_df[3,"betweeness"],2)
+
+  table1$central_factor_4[which(table1$Var1     == i)] <- rownames(temp_comm_df)[4]
+  table1$central_factor_4_deg[which(table1$Var1 == i)] <- temp_comm_df[4,"degree"]
+  table1$central_factor_4_btw[which(table1$Var1 == i)] <- round(temp_comm_df[4,"betweeness"],2)
+
+  table1$central_factor_5[which(table1$Var1     == i)] <- rownames(temp_comm_df)[5]
+  table1$central_factor_5_deg[which(table1$Var1 == i)] <- temp_comm_df[5,"degree"]
+  table1$central_factor_5_btw[which(table1$Var1 == i)] <- round(temp_comm_df[5,"betweeness"],2)
+   #  rm(temp_comm_df)
+  }
+names(table1)[1:2] <- c("Subsystem","Number of factors")
+
+new_names <- sub("^(.*)(\\d+)(_.*)$", "\\1\\3\\2", names(table1))
+names(table1) <- new_names
+
+
+  
+write.csv(table1, file = "Subsystems nodes top 5 factors wide.csv")
+
+####New long format
+factors <-  select(table1,
+                   c("Subsystem","Number of factors",
+                     "central_factor_1",     
+                     "central_factor_2",  
+                     "central_factor_3",
+                     "central_factor_4",   
+                     "central_factor_5"))
+degs <-  select(table1,
+                   c("Subsystem","Number of factors",
+                     "central_factor__deg1", 
+                     "central_factor__deg2", 
+                     "central_factor__deg3",
+                     "central_factor__deg4",
+                     "central_factor__deg5")) 
+
+btws <-  select(table1,
+                   c("Subsystem","Number of factors",
+                     "central_factor__btw1",
+                     "central_factor__btw2",
+                     "central_factor__btw3",   
+                     "central_factor__btw4",     
+                     "central_factor__btw5"))
+
+factors <- reshape2::melt(factors, id.vars = c("Subsystem", "Number of factors"), value.name = "factor" )
+degs    <- reshape2::melt(degs   , id.vars = c("Subsystem", "Number of factors"), value.name = "degree" )
+btws    <- reshape2::melt(btws   , id.vars = c("Subsystem", "Number of factors"), value.name = "betweenness" )
+
+factors$variable <- as.numeric(factors$variable)
+degs$variable    <- as.numeric(degs$variable)
+btws$variable    <- as.numeric(btws$variable)
+
+tt <- dplyr::full_join(factors, degs)
+tt <- dplyr::full_join(tt, btws)
+table1 <- tt[order(tt$`Number of factors` , tt$Subsystem , decreasing = T),]
+
+write.csv(table1, file = "Table 1 subsystems nodes deg btw.csv")
 
 
 edge_list <- as.data.frame(E(graph_raw_data))
@@ -214,7 +317,7 @@ network_summary_measures <- network_summary_measures %>%
   dplyr::select(variable, mean, min, max, sd )
 
 write.csv(network_summary_measures, 
-          paste0(wd_path,"/TableNetworkSummaryMeasures.csv"), 
+          paste0(wd,"/TableNetworkSummaryMeasures.csv"), 
           row.names = TRUE)
 
 nodes_with_maximums <- community_data_frame %>%
@@ -228,7 +331,7 @@ nodes_with_maximums <- community_data_frame %>%
 
 
 write.csv(nodes_with_maximums, 
-          paste0(wd_path,"/TableMaximumValues.csv"), 
+          paste0(wd,"/TableMaximumValues.csv"), 
           row.names = TRUE)
 
 
@@ -239,7 +342,7 @@ TableDegree <- community_data_frame %>%
 TableDegree <- head(TableDegree, 20)
 
 write.csv(TableDegree, 
-          paste0(wd_path,"/TableTopDegree.csv"), 
+          paste0(wd,"/TableTopDegree.csv"), 
           row.names = TRUE)
 
 # Highest degree within each community 
@@ -249,7 +352,7 @@ TableWithinCommunty <- community_data_frame %>%
   ungroup()
 
 write.csv(TableWithinCommunty, 
-          paste0(wd_path,"/TableWithinCommunty.csv"), 
+          paste0(wd,"/TableWithinCommunty.csv"), 
           row.names = TRUE)
 
 
@@ -257,8 +360,8 @@ write.csv(TableWithinCommunty,
 
 
                     
-base::saveRDS(community_data_frame, paste0(wd_path,"/CoProducedCommunities.rds"))
-write.csv(community_data_frame, paste0(wd_path,"/CoProducedCommunities.csv"))
+base::saveRDS(community_data_frame, paste0(wd,"/CoProducedCommunities.rds"))
+write.csv(community_data_frame, paste0(wd,"/CoProducedCommunities.csv"))
 
 
 
@@ -327,10 +430,10 @@ ggraph(tbl_graph_raw,
   theme(legend.position = "none")
 
 
-ggsave(paste0(wd_path,"/FigureCoProducedMap.pdf"),
+ggsave(paste0(wd,"/FigureCoProducedMap.pdf"),
          device = "pdf", width = 25, height = 15, units = "in")
 
-ggsave(paste0(wd_path,"/up_down_stream_plot.jpeg"),
+ggsave(paste0(wd,"/up_down_stream_plot.jpeg"),
        device = "jpeg", width = 45, height = 25, units = "in")
 # 
 # 
@@ -364,7 +467,7 @@ ggsave(paste0(wd_path,"/up_down_stream_plot.jpeg"),
 # 
 # dev.off()
 # 
-# plotsave(paste0(wd_path,"/CoProducedCommunityDectection.pdf"),
+# plotsave(paste0(wd,"/CoProducedCommunityDectection.pdf"),
 #        device = "pdf", width = 13.9, height = 10.3, units = "in")
 # 
 
