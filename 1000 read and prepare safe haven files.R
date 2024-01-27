@@ -121,8 +121,6 @@ full_link_zeroed_boot_below20 <- full_link_df
 full_link_zeroed_boot_below20[abs(full_link_zeroed_boot_below20) < 0.20] <- 0 
 
 
-library("igraph")
-
 class(full_link_df)
 full_link_mat <- as.matrix(full_link_df)
 colnames(full_link_mat) <- colnames(full_link_df)
@@ -166,13 +164,16 @@ head(edge_list)
 
 zero_g <-  graph_from_data_frame(edge_list, directed = F)
 
+clust   <- list()
+comm_df <- list()
 #loop through increasing resolution parameters for the louvain
 # algorithm. Higher resolution = more communities
+counter <- 1
 for (res in seq(from = 1, to = 5, by = 0.5)) {
   set.seed(492278)
-  clust <- igraph::cluster_louvain(zero_g, resolution = res)
-  V(zero_g)$community <- clust$membership
-  print(table(clust$membership))
+  clust[[counter]] <- igraph::cluster_louvain(zero_g, resolution = res)
+  V(zero_g)$community <- clust[[counter]]$membership
+  print(table(clust[[counter]]$membership))
   V(zero_g)$strength <- strength(zero_g)
   size <- scale(V(zero_g)$strength, center = FALSE)
   pdf(paste0("Community circle layout resolution ", res, ".pdf"))
@@ -183,7 +184,7 @@ for (res in seq(from = 1, to = 5, by = 0.5)) {
 #    layout = layout_with_drl(zero_g),
     layout = layout_in_circle(zero_g, order = V(zero_g)[order(V(zero_g)$community,V(zero_g)$strength )]),
     vertex.size =  size * 3,
-    vertex.color = membership(clust),
+    vertex.color = membership(clust[[counter]]),
     edge.width = as.numeric(E(zero_g)$edge_weights) * 0.2,
     edge.alpha = as.numeric(E(zero_g)$edge_weights) 
       
@@ -196,7 +197,7 @@ for (res in seq(from = 1, to = 5, by = 0.5)) {
    vertex.label.cex = 0.1,
     layout = layout_with_drl(zero_g),
     vertex.size =  size * 3,
-    vertex.color = membership(clust),
+    vertex.color = membership(clust[[counter]]),
     edge.width = as.numeric(E(zero_g)$edge_weights) * 0.2
    )
   dev.off()
@@ -229,10 +230,10 @@ community_data_frame <- community_data_frame %>%
   arrange(desc(community), desc(degree)) 
 
 ##Sort by strength (weighted degree)
-community_data_frame <- community_data_frame %>%
+comm_df[[counter]] <- community_data_frame %>%
   arrange(desc(community), desc(strength)) 
 
- write.csv(community_data_frame, 
+ write.csv(comm_df[[counter]], 
            paste0("Community strength sorted network resolution ",res,".csv"), 
            row.names = TRUE)
 
@@ -242,7 +243,7 @@ community_data_frame <- community_data_frame %>%
 
 ##The linked data file is summary file from safe haven.
 # Instead, create summary from final output cleared file above.
-table.df <- community_data_frame
+table.df <- comm_df[[counter]]
 
 # table.df <- readxl::read_excel("Linked data with labelled communities subsystems.xlsx")
 # names(table.df)[1] <- "variable"
@@ -266,7 +267,7 @@ table.df <- community_data_frame
 ###### Fill in columns of the table 
 ###First row of table - Names of subsystems
 
-table2 <- as.data.frame((sort(table(community_data_frame$community), decreasing = T)))
+table2 <- as.data.frame((sort(table(comm_df[[counter]]$community), decreasing = T)))
 table2$central_factor_1     <- NA
 table2$central_factor_deg_1 <- NA
 table2$central_factor_btw_1 <- NA
@@ -371,7 +372,153 @@ table2 <- tt[order(tt$`Number of factors` , tt$Subsystem , decreasing = T),]
 write.csv(table2, 
           file = paste0("Table 2 linked data subsystems and 5 factors resolution ",res,".csv"))
 
+clust[[counter]]$resolution   <- res
+comm_df[[counter]]$resolution <- res
+
+counter <- counter + 1
 } # End of resolution loop 
+
+
+length(comm_df)
+head(comm_df[[9]])
+
+
+###This idea was revealed to me in a dream 
+# on the night of 26th January - 27 January 2024 
+
+# 1. Create a unique nodeID for each community and resolution 
+# 2. Count how many variables are shared between first resolution and second resolution
+# 3. Repeat for nth and n+1th resolutions
+# 4. Create edges between each resolution node, with weight as the common variable count
+# 5. Edges only appear between adjacent resolution layers
+
+
+# 1. Create a unique nodeID for each community and resolution 
+
+##Count total number of nodes
+node_count <- 0
+node_names <- ""
+
+for (res in 1:9) {
+  # count communities in each layer
+  print(paste0("Number of nodes in resolution layer ", res, " :", dim(table(
+    comm_df[[res]]$community))))
+  node_count <- node_count + dim(table(comm_df[[res]]$community))
+  ##create node names
+  node_names <-
+    c(node_names, paste0(res, "-", names(table(
+      comm_df[[res]]$community))))
+}
+
+node_names <- node_names[node_names !=""]                                                                    
+layer_graph <-  graph(edges = character(0), isolates = node_names)
+V(layer_graph)$size <- NA
+
+length(V(layer_graph))
+length(node_names)
+
+V(layer_graph)$name[(is.na(V(layer_graph)$size))]
+
+V(layer_graph)$size[V(layer_graph)$name =="1-1" ]
+
+# 2. Count how many variables are shared between first resolution and second resolution
+
+#Look at number of communities
+
+for (res in 1:8){
+for (comm_num in as.numeric(names(table(comm_df[[res]]$community)))) {
+res2 <- res + 1
+for (comm_num2 in as.numeric(names(table(comm_df[[res2]]$community)))) {
+#Look at vars in first community
+sendvars <- comm_df[[res]]$variable[comm_df[[res]]$community==comm_num]
+#Look at vars in next layer community
+recvars <- comm_df[[res2]]$variable[comm_df[[res2]]$community==comm_num2]
+
+if (length(intersect(sendvars, recvars)) > 0)  layer_graph <- add_edges(layer_graph, c(
+                         noquote(paste0(res,"-",comm_num)) ,
+                         noquote(paste0(res2,"-",comm_num2))),
+                        weight = length(intersect(sendvars, recvars)))
+ 
+V(layer_graph)$size[V(layer_graph)$name == paste0(res,"-",comm_num)]   <- length(sendvars)
+V(layer_graph)$size[V(layer_graph)$name == paste0(res2,"-",comm_num2)]   <- length(recvars)
+
+}
+}
+}
+V(layer_graph)["9-1"]$size
+V(layer_graph)["9-85"]$size
+
+
+min <- 1
+max <- 3
+scale
+rescaled <- scale(V(layer_graph)$size, center = F, scale = (max - min) )
+rescaled <- scale(V(layer_graph)$size, center = F, scale = T )
+fivenum(rescaled)
+# plot(layer_graph)
+# plot(layer_graph, layout = layout_in_circle(layer_graph))
+# plot(layer_graph, layout =  layout_as_tree(layer_graph))
+isolates <- which(degree(layer_graph) == 0)
+# Delete isolates from the layer graph
+layer_graph <- delete.vertices(layer_graph, isolates)
+
+max_weight <- max(E(layer_graph)$weight)
+# Normalize the weights to range from 0 to 1
+normalized_weights <- (E(layer_graph)$weight / max_weight)
+inv_weights <- 1 - (E(layer_graph)$weight / max_weight)
+
+layers <- rep(NA, length(V(layer_graph)$name))
+layers
+
+V(layer_graph)$layer <- NA
+V(layer_graph)$layer[grep("^1-", V(layer_graph)$name)] <- 1
+V(layer_graph)$layer[grep("^2-", V(layer_graph)$name)] <- 2
+V(layer_graph)$layer[grep("^3-", V(layer_graph)$name)] <- 3
+V(layer_graph)$layer[grep("^4-", V(layer_graph)$name)] <- 4
+V(layer_graph)$layer[grep("^5-", V(layer_graph)$name)] <- 5
+V(layer_graph)$layer[grep("^6-", V(layer_graph)$name)] <- 6
+V(layer_graph)$layer[grep("^7-", V(layer_graph)$name)] <- 7
+V(layer_graph)$layer[grep("^8-", V(layer_graph)$name)] <- 8
+V(layer_graph)$layer[grep("^9-", V(layer_graph)$name)] <- 9
+
+
+
+  scaled_weight <- (E(layer_graph)$weight - min(E(layer_graph)$weight)) / (max(E(layer_graph)$weight) - min(E(layer_graph)$weight))
+  e_color <- rgb(0, (1 - scaled_weight) , 0.8)
+
+# Get edge colors based on edge weights
+
+plot(layer_graph, 
+     # layout = layout_as_tree(layer_graph ,
+     #                         root = V(layer_graph)$name[grepl("^1-", V(layer_graph)$name)],
+     #                         circular = F,
+     #                         mode = "all"),
+     layout = layout_with_sugiyama(layer_graph,
+                                   layers = V(layer_graph)$layer,
+# takes a few minutes                                   maxiter = 919500,
+                                   maxiter = 99500,
+                                   hgap = 66610),
+
+     #     layout = layout_with_fr(layer_graph),
+     edge.width = normalized_weights * 5 ,  # Set edge width based on weight
+#     edge.alpha = inv_weights * 0.5 ,
+     edge.label = NA,                     # Remove edge labels
+#     edge.color = "darkgray",                     # Remove edge labels
+     edge.color = e_color,                     # Remove edge labels
+     vertex.label = NA,        # Set vertex label color
+     vertex.label.color = "black",        # Set vertex label color
+     vertex.size = rescaled,                    # Set vertex size
+     edge.arrow.size = 0,
+     main = "Layered Graph without Labels and Edge Widths Based on Weight")
+
+###Seems to show there is one regularly detected community with the same vars, 
+##  this appears at all resolutions. 
+
+#  There are 2 or three similar veins of similarity. 
+
+##Weighting of lines is skewed because larger number of vars in the higher levels
+
+
 # 
 # 
 # 
