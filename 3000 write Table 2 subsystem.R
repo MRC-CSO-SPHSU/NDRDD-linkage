@@ -30,7 +30,7 @@ library(dplyr)
 if (Sys.info()[4] == "DESKTOP-2CKTEEO") wd <- "C:/Users/mmc78h/OneDrive - University of Glasgow/DRD/GGMnonreg"
 setwd(wd)
 
-setwd(paste0(wd,"/Below zero"))
+setwd(paste0(wd,"/system_map"))
 
 
 labels <- read.csv("Labelled Community strength sorted network resolution 1.csv")
@@ -42,10 +42,23 @@ subsystems$community <- subsystems$Subsystem
 head(labels)
 head(subsystems)
 
-table.df <- left_join(subsystems,labels , by = "community")
+sort(labels$Label)
+
+
+
+table.df <- left_join(subsystems,unique(labels) , by = "community")
 dim(subsystems)
-subsystems[56,]
-labels[56,]
 head(table.df)
 dim(table.df)
-write.csv(table.df, file = "Table 2 linked data subsystems and five factors.csv")
+table(table.df$Subsystem)
+table.df$X <- NULL
+
+write.csv(table.df, file = "Table 1 linked data subsystems and five factors.csv", row.names = F)
+
+
+###########################
+##Same for table 1
+###########################
+
+
+
