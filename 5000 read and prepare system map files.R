@@ -122,8 +122,6 @@ V(graph_raw_data)$out_degree <- igraph::degree(graph_raw_data, mode = "out")
 
 colrs_vertex <- c("#e41a1c","#377eb8","#4daf4a","#984ea3","#ff7f00","#ffff33","#a65628")
 
-
-
 colr_edges <- "#808080"
 
 E(graph_raw_data)$color <- "808080"
@@ -444,8 +442,6 @@ plot(equidistant_points)
 # RADIUS
 R <- 0.5
 
-coordinates
-
 
 # Create an empty data frame to store new coordinates
 new_coordinates <- data.frame(x = numeric(0), y = numeric(0))
@@ -456,8 +452,8 @@ R <- 0.2
 new_coordinates <- data.frame(x = numeric(0), y = numeric(0))
 
 # Iterate through the table and generate coordinates
-for (i in unique(co_ordinates$x)) {
-  for (j in unique(co_ordinates$y)) {
+for (i in co_ordinates$x) {
+  for (j in co_ordinates$y) {
     count <- sum(co_ordinates$x == i & co_ordinates$y == j)
     if (count > 0) {
       points <- equidistant_points_on_circle(count, R)
@@ -473,13 +469,17 @@ print(new_coordinates)
 #############in progress
 
 plot(co_ordinates)
-
 plot(new_coordinates)
+dim(co_ordinates)
 
+x <- cbind(V(tbl_graph_raw)$name, new_coordinates)
+
+V(tbl_graph_raw)$x_coord <- new_coordinates$x 
+V(tbl_graph_raw)$y_coord <- new_coordinates$y 
 
 pdf(file = "up_down_stream_plot.pdf")
 set.seed(3000)
-ggraph(tbl_graph_raw , layout = new_coordinates) +
+ggraph(tbl_graph_raw , layout = cbind(V(tbl_graph_raw)$x_coord,V(tbl_graph_raw)$y_coord)) +
   geom_edge_fan(color = "grey80") +
   geom_edge_link(arrow = arrow(length = unit(2, 'mm')), 
                  end_cap = circle(12, 'mm'),
@@ -496,7 +496,7 @@ ggraph(tbl_graph_raw , layout = new_coordinates) +
   scale_y_continuous(breaks = seq(min(new_coordinates$y), max(new_coordinates$y), by = 1)) +
   theme_graph(base_family = "Arial") +
   theme(legend.position = "none")
-
+dev.off()
 ###Looks like something's wrong with the node labeling.
 
 ggsave(paste0(wd,"/FigureCoProducedMap.pdf"),

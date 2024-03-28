@@ -30,7 +30,7 @@ library(dplyr)
 if (Sys.info()[4] == "DESKTOP-2CKTEEO") wd <- "C:/Users/mmc78h/OneDrive - University of Glasgow/DRD/GGMnonreg"
 setwd(wd)
 
-setwd(paste0(wd,"/system_map"))
+#setwd(paste0(wd,"/system_map"))
 
 
 labels <- read.csv("Labelled Community strength sorted network resolution 1.csv")
