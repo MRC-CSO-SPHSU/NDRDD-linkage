@@ -169,7 +169,7 @@ community_data_frame <- as.data.frame(list(vertex=V(graph_raw_data),
                                       betweeness = igraph::betweenness(graph_raw_data, directed = TRUE, normalized = TRUE), 
                                       avg_path_length = igraph::mean_distance(graph_raw_data, directed = TRUE),
                                       density = igraph::graph.density(graph_raw_data)))
-
+write.csv(community_data_frame, file = "Full system map with community detection and degrees.csv")
 
 ######Table 1: Subsystems returned from community detection algorithms 
 #  applied to the system map, and factors in each within highest degree
