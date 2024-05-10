@@ -50,7 +50,7 @@ table(as.numeric(edge_list$edge_weights))
 
 
 zero_g <-  graph_from_data_frame(edge_list, directed = F)
-
+save(zero_g, file = "zero_g.RData")
 # create R object
 
 
