@@ -111,7 +111,9 @@ edge_weights <- E(zerobootgraph)$weight
 edge_list <- cbind(edge_list, edge_weights)
 edge_list <- as.data.frame(edge_list)
 dim(edge_list)
+str(edge_list)
 
+edge_list$edge_weights <- as.numeric(as.character(edge_list$edge_weight))
 ###Remove corr below x 
 
 edge_list <- edge_list[edge_list$edge_weights >= 0.0,] 

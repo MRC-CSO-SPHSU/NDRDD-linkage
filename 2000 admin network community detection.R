@@ -13,6 +13,8 @@ rm(list = ls())
 library(igraph)
 library(ggplot2)
 library(dplyr)
+library(openxlsx)
+library(readxl)
 
 #########################
 #                       #
@@ -31,6 +33,9 @@ if (Sys.info()[4] == "DESKTOP-2CKTEEO") wd <- "C:/Users/mmc78h/OneDrive - Univer
 setwd(wd)
 
 edge_list <- readxl::read_excel("full_link zeroed below 0.xlsx")
+edge_list <- read.xlsx("full_link zeroed below 0.xlsx")
+head(edge_list)
+str(edge_list)
 setwd(paste0(wd,"/Below zero"))
 
 # edge_list <- readxl::read_excel("full_link zeroed below 0.05.xlsx")
@@ -43,9 +48,11 @@ setwd(paste0(wd,"/Below zero"))
 hist(as.numeric(edge_list$edge_weights))
 table(as.numeric(edge_list$edge_weights))
 
-head(edge_list)
 
 zero_g <-  graph_from_data_frame(edge_list, directed = F)
+
+# create R object
+
 
 clust   <- list()
 comm_df <- list()
