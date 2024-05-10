@@ -29,14 +29,17 @@ library(dplyr)
 
 if (Sys.info()[4] == "DESKTOP-2CKTEEO") wd <- "C:/Users/mmc78h/OneDrive - University of Glasgow/DRD/GGMnonreg"
 
+
+wd <- "T:/projects/CSO_DRD_S00359/Data"
+
 setwd(wd)
 # full_link_df <- read.csv("full_link weighted adjacency.csv")
 # full_link_df_cis <- read.csv("full_link weighted adjacency CIs.csv")
 # full_link_df_bootp <- read.csv("full_link weighted adjacency bootstrap proportions.csv")
 
-full_link_df <- read.csv("full_link weighted adjacency with obs above 20.csv")
-full_link_df_cis <- read.csv("full_link weighted adjacency CIs with obs above 20.csv")
-full_link_df_bootp <- read.csv("full_link weighted adjacency bootstrap proportions with obs above 20.csv")
+full_link_df       <- utils::read.csv("full_link weighted adjacency with obs above 20.csv")
+full_link_df_cis   <- utils::read.csv("full_link weighted adjacency CIs with obs above 20.csv")
+full_link_df_bootp <- utils::read.csv("full_link weighted adjacency bootstrap proportions with obs above 20.csv")
 
 rownames(full_link_df) <- full_link_df$X
 full_link_df$X <- NULL
