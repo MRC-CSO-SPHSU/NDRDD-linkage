@@ -70,8 +70,10 @@ gsize(swg) # 1950
 
 is.weighted(swg)
 
-set.seed(492278)
-CL <- cluster_louvain(swg, resolution = 1) # add Res here if needed
+set.seed(3111) # 54 - Need to check how different the communities are with different resolutions and seeds
+set.seed(12331) # 55
+CL <- igraph::cluster_louvain(swg) # add Res here if needed
+CL
 # the followig two steps are added to avoid some igraph vesrion related issues
 save(CL, file = "CL_1.RData") 
 
@@ -157,7 +159,7 @@ head(newdata)
 
 pr_df <- merge(pr_names, newdata, by = "supernode", all = T)
 head(pr_df, 20)
-
+View(pr_df)
 
 sum(is.na(pr_df$Label))
 str(pr_df$Label)
