@@ -1,7 +1,4 @@
 
-#set working directory
-setwd() # - put your path here
-
 #################
 #               #
 #  For DRD      #
@@ -74,7 +71,7 @@ gsize(swg) # 1950
 is.weighted(swg)
 
 set.seed(492278)
-CL <- cluster_louvain(swg) # add Res here if needed
+CL <- cluster_louvain(swg, resolution = 1) # add Res here if needed
 # the followig two steps are added to avoid some igraph vesrion related issues
 save(CL, file = "CL_1.RData") 
 
@@ -152,10 +149,13 @@ sum(V(g2)$degree==0) # 30 isolated communities
 pr_names<- utils::read.csv("Labelled Community strength sorted network resolution 1.csv")
 
 head(pr_names)
-head(newdata)
-newdata$variable <- newdata$node_names
 
-pr_df <- merge(pr_names, newdata, by = "variable", all = T)
+pr_names <- pr_names[pr_names$Label !="",]
+pr_names <- dplyr::select(pr_names, c(community, Label))
+pr_names$supernode <- pr_names$community
+head(newdata)
+
+pr_df <- merge(pr_names, newdata, by = "supernode", all = T)
 head(pr_df, 20)
 
 

@@ -29,6 +29,9 @@ library(readxl)
 #                       #
 #########################
 
+wd <- "T:/projects/CSO_DRD_S00359/Data"
+
+
 if (Sys.info()[4] == "DESKTOP-2CKTEEO") wd <- "C:/Users/mmc78h/OneDrive - University of Glasgow/DRD/GGMnonreg"
 setwd(wd)
 
@@ -36,7 +39,6 @@ edge_list <- readxl::read_excel("full_link zeroed below 0.xlsx")
 edge_list <- read.xlsx("full_link zeroed below 0.xlsx")
 head(edge_list)
 str(edge_list)
-setwd(paste0(wd,"/Below zero"))
 
 # edge_list <- readxl::read_excel("full_link zeroed below 0.05.xlsx")
 # setwd(paste0(wd,"/Below 5"))
