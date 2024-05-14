@@ -13,6 +13,8 @@ rm(list = ls())
 library(igraph)
 library(ggplot2)
 library(dplyr)
+library(openxlsx)
+library(readxl)
 
 #########################
 #                       #
@@ -33,6 +35,7 @@ if (Sys.info()[4] == "DESKTOP-2CKTEEO") wd <- "C:/Users/mmc78h/OneDrive - Univer
 wd <- "T:/projects/CSO_DRD_S00359/Data"
 
 setwd(wd)
+getwd()
 # full_link_df <- read.csv("full_link weighted adjacency.csv")
 # full_link_df_cis <- read.csv("full_link weighted adjacency CIs.csv")
 # full_link_df_bootp <- read.csv("full_link weighted adjacency bootstrap proportions.csv")
@@ -112,6 +115,10 @@ edge_list <- cbind(edge_list, edge_weights)
 edge_list <- as.data.frame(edge_list)
 dim(edge_list)
 str(edge_list)
+head(edge_list)
+
+edge_list$V1 <- as.character(edge_list$V1)
+edge_list$V2 <- as.character(edge_list$V2)
 
 edge_list$edge_weights <- as.numeric(as.character(edge_list$edge_weight))
 ###Remove corr below x 
@@ -119,21 +126,26 @@ edge_list$edge_weights <- as.numeric(as.character(edge_list$edge_weight))
 edge_list <- edge_list[edge_list$edge_weights >= 0.0,] 
 dim(edge_list)
 writexl::write_xlsx(edge_list, path = "full_link zeroed below 0.xlsx")
-
+write.xlsx(edge_list, file = "full_link zeroed below 0.xlsx")
 
 edge_list <- edge_list[edge_list$edge_weights >= 0.05,] 
 dim(edge_list)
 writexl::write_xlsx(edge_list, path = "full_link zeroed below 0.05.xlsx")
+write.xlsx(edge_list, file = "full_link zeroed below 0.05.xlsx")
 
 edge_list <- edge_list[edge_list$edge_weights > 0.08,]
 dim(edge_list)
 writexl::write_xlsx(edge_list, path = "full_link zeroed below 0.08.xlsx")
+write.xlsx(edge_list, file = "full_link zeroed below 0.08.xlsx")
+
 
 edge_list <- edge_list[edge_list$edge_weights > 0.1,]
 dim(edge_list)
 writexl::write_xlsx(edge_list, path = "full_link zeroed below 0.1.xlsx")
+write.xlsx(edge_list, file = "full_link zeroed below 0.1.xlsx")
 
 edge_list <- edge_list[edge_list$edge_weights > 0.20,]
 dim(edge_list)
 writexl::write_xlsx(edge_list, path = "full_link zeroed below 0.2.xlsx")
+write.xlsx(edge_list, file = "full_link zeroed below 0.2.xlsx")
 
