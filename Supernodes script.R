@@ -75,14 +75,14 @@ set.seed(12331) # 55
 CL <- igraph::cluster_louvain(swg) # add Res here if needed
 CL
 # the followig two steps are added to avoid some igraph vesrion related issues
-save(CL, file = "CL_1.RData") 
-
-loadRData <- function(fileName){
-  #loads an RData file, and returns it
-  load(fileName)
-  get(ls()[ls() != "fileName"])
-}
-CL <- loadRData("CL_1.RData")
+# save(CL, file = "CL_1.RData") 
+# 
+# loadRData <- function(fileName){
+#   #loads an RData file, and returns it
+#   load(fileName)
+#   get(ls()[ls() != "fileName"])
+# }
+# CL <- loadRData("CL_1.RData")
 
 
 length(unique(CL$membership)) # 55
@@ -90,14 +90,15 @@ length(unique(CL$membership)) # 55
 V(swg)$member <- CL$membership
 table(CL$membership)
 
-plot(swg, vertex.color = V(swg)$member)
+#plot(swg, vertex.color = V(swg)$member)
 
 ##########################
 # Supernodes
 #########################
-alln <- V(swg)$name
-coms <- unique(V(swg)$member)
-comnn <- seq(1:length(coms))
+alln <- V(swg)$name # nodes
+coms <- unique(V(swg)$member) # communities numbers
+comnn <- seq(1:length(coms)) # 
+
 size <-c()
 alln <- V(swg)$member
 for(k in 1:length(coms)){
@@ -126,13 +127,16 @@ V(g2)$name <- V(g2)$supername
 V(g2)$true_name <- coms
 V(g2)$size <- size
 
+as_adjacency_matrix(g2)
+
+supernodes_graph <- g2
+
 sdf <- as.data.frame(cbind(V(swg)$name, V(swg)$member2))
 colnames(sdf) <- c("node_names", "supernode")
 
 newdata <- sdf[order(sdf$supernode),]
 head(newdata, 10)
 write.xlsx(newdata, "NodesAndSupernodes.xlsx")
-
 
 
 
@@ -144,12 +148,167 @@ V(g2)$degree <- degree(g2)
 sum(V(g2)$degree==0) # 30 isolated communities
 
 
+# adding weights
+# THIS CODE IS EXTREMLY SLOW!!!
+# Assuming 'swg' is your original graph and ''member2 is a vector indicating the community membership of each node
+# 'supernodes_graph' is the graph where each supernode represents a community and ties exist between communities if there were any ties between nodes of each pair of communities
 
+# Calculate the percentage of nodes in each community connected to nodes in other communities
+
+# Precompute community sizes
+community_sizes <- sapply(1:vcount(supernodes_graph), function(i) {
+  length(which(V(swg)$member2 == i))
+})
+# Precompute node names in each community
+nodes_in_community <- list()
+for(i in 1:vcount(supernodes_graph)){
+  nodes_in_community_i <- V(swg)[which(V(swg)$member2 == i)]
+  net_i <- induced_subgraph(swg, nodes_in_community_i)
+  nodes_in_community[[i]] <- V(net_i)$name
+}
+
+# the loop starts here::
+start.time <- Sys.time()
+# simple sum of edges
+weighted_edges1 <- matrix(NA, nrow = vcount(supernodes_graph), ncol = vcount(supernodes_graph))
+# taking into acount the size of node
+weighted_edges2 <- matrix(NA, nrow = vcount(supernodes_graph), ncol = vcount(supernodes_graph))
+for (i in 2:nrow(weighted_edges1)) {
+  for (j in 1:ncol(weighted_edges1)) {
+    if (i != j) {
+      nodes_in_c_i <- nodes_in_community[[i]]
+      com_size_i <- community_sizes[[i]]
+      print(c(i,j))
+      nodes_in_c_j <- nodes_in_community[[j]]
+      com_size_j <- community_sizes[[j]]
+      
+      # nodes_in_community_i <- V(swg)[which(V(swg)$member2 == i)]
+      # com_i_size <- length(V(swg)$name[nodes_in_community_i])
+      # net_i <- induced_subgraph(swg, nodes_in_community_i)
+      # nodes_in_community_i <- V(net_i)$name
+      # 
+      # nodes_in_community_j <- V(swg)[which(V(swg)$member2 == j)]
+      # com_j_size <- length(V(swg)$name[nodes_in_community_j])
+      # net_j <- induced_subgraph(swg, nodes_in_community_j)#
+      # nodes_in_community_j <- V(net_j)$name
+      # Initialize a counter for the number of ties
+      num_ties <- 0
+      for (z in 1:length(E(swg))) {
+        edge <- E(swg)[z]
+        node_names <- ends(swg, edge)
+        node_names_vector <- as.character(node_names)
+        if ((node_names_vector[1] %in% nodes_in_c_i & node_names_vector[2] %in% nodes_in_c_j)|
+            (node_names_vector[2] %in% nodes_in_c_i & node_names_vector[1] %in% nodes_in_c_j)){
+         
+          num_ties <- num_ties + 1
+        }
+      }
+     W <- round(((num_ties/com_size_i) + (num_ties/com_size_j))/2, 2)
+      weighted_edges1[i, j] <- num_ties # simple sum
+      weighted_edges2[i, j] <- W # taking into account the size of communities
+  }
+  }}
+end.time <- Sys.time()
+time.taken <- round(end.time - start.time,2)
+time.taken
+
+
+# some tries/estimations
+for (i in 1:vcount(supernodes_graph)) {
+  for (j in 1:(i - 1)) {
+    if (i != j) {
+      print(c(i,j))}
+  }}
+
+  
+
+# estimating how long it will take
+nodes_in_community_i <- V(swg)[which(V(swg)$member2 == 1)]
+com_i_size <- length(V(swg)$name[nodes_in_community_i])
+net_i <- induced_subgraph(swg, nodes_in_community_i)
+nodes_in_community_i <- V(net_i)$name
+
+nodes_in_community_j <- V(swg)[which(V(swg)$member2 == 3)]
+com_j_size <- length(V(swg)$name[nodes_in_community_j])
+net_j <- induced_subgraph(swg, nodes_in_community_j)#
+nodes_in_community_j <- V(net_j)$name
+class(nodes_in_community_j)
+class(nodes_in_community[[1]])
+# Initialize a counter for the number of ties
+start.time <- Sys.time()
+num_ties <- 0
+for (z in 1:length(E(swg))) {
+  edge <- E(swg)[z]
+  node_names <- ends(swg, edge)
+  node_names_vector <- as.character(node_names)
+  if ((node_names_vector[1] %in% nodes_in_community_i & node_names_vector[2] %in% nodes_in_community_j)|
+      (node_names_vector[2] %in% nodes_in_community_i & node_names_vector[1] %in% nodes_in_community_j)){
+    
+    num_ties <- num_ties + 1
+  }
+}
+end.time <- Sys.time()
+time.taken <- round(end.time - start.time,2)
+time.taken # 9 seconds per pair
+
+toy <- matrix(NA, nrow = vcount(supernodes_graph), ncol = vcount(supernodes_graph))
+for (i in 1:vcount(supernodes_graph)) {
+  for (j in 1:(i - 1)) {
+    if (i != j) {
+      toy[i, j] <- 1}
+  }
+  }
+dim(toy)
+sum(toy, na.rm =T)# 1485
+1485*9
+13365/60 = 222.75 #minutes
+222.75/60 = 3.7 #hours
+
+# two
+# estimating how long it will take
+nodes_in_c_i <- nodes_in_community[[1]]
+com_size_i <- community_sizes[[1]]
+nodes_in_c_j <- nodes_in_community[[3]]
+com_size_j <- community_sizes[[3]]
+
+
+# Initialize a counter for the number of ties
+start.time <- Sys.time()
+num_ties <- 0
+for (z in 1:length(E(swg))) {
+  edge <- E(swg)[z]
+  node_names <- ends(swg, edge)
+  node_names_vector <- as.character(node_names)
+  if ((node_names_vector[1] %in% nodes_in_c_i & node_names_vector[2] %in% nodes_in_c_j)|
+      (node_names_vector[2] %in% nodes_in_c_i & node_names_vector[1] %in% nodes_in_c_j)){
+    
+    num_ties <- num_ties + 1
+  }
+}
+end.time <- Sys.time()
+time.taken <- round(end.time - start.time,2)
+time.taken # 9 seconds per pair
+
+### ends here
+
+
+# Create a weighted supernodes graph
+weighted_supernodes_graph <- graph_from_adjacency_matrix(weighted_edges, mode = "undirected", weighted = TRUE)
+
+# Plot the weighted supernodes graph
+plot(weighted_supernodes_graph, 
+     layout = layout_with_fr(weighted_supernodes_graph),  # Use a layout algorithm (e.g., Fruchterman-Reingold)
+     vertex.size = 5,  # Set node size
+     vertex.label = V(weighted_supernodes_graph)$name,  # Label supernodes with community ID
+     edge.label = E(weighted_supernodes_graph)$weight,  # Label edges with weights
+
+     main = "Weighted Supernodes Graph based on Community Connections 1"  # Add a title
+)
 
 # adding proper supernode names
 
 pr_names<- utils::read.csv("Labelled Community strength sorted network resolution 1.csv")
-
+table(pr_names$community)
 head(pr_names)
 
 pr_names <- pr_names[pr_names$Label !="",]
