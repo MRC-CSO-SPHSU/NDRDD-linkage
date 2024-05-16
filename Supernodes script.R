@@ -45,7 +45,7 @@ wd <- "T:/projects/CSO_DRD_S00359/Data"
 
 setwd(wd)
 getwd()
-
+packageVersion("igraph")
 # check igraph package bc older versions give different results
 # detach(package:igraph, unload = TRUE)
 # packageVersion("igraph") # '1.2.6'
@@ -89,6 +89,7 @@ length(unique(CL$membership)) # 55
 # assign mebership as node attribute
 V(swg)$member <- CL$membership
 table(CL$membership)
+is_directed(swg)
 
 #plot(swg, vertex.color = V(swg)$member)
 
@@ -127,7 +128,7 @@ V(g2)$name <- V(g2)$supername
 V(g2)$true_name <- coms
 V(g2)$size <- size
 
-
+is_directed(g2)
 sdf <- as.data.frame(cbind(V(swg)$name, V(swg)$member2))
 colnames(sdf) <- c("node_names", "supernode")
 str(V(swg)$member2)
@@ -169,17 +170,37 @@ el$from_Com <- plyr::mapvalues(el$from, from = Node_names, to = Supernode_)
 el$to_Com <- plyr::mapvalues(el$to, from = Node_names, to = Supernode_)
 el$to_Com <- as.numeric(el$to_Com)
 el$from_Com <- as.numeric(el$from_Com)
+colnames(el)
+# make an edge list of communities
+elc <- subset(el, select = c( from_Com, to_Com))
+str(elc)
+# via a loop - it takes around 5 minutes
+the_first_mat <- matrix(NA, nrow = 55, ncol = 55)
+for (i in 1:nrow(the_first_mat)) {
+  for (j in 1:ncol(the_first_mat)) {
+    num_tie <-0
+    print(c(i,j))
+    for(z in 1:nrow(elc)){
+      if ((elc$from_Com[z] ==i & elc$to_Com[z] ==j)|(elc$from_Com[z] ==j & elc$to_Com[z] ==i)){
+        num_tie <- num_tie +1
+      }
+    }
+     
+    the_first_mat[i,j] <- num_tie
+
+  }}
+isSymmetric(the_first_mat) # TRUE
+the_first_mat
+#mat <- as.matrix(table(el$from_Com, el$to_Com)) # includes isolates too
+mat <- the_first_mat
 
 
-mat <- as.matrix(table(el$from_Com, el$to_Com)) # includes isolates too
-rownames(mat)
-colnames(mat)
+Snodes <-unique(Supernode_) # that is the order of nodes in the matrix
+rownames(mat) <- Snodes
+colnames(mat) <- Snodes
 mat_simple <- mat
 diag(mat_simple)
 diag(mat) <- 0
-
-Snodes <-unique(Supernode_) # that is the order of nodes in the matrix
-
 
 community_sizes <- sapply(1:length(Snodes), function(i) {
   length(which(V(swg)$member2 == i))
@@ -188,8 +209,9 @@ sum(community_sizes)
 
 sdf2 <- as.data.frame(cbind(Snodes, community_sizes, diag(mat_simple)))
 colnames(sdf2) <- c("supernode_code", "N_of_nodes", "Nties_in_com")
-# something is wrong!!
-head(sdf2, 10)
+
+head(sdf2, 20)
+
 rownames(mat_simple)
 
 #density_com <- cbind(diag(mat), community_sizes)
@@ -218,7 +240,7 @@ str(Snodes)
 degree(g2, v= 2)
 degree(g2, v = 50)
 str(V(g2)$name)
-max(mat_2, na.rm = T) # 0.13 now
+max(mat_2, na.rm = T) # 0.16 now
 # bc e.g. A community can have 2 nodes, they can have ties to more than 2 nodes in another community
 # that is: com size is not necesseraly bigger than num_ties between communities
 hist(mat_2)
@@ -236,6 +258,9 @@ weighted_supernodes_graph <- graph_from_adjacency_matrix(mat_2, weighted = T,
 E(weighted_supernodes_graph)$weight
 diag(mat_2)
 
+isSymmetric(mat_2)
+
+
 # Plot the weighted supernodes graph
 set.seed(45389)
 plot(weighted_supernodes_graph, 
@@ -250,7 +275,7 @@ plot(weighted_supernodes_graph,
      vertex.label.cex = 0.8,
      arrow.mode = "-",
      edge.color = "gray",
-     edge.width	= E(weighted_supernodes_graph)$weight*10, 
+     edge.width	= E(weighted_supernodes_graph)$weight*50, 
      layout = layout_with_fr(weighted_supernodes_graph),  # Use a layout algorithm (e.g., Fruchterman-Reingold)
      vertex.label = V(weighted_supernodes_graph)$name,  # Label supernodes with community ID
      #edge.label = E(weighted_supernodes_graph)$weight,  # Label edges with weights
@@ -263,15 +288,23 @@ plot(weighted_supernodes_graph,
 pr_names<- utils::read.csv("Labelled Community strength sorted network resolution 1.csv")
 table(pr_names$community)
 head(pr_names)
+colnames(pr_names)
+colnames(newdata)
+pr_names$supernode <- NULL
+newdata$variable <- newdata$node_names
 
-pr_names <- pr_names[pr_names$Label !="",]
-pr_names <- dplyr::select(pr_names, c(community, Label))
-pr_names$supernode <- pr_names$community
-head(pr_names)
-dim(pr_names)
+pr_df <- merge(pr_names, newdata, by = "variable", all = T)
+dim(pr_df)
+
+pr_df <- pr_df[pr_names$Label !="",]
+head(pr_df)
+pr_df <- dplyr::select(pr_df, c(community, Label, supernode))
+cbind(pr_df$community, pr_df$supernode)
+pr_df$community == pr_df$supernode # the same
+
 
 str(pr_names$community)
-pr_names$community == pr_names$supernode
+
 
 # pr_df <- merge(pr_names, newdata, by = "supernode", all = T)
 # head(pr_df, 20)
@@ -295,14 +328,14 @@ pr_names$community == pr_names$supernode
 #                       to = Com_names)
 
 # fill in the rows
-colnames(pr_df)
-length(unique(pr_df$community))# 55
-c_num <- unique(pr_df$community)
-Labels <- unique(pr_df$Label)[-1]
-pr_df$SUPERNODE_name <- plyr::mapvalues(pr_df$community, 
-                                        from = c_num,
-                                        to = Labels)
-write.xlsx(pr_df, "sanity_check.xlsx")
+# colnames(pr_df)
+# 
+# c_num <- unique(pr_df$community)
+# Labels <- unique(pr_df$Label)[-1]
+# pr_df$SUPERNODE_name <- plyr::mapvalues(pr_df$community, 
+#                                         from = c_num,
+#                                         to = Labels)
+# write.xlsx(pr_df, "sanity_check.xlsx")
 
 Com_names <- pr_names$Label
 Com_codes <- pr_names$community
@@ -322,9 +355,8 @@ try2 <- plyr::mapvalues(V(weighted_supernodes_graph)$name, from = Com_codes,
 try2 <- as.numeric(try2)
 
 V(weighted_supernodes_graph)$size <-try2
-degree(weighted_supernodes_graph)
 
-# not working??? 
+# Create a graph without isolates
 Isolated = which(degree(weighted_supernodes_graph)==0)
 length(Isolated)
 WSG = delete_vertices(weighted_supernodes_graph, Isolated)
@@ -340,7 +372,7 @@ save(WSG, file = "supernodes_network_without_iso.RData")
 
 png(filename="Communities_zero_g_all.png",
     #width = 10, height = 14)
-    width = 800, height = 800, units = "px")
+    width = 1000, height = 1000, units = "px")
 # Use the Fruchterman-Reingold layout with additional repulsion
 #lay <- layout_with_fr(g2, niter = 500, grid = "nogrid")
 set.seed(492555)
@@ -356,7 +388,7 @@ plot(weighted_supernodes_graph,
      vertex.label.cex = 0.8,
      arrow.mode = "-",
      edge.color = "gray",
-     edge.width	= E(weighted_supernodes_graph)$weight*10, 
+     edge.width	= E(weighted_supernodes_graph)$weight*50, 
      #vertex.color = "darkred",
      layout = lay,
      main = "",
@@ -368,25 +400,30 @@ dev.off()
 
 
 png(filename="Communities_zero_g_non_isolates.png",
-    width = 800, height = 800, units = "px")
+    width = 1000, height = 1000, units = "px")
 
 #set.seed(392505)
 
-set.seed(192300)
+set.seed(321007)
 lay <- layout_with_fr(WSG)
+
 plot(WSG, 
      vertex.size=(V(WSG)$size/18)+5, 
      vertex.label.color="black", vertex.label.dist=0.1,
      vertex.label=V(WSG)$Full_name , 
      vertex.frame.color = "white",
      vertex.label.font = 1,
-     vertex.label.cex = 0.7,
+     vertex.label.cex = 1,
      arrow.mode = "-",
      edge.color = "gray",
-     edge.width	= E(WSG)$weight*10, 
+     edge.width	= E(WSG)$weight*50, 
      #vertex.color = "darkred",
      layout = lay,
-     main = "")
+     main = "",
+     rescale = TRUE,  # Adjusts plot to the entire layout area
+     #xlim = c(-0.5, 0.5),  # Adjust x-axis limits to prevent truncation
+     #ylim = c(-0.5, 0.5) ) # Adjust y-axis limits to prevent truncation)
+)
 dev.off()
 hist(E(WSG)$weight)
 
