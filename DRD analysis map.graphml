@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:java="http://www.yworks.com/xml/yfiles-common/1.0/java" xmlns:sys="http://www.yworks.com/xml/yfiles-common/markup/primitives/2.0" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:y="http://www.yworks.com/xml/graphml" xmlns:yed="http://www.yworks.com/xml/yed/3" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd">
-  <!--Created by yEd 3.22-->
+  <!--Created by yEd 3.23.2-->
   <key attr.name="Description" attr.type="string" for="graph" id="d0"/>
   <key for="port" id="d1" yfiles.type="portgraphics"/>
   <key for="port" id="d2" yfiles.type="portgeometry"/>
@@ -49,7 +49,7 @@ full_link weighted adjacency bootstrap proportions with obs above 20.csv
           <y:Geometry height="141.41015625" width="730.828125" x="2183.6212549603174" y="1138.808026884191"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="58" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="74.78767395019531" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="720.1998291015625" x="-40.52976413635497" xml:space="preserve" y="33.311241149902344">full_link zeroed below 0.xlsx<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="-0.06272871899336624" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="58" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="75.0556640625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="722.9111328125" x="-41.88541599182372" xml:space="preserve" y="33.17724609375">full_link zeroed below 0.xlsx<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="-0.06272871899336624" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
@@ -59,7 +59,7 @@ full_link weighted adjacency bootstrap proportions with obs above 20.csv
           <y:Geometry height="282.29638671875" width="594.6243551612984" x="2251.7231398796685" y="313.29638671875"/>
           <y:Fill color="#E8EEF7" color2="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="52" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="67.4179458618164" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="582.4456176757812" x="6.089368742758779" xml:space="preserve" y="107.4392204284668">Safe haven data analysis<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="52" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="67.705078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="585.064453125" x="4.779951018149404" xml:space="preserve" y="107.295654296875">Safe haven data analysis<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
@@ -80,7 +80,7 @@ Linked data subsystems and 5 factors resolution ",res,".csv"</y:NodeLabel>
           <y:Geometry height="407.43929595588247" width="1017.7845900735294" x="1362.3557208362513" y="1736.5291397058822"/>
           <y:Fill color="#E8EEF7" color2="#FF6600" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="48" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="353.4973907470703" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1006.9653930664062" x="-58.43472504293936" xml:space="preserve" y="26.970952604406193">Community drl layout resolution ", res, ".pdf
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="48" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="356.828125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1016.5234375" x="-63.21374725973624" xml:space="preserve" y="25.30558547794135">Community drl layout resolution ", res, ".pdf
 "Community circle layout resolution ", res, ".pdf"
 res = 1 (0.5) 5
 
@@ -105,7 +105,8 @@ Layer plot auto position.pdf<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/
           <y:Geometry height="141.41015625" width="609.95361328125" x="2360.8124790736606" y="2158.9684356617645"/>
           <y:Fill color="#E8EEF7" color2="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="42" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="55.224395751953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="598.970703125" x="5.491455078125" xml:space="preserve" y="43.09288024902344">Manual labelling of communities<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="42" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="106.908203125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="601.638671875" x="4.157470703125" xml:space="preserve" y="17.2509765625">Manual labelling of communities
+And assigning to three groups<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
@@ -115,7 +116,7 @@ Layer plot auto position.pdf<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/
           <y:Geometry height="156.111328125" width="1739.2451171875" x="1796.1667271205356" y="2320.3785919117645"/>
           <y:Fill color="#00FFFF" color2="#00FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="64" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="82.06169128417969" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1728.7935791015625" x="5.22576904296875" xml:space="preserve" y="37.024818420410156">Labelled Community strength sorted network resolution 1.csv</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="64" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="82.40625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1736.40625" x="1.41943359375" xml:space="preserve" y="36.8525390625">Labelled Community strength sorted network resolution 1.csv</y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
@@ -135,7 +136,7 @@ Layer plot auto position.pdf<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/
           <y:Geometry height="156.111328125" width="1121.7194174930091" x="69.99465633286047" y="678.6853027343745"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="83" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="105.26197814941406" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1110.9803466796875" x="-64.99448672266067" xml:space="preserve" y="25.42467498779297">DRD_SystemMap (2).graphml<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="-0.06272871899336624" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="83" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="105.68310546875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1115.583984375" x="-67.29630557031692" xml:space="preserve" y="25.214111328125">DRD_SystemMap (2).graphml<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="-0.06272871899336624" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
@@ -145,7 +146,7 @@ Layer plot auto position.pdf<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/
           <y:Geometry height="282.29638671875" width="594.6243551612984" x="333.54218749871586" y="313.29638671875"/>
           <y:Fill color="#E8EEF7" color2="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="52" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="132.13755798339844" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="582.3809814453125" x="6.121686857992927" xml:space="preserve" y="75.07941436767578">System map transcribed 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="52" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="131.41015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="579.09765625" x="7.763349455649177" xml:space="preserve" y="75.443115234375">System map transcribed 
 from workshops<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
@@ -166,7 +167,7 @@ from workshops<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMode
           <y:Geometry height="156.111328125" width="1017.7845900735292" x="2681.2894509949815" y="2784.564060202206"/>
           <y:Fill color="#00FFFF" color2="#00FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="65" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="83.82276916503906" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1007.1136474609375" x="5.335471306295858" xml:space="preserve" y="36.14427947998047">Finalised labelled communities.csv</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="65" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="83.63134765625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1004.7080078125" x="6.538291130514608" xml:space="preserve" y="36.239990234375">Finalised labelled communities.csv</y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
@@ -176,7 +177,7 @@ from workshops<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMode
           <y:Geometry height="141.41015625" width="609.95361328125" x="2885.204939391121" y="2507.4899200367645"/>
           <y:Fill color="#E8EEF7" color2="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="51" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="129.38108825683594" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="575.660888671875" x="17.1463623046875" xml:space="preserve" y="6.014533996582031">Discussion of labels with 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="51" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="128.9599609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="573.74072265625" x="18.1064453125" xml:space="preserve" y="6.22509765625">Discussion of labels with 
 clinical experts<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
@@ -187,7 +188,7 @@ clinical experts<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMo
           <y:Geometry height="407.43929595588247" width="1017.7845900735294" x="2681.2894509949815" y="3164.243669117647"/>
           <y:Fill color="#E8EEF7" color2="#FF6600" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="44" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="57.80858612060547" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1007.36181640625" x="-58.632936712861465" xml:space="preserve" y="174.81535491763862">Table 2 linked data subsystems and five factors.csv<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="-0.06272871899336624" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="44" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="57.904296875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1009.146484375" x="-59.525270697236465" xml:space="preserve" y="174.76749954044135">Table 2 linked data subsystems and five factors.csv<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="-0.06272871899336624" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
@@ -197,7 +198,7 @@ clinical experts<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMo
           <y:Geometry height="407.43929595588247" width="1017.7845900735294" x="121.96207004260032" y="1005.7934570312497"/>
           <y:Fill color="#E8EEF7" color2="#FF6600" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="57" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="74.32826232910156" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1005.9185791015625" x="-57.911318060517374" xml:space="preserve" y="166.55551681339045">Table 1 subsystems nodes deg btw.csv<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="-0.06272871899336624" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="57" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="73.83056640625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="998.828125" x="-54.366091009736124" xml:space="preserve" y="166.80436477481624">Table 1 subsystems nodes deg btw.csv<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="-0.06272871899336624" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
@@ -207,7 +208,7 @@ clinical experts<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMo
           <y:Geometry height="282.29638671875" width="594.6243551612984" x="482.19813987966825" y="3602.68296507353"/>
           <y:Fill color="#E8EEF7" color2="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="78" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="100.07445526123047" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="579.298095703125" x="7.663129729086677" xml:space="preserve" y="91.11096572875977">Final manuscript<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="78" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="99.5576171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="576.203125" x="9.210615080649177" xml:space="preserve" y="91.369384765625">Final manuscript<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
@@ -217,7 +218,7 @@ clinical experts<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMo
           <y:Geometry height="282.29638671875" width="594.6243551612984" x="2434.430282736811" y="1423.2327529871322"/>
           <y:Fill color="#E8EEF7" color2="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="44" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="271.1287155151367" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="517.9222412109375" x="38.351056975180654" xml:space="preserve" y="5.583835601806641">Loaded into yEd
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="44" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="273.521484375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="522.525390625" x="36.049482268149404" xml:space="preserve" y="4.387451171875">Loaded into yEd
 Organic layout 
 Louvain algorithm
 Chains straight line nested
@@ -242,7 +243,7 @@ Trees oriented
           <y:Geometry height="155.91888490643737" width="367.80316636286284" x="885.0416707868225" y="1862.2893452306048"/>
           <y:Fill color="#C0C0C0" color2="#008000" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="55" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="71.64836120605469" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="341.64862060546875" x="47.23042404096293" xml:space="preserve" y="38.99524954129083">Zero_g.Rdata<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.5" nodeRatioX="0.09285714285714286" nodeRatioY="0.20962289663461542" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="55" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="71.38037109375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="340.31103515625" x="47.899216765572305" xml:space="preserve" y="39.26323965359552">Zero_g.Rdata<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.5" nodeRatioX="0.09285714285714286" nodeRatioY="0.20962289663461542" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
@@ -252,7 +253,7 @@ Trees oriented
           <y:Geometry height="407.43929595588247" width="1017.7845900735294" x="766.5461970267273" y="2658.9000762867645"/>
           <y:Fill color="#E8EEF7" color2="#FF6600" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="48" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="120.49913024902344" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="839.2277221679688" x="25.4341104062795" xml:space="preserve" y="143.47008285342963">Communities_zero_g_all.png
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="48" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="121.609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="847.1875" x="21.454221490263876" xml:space="preserve" y="142.91496047794135">Communities_zero_g_all.png
 Communities_zero_g_non_isolates.png<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="-0.06272871899336624" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
@@ -263,7 +264,7 @@ Communities_zero_g_non_isolates.png<y:LabelModel><y:SmartNodeLabelModel distance
           <y:Geometry height="282.29638671875" width="594.6243551612984" x="1292.632663689192" y="0.0"/>
           <y:Fill color="#E8EEF7" color2="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="52" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="67.4179458618164" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="447.1422119140625" x="73.74107162361793" xml:space="preserve" y="107.4392204284668">Study starting point<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="52" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="67.705078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="449.1484375" x="72.73795883064918" xml:space="preserve" y="107.295654296875">Study starting point<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
@@ -489,7 +490,6 @@ Communities_zero_g_non_isolates.png<y:LabelModel><y:SmartNodeLabelModel distance
       </data>
     </edge>
     <edge id="e20" source="n8" target="n19">
-      <data key="d11"/>
       <data key="d12">
         <y:PolyLineEdge>
           <y:Path sx="-579.7483723958335" sy="75.8994140625" tx="206.4951171875" ty="-33.9521484375">
@@ -503,7 +503,6 @@ Communities_zero_g_non_isolates.png<y:LabelModel><y:SmartNodeLabelModel distance
       </data>
     </edge>
     <edge id="e21" source="n20" target="n19">
-      <data key="d11"/>
       <data key="d12">
         <y:PolyLineEdge>
           <y:Path sx="-1.7885008674056735E-6" sy="70.17819245321903" tx="-206.4951171875" ty="-33.9521484375"/>
@@ -514,7 +513,6 @@ Communities_zero_g_non_isolates.png<y:LabelModel><y:SmartNodeLabelModel distance
       </data>
     </edge>
     <edge id="e22" source="n6" target="n20">
-      <data key="d11"/>
       <data key="d12">
         <y:PolyLineEdge>
           <y:Path sx="-275.32682291666663" sy="33.9521484375" tx="0.0" ty="-70.1781924532188">
@@ -528,7 +526,6 @@ Communities_zero_g_non_isolates.png<y:LabelModel><y:SmartNodeLabelModel distance
       </data>
     </edge>
     <edge id="e23" source="n19" target="n21">
-      <data key="d11"/>
       <data key="d12">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="33.9521484375" tx="0.0" ty="-203.71964797794124"/>
@@ -539,7 +536,6 @@ Communities_zero_g_non_isolates.png<y:LabelModel><y:SmartNodeLabelModel distance
       </data>
     </edge>
     <edge id="e24" source="n22" target="n3">
-      <data key="d11"/>
       <data key="d12">
         <y:PolyLineEdge>
           <y:Path sx="148.6560887903246" sy="141.148193359375" tx="0.0" ty="-141.148193359375">
@@ -553,7 +549,6 @@ Communities_zero_g_non_isolates.png<y:LabelModel><y:SmartNodeLabelModel distance
       </data>
     </edge>
     <edge id="e25" source="n22" target="n11">
-      <data key="d11"/>
       <data key="d12">
         <y:PolyLineEdge>
           <y:Path sx="-148.6560887903246" sy="141.148193359375" tx="0.0" ty="-141.148193359375">
@@ -567,7 +562,6 @@ Communities_zero_g_non_isolates.png<y:LabelModel><y:SmartNodeLabelModel distance
       </data>
     </edge>
     <edge id="e26" source="n21" target="n17">
-      <data key="d11"/>
       <data key="d12">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
