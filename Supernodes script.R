@@ -363,6 +363,11 @@ WSG = delete_vertices(weighted_supernodes_graph, Isolated)
 gorder(WSG) # 25
 gsize(WSG) # 160
 edge_density(WSG) # 0.53
+
+sdf2$Label <- try_new
+head(sdf2)
+
+write.xlsx.(sdf2, "Some data about supernodes_communities.xlsx")
 # 
 save(weighted_supernodes_graph, file = "supernodes_network.RData")
 save(WSG, file = "supernodes_network_without_iso.RData")
