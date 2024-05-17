@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:java="http://www.yworks.com/xml/yfiles-common/1.0/java" xmlns:sys="http://www.yworks.com/xml/yfiles-common/markup/primitives/2.0" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:y="http://www.yworks.com/xml/graphml" xmlns:yed="http://www.yworks.com/xml/yed/3" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd">
-  <!--Created by yEd 3.23.2-->
+  <!--Created by yEd 3.22-->
   <key attr.name="Description" attr.type="string" for="graph" id="d0"/>
   <key for="port" id="d1" yfiles.type="portgraphics"/>
   <key for="port" id="d2" yfiles.type="portgeometry"/>
@@ -23,10 +23,10 @@
     <node id="n0">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.storedData">
-          <y:Geometry height="282.29638671875" width="2367.6083984375" x="148.51722935267867" y="302.29638671875"/>
+          <y:Geometry height="282.29638671875" width="2367.6083984375" x="1365.2311182415674" y="615.5927734374995"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="73" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="272.29638671875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="2357.6083984375" x="-143.5170419119197" xml:space="preserve" y="5.0">full_link weighted adjacency with obs above 20.csv
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="73" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="272.29638671875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="2357.6083984375" x="-143.51704191191993" xml:space="preserve" y="5.0">full_link weighted adjacency with obs above 20.csv
 full_link weighted adjacency CIs with obs above 20.csv
 full_link weighted adjacency bootstrap proportions with obs above 20.csv
 <y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="-0.06272871899336624" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -36,7 +36,7 @@ full_link weighted adjacency bootstrap proportions with obs above 20.csv
     <node id="n1">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="67.904296875" width="779.66015625" x="942.4913504464287" y="604.5927734375"/>
+          <y:Geometry height="67.904296875" width="779.66015625" x="2159.2052393353174" y="917.8891601562495"/>
           <y:Fill color="#E8EEF7" color2="#99CC00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="44" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="57.904296875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="769.66015625" x="5.0" xml:space="preserve" y="5.0">1000 read and prepare safe haven files<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -46,27 +46,27 @@ full_link weighted adjacency bootstrap proportions with obs above 20.csv
     <node id="n2">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.storedData">
-          <y:Geometry height="141.41015625" width="730.828125" x="966.9073660714287" y="692.4970703125"/>
+          <y:Geometry height="141.41015625" width="730.828125" x="2183.6212549603174" y="1138.808026884191"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="52" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="67.705078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="648.541015625" x="-4.70035739807372" xml:space="preserve" y="36.8525390625">full_link zeroed below 0.xlsx<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="-0.06272871899336624" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="58" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="74.78767395019531" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="720.1998291015625" x="-40.52976413635497" xml:space="preserve" y="33.311241149902344">full_link zeroed below 0.xlsx<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="-0.06272871899336624" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
     <node id="n3">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.manualOperation">
-          <y:Geometry height="282.29638671875" width="594.6243551612984" x="1035.0092509907795" y="0.0"/>
+          <y:Geometry height="282.29638671875" width="594.6243551612984" x="2251.7231398796685" y="313.29638671875"/>
           <y:Fill color="#E8EEF7" color2="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="34" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.6533203125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="383.9267578125" x="105.34879867439918" xml:space="preserve" y="118.321533203125">Safe haven data analysis<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="52" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="67.4179458618164" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="582.4456176757812" x="6.089368742758779" xml:space="preserve" y="107.4392204284668">Safe haven data analysis<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
     <node id="n4">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.document">
-          <y:Geometry height="156.111328125" width="1739.2451171875" x="1067.7849810887897" y="1078.4755073529413"/>
+          <y:Geometry height="156.111328125" width="1739.2451171875" x="2410.140536644345" y="1862.1931236213236"/>
           <y:Fill color="#00FFFF" color2="#00FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="58" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="146.111328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1539.0458984375" x="100.099609375" xml:space="preserve" y="5.0">Community strength sorted network resolution ",res,".csv"
@@ -77,10 +77,10 @@ Linked data subsystems and 5 factors resolution ",res,".csv"</y:NodeLabel>
     <node id="n5">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.storedData">
-          <y:Geometry height="407.43929595588247" width="1017.7845900735294" x="20.00016528069557" y="952.8115234375001"/>
+          <y:Geometry height="407.43929595588247" width="1017.7845900735294" x="1362.3557208362513" y="1736.5291397058822"/>
           <y:Fill color="#E8EEF7" color2="#FF6600" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="40" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="298.0234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="847.76953125" x="21.16320586526382" xml:space="preserve" y="54.707929227941236">Community drl layout resolution ", res, ".pdf
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="48" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="353.4973907470703" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1006.9653930664062" x="-58.43472504293936" xml:space="preserve" y="26.970952604406193">Community drl layout resolution ", res, ".pdf
 "Community circle layout resolution ", res, ".pdf"
 res = 1 (0.5) 5
 
@@ -92,7 +92,7 @@ Layer plot auto position.pdf<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/
     <node id="n6">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="67.904296875" width="825.98046875" x="919.3311941964287" y="853.9072265625"/>
+          <y:Geometry height="67.904296875" width="825.98046875" x="1458.257781498016" y="1530.4287979090072"/>
           <y:Fill color="#E8EEF7" color2="#99CC00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="44" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="57.904296875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="815.98046875" x="5.0" xml:space="preserve" y="5.0">2000 admin network community detection<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -102,50 +102,50 @@ Layer plot auto position.pdf<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/
     <node id="n7">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.manualOperation">
-          <y:Geometry height="141.41015625" width="609.95361328125" x="2067.241844153026" y="1380.2508193933827"/>
+          <y:Geometry height="141.41015625" width="609.95361328125" x="2360.8124790736606" y="2158.9684356617645"/>
           <y:Fill color="#E8EEF7" color2="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="34" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.6533203125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="487.802734375" x="61.075439453125" xml:space="preserve" y="47.87841796875">Manual labelling of communities<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="42" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="55.224395751953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="598.970703125" x="5.491455078125" xml:space="preserve" y="43.09288024902344">Manual labelling of communities<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
     <node id="n8">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.document">
-          <y:Geometry height="156.111328125" width="1739.2451171875" x="1502.5960921999008" y="1541.6609756433827"/>
+          <y:Geometry height="156.111328125" width="1739.2451171875" x="1796.1667271205356" y="2320.3785919117645"/>
           <y:Fill color="#00FFFF" color2="#00FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="58" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="75.0556640625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1573.9931640625" x="82.6259765625" xml:space="preserve" y="40.52783203125">Labelled Community strength sorted network resolution 1.csv</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="64" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="82.06169128417969" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1728.7935791015625" x="5.22576904296875" xml:space="preserve" y="37.024818420410156">Labelled Community strength sorted network resolution 1.csv</y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
     <node id="n9">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="67.904296875" width="825.98046875" x="3148.895479910714" y="2207.1800186121327"/>
+          <y:Geometry height="67.904296875" width="825.98046875" x="217.86413070436504" y="917.8891601562495"/>
           <y:Fill color="#E8EEF7" color2="#99CC00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="44" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="57.904296875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="769.552734375" x="28.2138671875" xml:space="preserve" y="5.0">5000 read and prepare system map file<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="44" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="57.904296875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="757.37109375" x="34.3046875" xml:space="preserve" y="5.0">6000 read and prepare system 6ap file<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
     <node id="n10">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.storedData">
-          <y:Geometry height="156.111328125" width="1121.7194174930091" x="3001.0260055392096" y="2020.0686904871327"/>
+          <y:Geometry height="156.111328125" width="1121.7194174930091" x="69.99465633286047" y="678.6853027343745"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="73" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="93.43212890625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="981.658203125" x="-0.33341494531669014" xml:space="preserve" y="31.339599609375">DRD_SystemMap (2).graphml<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="-0.06272871899336624" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="83" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="105.26197814941406" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1110.9803466796875" x="-64.99448672266067" xml:space="preserve" y="25.42467498779297">DRD_SystemMap (2).graphml<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="-0.06272871899336624" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
     <node id="n11">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.manualOperation">
-          <y:Geometry height="282.29638671875" width="594.6243551612984" x="3264.5735367050647" y="1717.7723037683827"/>
+          <y:Geometry height="282.29638671875" width="594.6243551612984" x="333.54218749871586" y="313.29638671875"/>
           <y:Fill color="#E8EEF7" color2="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="34" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="87.306640625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="380.025390625" x="107.2994822681494" xml:space="preserve" y="97.494873046875">System map transcribed 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="52" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="132.13755798339844" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="582.3809814453125" x="6.121686857992927" xml:space="preserve" y="75.07941436767578">System map transcribed 
 from workshops<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
@@ -153,7 +153,7 @@ from workshops<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMode
     <node id="n12">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.process">
-          <y:Geometry height="67.904296875" width="825.98046875" x="1524.4173053075397" y="2207.1800186121327"/>
+          <y:Geometry height="67.904296875" width="825.98046875" x="2777.191511656746" y="3076.339372242647"/>
           <y:Fill color="#E8EEF7" color2="#99CC00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="44" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="57.904296875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="588.50390625" x="118.73828125" xml:space="preserve" y="5.0">3000 write Table 2 subsystem<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -163,20 +163,20 @@ from workshops<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMode
     <node id="n13">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.document">
-          <y:Geometry height="156.111328125" width="1017.7845900735292" x="1952.9077049632356" y="2020.0686904871327"/>
+          <y:Geometry height="156.111328125" width="1017.7845900735292" x="2681.2894509949815" y="2784.564060202206"/>
           <y:Fill color="#00FFFF" color2="#00FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="58" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="75.0556640625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="896.939453125" x="60.42256847426461" xml:space="preserve" y="40.52783203125">Finalised labelled communities.csv</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="65" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="83.82276916503906" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1007.1136474609375" x="5.335471306295858" xml:space="preserve" y="36.14427947998047">Finalised labelled communities.csv</y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
     <node id="n14">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.manualOperation">
-          <y:Geometry height="141.41015625" width="609.95361328125" x="2156.823193359375" y="1788.2154190027577"/>
+          <y:Geometry height="141.41015625" width="609.95361328125" x="2885.204939391121" y="2507.4899200367645"/>
           <y:Fill color="#E8EEF7" color2="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="34" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="87.306640625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="383.8271484375" x="113.063232421875" xml:space="preserve" y="27.0517578125">Discussion of labels with 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="51" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="129.38108825683594" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="575.660888671875" x="17.1463623046875" xml:space="preserve" y="6.014533996582031">Discussion of labels with 
 clinical experts<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
@@ -184,45 +184,86 @@ clinical experts<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMo
     <node id="n15">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.storedData">
-          <y:Geometry height="407.43929595588247" width="1017.7845900735294" x="1428.515244645775" y="2295.0843154871327"/>
+          <y:Geometry height="407.43929595588247" width="1017.7845900735294" x="2681.2894509949815" y="3164.243669117647"/>
           <y:Fill color="#E8EEF7" color2="#FF6600" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="40" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="53.00390625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="917.76953125" x="-13.836794134736238" xml:space="preserve" y="177.21769485294135">Table 2 linked data subsystems and five factors.csv<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="-0.06272871899336624" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="44" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="57.80858612060547" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1007.36181640625" x="-58.632936712861465" xml:space="preserve" y="174.81535491763862">Table 2 linked data subsystems and five factors.csv<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="-0.06272871899336624" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
     <node id="n16">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.storedData">
-          <y:Geometry height="407.43929595588247" width="1017.7845900735294" x="3052.9934192489495" y="2295.0843154871327"/>
+          <y:Geometry height="407.43929595588247" width="1017.7845900735294" x="121.96207004260032" y="1005.7934570312497"/>
           <y:Fill color="#E8EEF7" color2="#FF6600" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="40" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="53.00390625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="702.125" x="93.98547149026354" xml:space="preserve" y="177.21769485294135">Table 1 subsystems nodes deg btw.csv<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="-0.06272871899336624" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="57" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="74.32826232910156" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="1005.9185791015625" x="-57.911318060517374" xml:space="preserve" y="166.55551681339045">Table 1 subsystems nodes deg btw.csv<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="-0.06272871899336624" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
     <node id="n17">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.manualOperation">
-          <y:Geometry height="282.29638671875" width="594.6243551612984" x="1788.7513144828429" y="2733.5236114430154"/>
+          <y:Geometry height="282.29638671875" width="594.6243551612984" x="482.19813987966825" y="3602.68296507353"/>
           <y:Fill color="#E8EEF7" color2="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="34" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.6533203125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="253.421875" x="170.60124008064918" xml:space="preserve" y="118.321533203125">Final manuscript<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="78" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="100.07445526123047" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="579.298095703125" x="7.663129729086677" xml:space="preserve" y="91.11096572875977">Final manuscript<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
     <node id="n18">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.manualOperation">
-          <y:Geometry height="282.29638671875" width="594.6243551612984" x="2822.055868198403" y="563.4273436931173"/>
+          <y:Geometry height="282.29638671875" width="594.6243551612984" x="2434.430282736811" y="1423.2327529871322"/>
           <y:Fill color="#E8EEF7" color2="#FFFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="34" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="212.2666015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="404.6787109375" x="94.9728221118994" xml:space="preserve" y="35.014892578125">Loaded into yEd
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="44" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="271.1287155151367" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="517.9222412109375" x="38.351056975180654" xml:space="preserve" y="5.583835601806641">Loaded into yEd
 Organic layout 
 Louvain algorithm
 Chains straight line nested
 Trees oriented
 <y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+        </y:GenericNode>
+      </data>
+    </node>
+    <node id="n19">
+      <data key="d6">
+        <y:GenericNode configuration="com.yworks.flowchart.process">
+          <y:Geometry height="67.904296875" width="825.98046875" x="862.448257688492" y="2544.2428497242645"/>
+          <y:Fill color="#E8EEF7" color2="#99CC00" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="44" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="57.904296875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="461.40234375" x="182.2890625" xml:space="preserve" y="5.0">5000 supernodes script<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+        </y:GenericNode>
+      </data>
+    </node>
+    <node id="n20">
+      <data key="d6">
+        <y:GenericNode configuration="com.yworks.flowchart.dataBase">
+          <y:Geometry height="155.91888490643737" width="367.80316636286284" x="885.0416707868225" y="1862.2893452306048"/>
+          <y:Fill color="#C0C0C0" color2="#008000" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="55" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="71.64836120605469" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="341.64862060546875" x="47.23042404096293" xml:space="preserve" y="38.99524954129083">Zero_g.Rdata<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.5" nodeRatioX="0.09285714285714286" nodeRatioY="0.20962289663461542" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+        </y:GenericNode>
+      </data>
+    </node>
+    <node id="n21">
+      <data key="d6">
+        <y:GenericNode configuration="com.yworks.flowchart.storedData">
+          <y:Geometry height="407.43929595588247" width="1017.7845900735294" x="766.5461970267273" y="2658.9000762867645"/>
+          <y:Fill color="#E8EEF7" color2="#FF6600" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="48" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="120.49913024902344" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="839.2277221679688" x="25.4341104062795" xml:space="preserve" y="143.47008285342963">Communities_zero_g_all.png
+Communities_zero_g_non_isolates.png<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="-0.06272871899336624" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+        </y:GenericNode>
+      </data>
+    </node>
+    <node id="n22">
+      <data key="d6">
+        <y:GenericNode configuration="com.yworks.flowchart.manualOperation">
+          <y:Geometry height="282.29638671875" width="594.6243551612984" x="1292.632663689192" y="0.0"/>
+          <y:Fill color="#E8EEF7" color2="#FFFFFF" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="52" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="67.4179458618164" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="447.1422119140625" x="73.74107162361793" xml:space="preserve" y="107.4392204284668">Study starting point<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
@@ -259,7 +300,10 @@ Trees oriented
     <edge id="e3" source="n2" target="n6">
       <data key="d12">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="70.705078125" tx="0.0" ty="-33.9521484375"/>
+          <y:Path sx="-182.70703125" sy="70.705078125" tx="0.0" ty="-33.9521484375">
+            <y:Point x="2366.3282862103174" y="1295.718183134191"/>
+            <y:Point x="1871.248015873016" y="1295.718183134191"/>
+          </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
@@ -269,10 +313,7 @@ Trees oriented
     <edge id="e4" source="n6" target="n5">
       <data key="d12">
         <y:PolyLineEdge>
-          <y:Path sx="-206.4951171875" sy="33.9521484375" tx="0.0" ty="-203.71964797794124">
-            <y:Point x="1125.8263113839287" y="937.3115234375"/>
-            <y:Point x="528.8924603174603" y="937.3115234375"/>
-          </y:Path>
+          <y:Path sx="0.0" sy="33.9521484375" tx="0.0" ty="-203.71964797794124"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
@@ -282,9 +323,9 @@ Trees oriented
     <edge id="e5" source="n6" target="n4">
       <data key="d12">
         <y:PolyLineEdge>
-          <y:Path sx="206.4951171875" sy="33.9521484375" tx="0.0" ty="-78.0556640625">
-            <y:Point x="1538.8165457589287" y="937.3115234375"/>
-            <y:Point x="1937.4075396825397" y="937.3115234375"/>
+          <y:Path sx="275.32682291666663" sy="33.9521484375" tx="0.0" ty="-78.0556640625">
+            <y:Point x="2146.5748387896824" y="1721.0291397058822"/>
+            <y:Point x="3279.763095238095" y="1721.0291397058822"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -295,7 +336,10 @@ Trees oriented
     <edge id="e6" source="n4" target="n7">
       <data key="d12">
         <y:PolyLineEdge>
-          <y:Path sx="434.81132436292637" sy="39.02441406252615" tx="0.0" ty="-70.705078125"/>
+          <y:Path sx="-434.811279296875" sy="78.0556640625" tx="0.0" ty="-70.705078125">
+            <y:Point x="2844.95181594122" y="2033.8044517463236"/>
+            <y:Point x="2665.7892857142856" y="2033.8044517463236"/>
+          </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
@@ -333,14 +377,11 @@ Trees oriented
       </data>
     </edge>
     <edge id="e10" source="n4" target="n12">
-      <data key="d11"/>
       <data key="d12">
         <y:PolyLineEdge>
-          <y:Path sx="-434.811279296875" sy="78.0556640625" tx="-275.3268229166665" ty="-33.9521484375">
-            <y:Point x="1502.5962603856647" y="1250.0868354779413"/>
-            <y:Point x="1487.0960317460317" y="1250.0868354779413"/>
-            <y:Point x="1487.0960317460317" y="2113.6243545496327"/>
-            <y:Point x="1662.0807167658731" y="2113.6243545496327"/>
+          <y:Path sx="434.8112862962398" sy="39.02441406250068" tx="275.3268229166665" ty="-33.9521484375">
+            <y:Point x="3714.574206349206" y="2956.175388327206"/>
+            <y:Point x="3465.5085689484126" y="2956.175388327206"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -349,10 +390,12 @@ Trees oriented
       </data>
     </edge>
     <edge id="e11" source="n8" target="n12">
-      <data key="d11"/>
       <data key="d12">
         <y:PolyLineEdge>
-          <y:Path sx="-434.811279296875" sy="78.0556640625" tx="0.0" ty="-33.9521484375"/>
+          <y:Path sx="0.0" sy="58.5244140625" tx="-275.3268229166665" ty="-33.9521484375">
+            <y:Point x="2665.7892857142856" y="2956.175388327206"/>
+            <y:Point x="2914.8549231150796" y="2956.175388327206"/>
+          </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
@@ -360,12 +403,11 @@ Trees oriented
       </data>
     </edge>
     <edge id="e12" source="n8" target="n14">
-      <data key="d11"/>
       <data key="d12">
         <y:PolyLineEdge>
-          <y:Path sx="434.811279296875" sy="39.0244140625" tx="0.0" ty="-70.705078125">
-            <y:Point x="2807.029930090526" y="1713.2723037683827"/>
-            <y:Point x="2461.8" y="1713.2723037683827"/>
+          <y:Path sx="579.7483723958335" sy="41.2119140625" tx="0.0" ty="-70.705078125">
+            <y:Point x="3245.537658110119" y="2491.9899200367645"/>
+            <y:Point x="3190.181746031746" y="2491.9899200367645"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -374,7 +416,6 @@ Trees oriented
       </data>
     </edge>
     <edge id="e13" source="n14" target="n13">
-      <data key="d11"/>
       <data key="d12">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="70.705078125" tx="0.0" ty="-78.0556640625"/>
@@ -385,13 +426,9 @@ Trees oriented
       </data>
     </edge>
     <edge id="e14" source="n13" target="n12">
-      <data key="d11"/>
       <data key="d12">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="58.5244140625" tx="275.32682291666663" ty="-33.9521484375">
-            <y:Point x="2461.8" y="2191.6800186121327"/>
-            <y:Point x="2212.734362599206" y="2191.6800186121327"/>
-          </y:Path>
+          <y:Path sx="0.0" sy="58.5244140625" tx="0.0" ty="-33.9521484375"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
@@ -399,7 +436,6 @@ Trees oriented
       </data>
     </edge>
     <edge id="e15" source="n12" target="n15">
-      <data key="d11"/>
       <data key="d12">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="33.9521484375" tx="0.0" ty="-203.71964797794124"/>
@@ -410,7 +446,6 @@ Trees oriented
       </data>
     </edge>
     <edge id="e16" source="n9" target="n16">
-      <data key="d11"/>
       <data key="d12">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="33.9521484375" tx="0.0" ty="-203.71964797794124"/>
@@ -421,23 +456,11 @@ Trees oriented
       </data>
     </edge>
     <edge id="e17" source="n15" target="n17">
-      <data key="d11"/>
-      <data key="d12">
-        <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="203.71964797794124" tx="-148.6560887903246" ty="-141.148193359375"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="standard"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e18" source="n16" target="n17">
-      <data key="d11"/>
       <data key="d12">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="203.71964797794124" tx="148.6560887903246" ty="-141.148193359375">
-            <y:Point x="3561.885714285714" y="2718.0236114430154"/>
-            <y:Point x="2234.7195808538168" y="2718.0236114430154"/>
+            <y:Point x="3190.181746031746" y="3587.18296507353"/>
+            <y:Point x="928.166406250642" y="3587.18296507353"/>
           </y:Path>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
@@ -445,7 +468,105 @@ Trees oriented
         </y:PolyLineEdge>
       </data>
     </edge>
+    <edge id="e18" source="n16" target="n17">
+      <data key="d12">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="203.71964797794135" tx="-148.6560887903246" ty="-141.148193359375"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
     <edge id="e19" source="n2" target="n18">
+      <data key="d12">
+        <y:PolyLineEdge>
+          <y:Path sx="182.70703125" sy="70.705078125" tx="0.0" ty="-141.148193359375"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e20" source="n8" target="n19">
+      <data key="d11"/>
+      <data key="d12">
+        <y:PolyLineEdge>
+          <y:Path sx="-579.7483723958335" sy="75.8994140625" tx="206.4951171875" ty="-33.9521484375">
+            <y:Point x="2086.040913318452" y="2491.9899200367645"/>
+            <y:Point x="1481.933609250992" y="2491.9899200367645"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e21" source="n20" target="n19">
+      <data key="d11"/>
+      <data key="d12">
+        <y:PolyLineEdge>
+          <y:Path sx="-1.7885008674056735E-6" sy="70.17819245321903" tx="-206.4951171875" ty="-33.9521484375"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e22" source="n6" target="n20">
+      <data key="d11"/>
+      <data key="d12">
+        <y:PolyLineEdge>
+          <y:Path sx="-275.32682291666663" sy="33.9521484375" tx="0.0" ty="-70.1781924532188">
+            <y:Point x="1595.9211929563494" y="1613.8330947840072"/>
+            <y:Point x="1068.9432539682539" y="1613.8330947840072"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e23" source="n19" target="n21">
+      <data key="d11"/>
+      <data key="d12">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="33.9521484375" tx="0.0" ty="-203.71964797794124"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e24" source="n22" target="n3">
+      <data key="d11"/>
+      <data key="d12">
+        <y:PolyLineEdge>
+          <y:Path sx="148.6560887903246" sy="141.148193359375" tx="0.0" ty="-141.148193359375">
+            <y:Point x="1738.6009300601659" y="297.79638671875"/>
+            <y:Point x="2549.035317460318" y="297.79638671875"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e25" source="n22" target="n11">
+      <data key="d11"/>
+      <data key="d12">
+        <y:PolyLineEdge>
+          <y:Path sx="-148.6560887903246" sy="141.148193359375" tx="0.0" ty="-141.148193359375">
+            <y:Point x="1441.2887524795165" y="297.79638671875"/>
+            <y:Point x="630.854365079365" y="297.79638671875"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e26" source="n21" target="n17">
       <data key="d11"/>
       <data key="d12">
         <y:PolyLineEdge>
