@@ -80,16 +80,6 @@ table(full_link_df_bootp$below_95) / dim(full_link_df_bootp)[1]
 full_link_df_zeroed_boot <- full_link_df
 full_link_df_zeroed_boot[upper_triangle_logical] <- full_link_df[upper_triangle_logical] * !full_link_df_bootp$below_95
 
-table(rowSums(full_link_df) == rowSums(full_link_df_zeroed_boot))
-
-
-hist(rowSums(full_link_df))
-hist(rowSums(full_link_df_zeroed_boot))
-
-table(rowSums(full_link_df))
-table(rowSums(full_link_df_zeroed_boot))
-
-class(full_link_df)
 full_link_mat <- as.matrix(full_link_df)
 colnames(full_link_mat) <- colnames(full_link_df)
 rownames(full_link_mat) <- colnames(full_link_df)
@@ -128,24 +118,26 @@ dim(edge_list)
 writexl::write_xlsx(edge_list, path = "full_link zeroed below 0.xlsx")
 write.xlsx(edge_list, file = "full_link zeroed below 0.xlsx")
 
-edge_list <- edge_list[edge_list$edge_weights >= 0.05,] 
-dim(edge_list)
-writexl::write_xlsx(edge_list, path = "full_link zeroed below 0.05.xlsx")
-write.xlsx(edge_list, file = "full_link zeroed below 0.05.xlsx")
+##Set higher thresholds for sensitivity analysis
 
-edge_list <- edge_list[edge_list$edge_weights > 0.08,]
-dim(edge_list)
-writexl::write_xlsx(edge_list, path = "full_link zeroed below 0.08.xlsx")
-write.xlsx(edge_list, file = "full_link zeroed below 0.08.xlsx")
-
-
-edge_list <- edge_list[edge_list$edge_weights > 0.1,]
-dim(edge_list)
-writexl::write_xlsx(edge_list, path = "full_link zeroed below 0.1.xlsx")
-write.xlsx(edge_list, file = "full_link zeroed below 0.1.xlsx")
-
-edge_list <- edge_list[edge_list$edge_weights > 0.20,]
-dim(edge_list)
-writexl::write_xlsx(edge_list, path = "full_link zeroed below 0.2.xlsx")
-write.xlsx(edge_list, file = "full_link zeroed below 0.2.xlsx")
-
+# edge_list <- edge_list[edge_list$edge_weights >= 0.05,] 
+# dim(edge_list)
+# writexl::write_xlsx(edge_list, path = "full_link zeroed below 0.05.xlsx")
+# write.xlsx(edge_list, file = "full_link zeroed below 0.05.xlsx")
+# 
+# edge_list <- edge_list[edge_list$edge_weights > 0.08,]
+# dim(edge_list)
+# writexl::write_xlsx(edge_list, path = "full_link zeroed below 0.08.xlsx")
+# write.xlsx(edge_list, file = "full_link zeroed below 0.08.xlsx")
+# 
+# 
+# edge_list <- edge_list[edge_list$edge_weights > 0.1,]
+# dim(edge_list)
+# writexl::write_xlsx(edge_list, path = "full_link zeroed below 0.1.xlsx")
+# write.xlsx(edge_list, file = "full_link zeroed below 0.1.xlsx")
+# 
+# edge_list <- edge_list[edge_list$edge_weights > 0.20,]
+# dim(edge_list)
+# writexl::write_xlsx(edge_list, path = "full_link zeroed below 0.2.xlsx")
+# write.xlsx(edge_list, file = "full_link zeroed below 0.2.xlsx")
+# 

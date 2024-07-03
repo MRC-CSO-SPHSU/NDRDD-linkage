@@ -1,12 +1,14 @@
 
-#################
-#               #
-#  For DRD      #
-#               #
-#################
+################################
+#                              #
+#  Create supernode plots      #
+#  Where each node relates     # 
+#  to a community of the       #
+#  original network            #
+################################
 
 # SL developed this script
-# Aril 2024
+# April 2024
 
 #############
 #  Purpose  #
@@ -46,9 +48,8 @@ wd <- "T:/projects/CSO_DRD_S00359/Data"
 setwd(wd)
 getwd()
 packageVersion("igraph")
-# check igraph package bc older versions give different results
-# detach(package:igraph, unload = TRUE)
-# packageVersion("igraph") # '1.2.6'
+# This analysis was run using igraph 2.0.3
+# older versions give different results
 # update.packages(oldPkgs = "igraph")
 
 load("zero_g.RData")
@@ -154,8 +155,6 @@ sum(V(g2)$degree==0) # 30 isolated communities
 
 
 # adding weights
-
-# adding weights - new way - THAT DOES NOT INCLUDE ISOLATES!!!!
 #  df   node - comm
 colnames(newdata)
 Node_names <- newdata$node_names
@@ -163,9 +162,9 @@ Supernode_ <- newdata$supernode
 unique(Supernode_)
 
 #  el:  From_Node - To_Node
-el = as_data_frame(swg)
+el = igraph::as_data_frame(swg)
 
-# map is better I think
+# map supernode from - to columns
 el$from_Com <- plyr::mapvalues(el$from, from = Node_names, to = Supernode_)
 el$to_Com <- plyr::mapvalues(el$to, from = Node_names, to = Supernode_)
 el$to_Com <- as.numeric(el$to_Com)
@@ -295,7 +294,7 @@ newdata$variable <- newdata$node_names
 
 pr_df <- merge(pr_names, newdata, by = "variable", all = T)
 dim(pr_df)
-
+dim(pr_names)
 pr_df <- pr_df[pr_names$Label !="",]
 head(pr_df)
 pr_df <- dplyr::select(pr_df, c(community, Label, supernode))
@@ -367,21 +366,34 @@ edge_density(WSG) # 0.53
 sdf2$Label <- try_new
 head(sdf2)
 
-write.xlsx.(sdf2, "Some data about supernodes_communities.xlsx")
+#write.xlsx(sdf2, "Some data about supernodes_communities.xlsx")
 # 
-save(weighted_supernodes_graph, file = "supernodes_network.RData")
-save(WSG, file = "supernodes_network_without_iso.RData")
+#save(weighted_supernodes_graph, file = "supernodes_network.RData")
+#save(WSG, file = "supernodes_network_without_iso.RData")
 
 
 # simple plotting
+set.seed(321007)
+V(weighted_supernodes_graph)$circle.order <- rank(degree(weighted_supernodes_graph), ties.method = "random")
 
-png(filename="Communities_zero_g_all.png",
+groups <- cluster_louvain(weighted_supernodes_graph, resolution = 1)
+
+#lay <- layout_in_circle(weighted_supernodes_graph, order = V(weighted_supernodes_graph)$circle.order)
+lay <- layout_in_circle(weighted_supernodes_graph, order = order(membership(groups)))
+color_gradient <- colorRampPalette(c("#ffff99", "#386cb0"))
+# Normalize node sizes for color mapping
+node_sizes <- (V(weighted_supernodes_graph)$size / 18) + 5
+normalized_sizes <- (node_sizes - min(node_sizes)) / (max(node_sizes) - min(node_sizes))
+# Generate colors based on normalized sizes
+vertex_colors <- color_gradient(100)[as.numeric(cut(normalized_sizes, breaks = 100))]
+
+png(filename="Connected subsystems all.png",
     #width = 10, height = 14)
     width = 1000, height = 1000, units = "px")
 # Use the Fruchterman-Reingold layout with additional repulsion
 #lay <- layout_with_fr(g2, niter = 500, grid = "nogrid")
 set.seed(492555)
-lay <- layout_nicely(weighted_supernodes_graph)
+#lay <- layout_nicely(weighted_supernodes_graph)
 plot(weighted_supernodes_graph, 
      vertex.frame.color = "white",
      vertex.size=(V(weighted_supernodes_graph)$size/18)+5, 
@@ -404,97 +416,144 @@ plot(weighted_supernodes_graph,
 dev.off()
 
 
-png(filename="Communities_zero_g_non_isolates.png",
-    width = 1000, height = 1000, units = "px")
-
 #set.seed(392505)
 
-set.seed(321007)
-lay <- layout_with_fr(WSG)
+##Wrap text
 
+V(WSG)$Full_name <- c(
+  "NDRDD \n variables",
+  "Mental \n illness",
+  "Alcohol \n detox",
+  "Gastric and \n psychosis",
+  "Benzos \n & pain",
+  "Hepatitis & \n mental health",
+  "Respiratory, \n depression,\n  pain",
+  "Diabetes",
+  "Epilepsy",
+  "Alcohol \n treatment",
+  "Allergy \n  & asthma",
+  "Self \n poisoning",
+  "Assault & \n self harm",
+  "Skin, \n migraine, \n sinuses",
+  "Cardiac \n arrest",
+  "Alcohol, \n antifungal, \n stomach",
+  "Methadone & \n general \n health",
+  "Leg \n ulcers",
+  "Eye drops \n and \n malnourishment",
+  "Morphine, \n pain, \n constipation",
+  "Respiratory \n disease",
+  "Skin \n cream",
+  "Mixed \n general health",
+  "Heart \n disease",
+  "Suboxone"
+  
+)
+
+
+
+
+set.seed(321007)
+V(WSG)$circle.order <- rank(degree(WSG), ties.method = "random")
+
+groups <- cluster_louvain(WSG, resolution = 1)
+
+#lay <- layout_in_circle(WSG, order = V(WSG)$circle.order)
+lay <- layout_in_circle(WSG, order = order(membership(groups)))
+color_gradient <- colorRampPalette(c("#ffff99", "#386cb0"))
+# Normalize node sizes for color mapping
+node_sizes <- (V(WSG)$size / 18) + 5
+normalized_sizes <- (node_sizes - min(node_sizes)) / (max(node_sizes) - min(node_sizes))
+# Generate colors based on normalized sizes
+vertex_colors <- color_gradient(100)[as.numeric(cut(normalized_sizes, breaks = 100))]
+
+png(filename="Figure 2 connected subsystems isolates removed.png",
+    width = 2000, height = 2000, units = "px")
+
+# Plot the graph with the specified parameters
 plot(WSG, 
-     vertex.size=(V(WSG)$size/18)+5, 
-     vertex.label.color="black", vertex.label.dist=0.1,
-     vertex.label=V(WSG)$Full_name , 
+     vertex.size = node_sizes + 5, 
+     vertex.label.color = "black", 
+     vertex.label.dist = 0.1,
+     vertex.label = V(WSG)$Full_name, 
      vertex.frame.color = "white",
      vertex.label.font = 1,
-     vertex.label.cex = 1,
+     vertex.label.cex = 2,
      arrow.mode = "-",
      edge.color = "gray",
-     edge.width	= E(WSG)$weight*50, 
-     #vertex.color = "darkred",
+     edge.width = E(WSG)$weight * 80, 
+     vertex.color = vertex_colors,
      layout = lay,
      main = "",
-     rescale = TRUE,  # Adjusts plot to the entire layout area
-     #xlim = c(-0.5, 0.5),  # Adjust x-axis limits to prevent truncation
-     #ylim = c(-0.5, 0.5) ) # Adjust y-axis limits to prevent truncation)
+     rescale = TRUE
+     #xlim = c(-0.5, 0.5),  # Adjust x-axis limits to prevent truncation (if needed)
+     #ylim = c(-0.5, 0.5)   # Adjust y-axis limits to prevent truncation (if needed)
 )
+    
 dev.off()
-hist(E(WSG)$weight)
 
-# OLD CODE
-
-# # THIS CODE IS EXTREMLY SLOW!!!
-# Assuming 'swg' is your original graph and ''member2 is a vector indicating the community membership of each node
-# 'supernodes_graph' is the graph where each supernode represents a community and ties exist between communities if there were any ties between nodes of each pair of communities
-
-# Calculate the percentage of nodes in each community connected to nodes in other communities
-
-# Precompute community sizes
-community_sizes <- sapply(1:vcount(supernodes_graph), function(i) {
-  length(which(V(swg)$member2 == i))
-})
-# Precompute node names in each community
-nodes_in_community <- list()
-for(i in 1:vcount(supernodes_graph)){
-  nodes_in_community_i <- V(swg)[which(V(swg)$member2 == i)]
-  net_i <- induced_subgraph(swg, nodes_in_community_i)
-  nodes_in_community[[i]] <- V(net_i)$name
-}
-
-# the loop starts here::
-start.time <- Sys.time()
-# simple sum of edges
-weighted_edges1 <- matrix(NA, nrow = vcount(supernodes_graph), ncol = vcount(supernodes_graph))
-# taking into acount the size of node
-weighted_edges2 <- matrix(NA, nrow = vcount(supernodes_graph), ncol = vcount(supernodes_graph))
-for (i in 2:nrow(weighted_edges1)) {
-  for (j in 1:ncol(weighted_edges1)) {
-    if (i != j) {
-      nodes_in_c_i <- nodes_in_community[[i]]
-      com_size_i <- community_sizes[[i]]
-      print(c(i,j))
-      nodes_in_c_j <- nodes_in_community[[j]]
-      com_size_j <- community_sizes[[j]]
-      
-      # nodes_in_community_i <- V(swg)[which(V(swg)$member2 == i)]
-      # com_i_size <- length(V(swg)$name[nodes_in_community_i])
-      # net_i <- induced_subgraph(swg, nodes_in_community_i)
-      # nodes_in_community_i <- V(net_i)$name
-      # 
-      # nodes_in_community_j <- V(swg)[which(V(swg)$member2 == j)]
-      # com_j_size <- length(V(swg)$name[nodes_in_community_j])
-      # net_j <- induced_subgraph(swg, nodes_in_community_j)#
-      # nodes_in_community_j <- V(net_j)$name
-      # Initialize a counter for the number of ties
-      num_ties <- 0
-      for (z in 1:length(E(swg))) {
-        edge <- E(swg)[z]
-        node_names <- ends(swg, edge)
-        node_names_vector <- as.character(node_names)
-        if ((node_names_vector[1] %in% nodes_in_c_i & node_names_vector[2] %in% nodes_in_c_j)|
-            (node_names_vector[2] %in% nodes_in_c_i & node_names_vector[1] %in% nodes_in_c_j)){
-          
-          num_ties <- num_ties + 1
-        }
-      }
-      W <- round(((num_ties/com_size_i) + (num_ties/com_size_j))/2, 2)
-      weighted_edges1[i, j] <- num_ties # simple sum
-      weighted_edges2[i, j] <- W # taking into account the size of communities
-    }
-  }}
-end.time <- Sys.time()
-time.taken <- round(end.time - start.time,2)
-time.taken # 11.23 hours
-write.xlsx(weighted_edges1, "weighted_edges1_oldcode.xlsx")
-write.xlsx(weighted_edges2, "weighted_edges2_oldcode.xlsx")
+# # OLD CODE
+# 
+# # # THIS CODE IS EXTREMLY SLOW!!!
+# # Assuming 'swg' is your original graph and ''member2 is a vector indicating the community membership of each node
+# # 'supernodes_graph' is the graph where each supernode represents a community and ties exist between communities if there were any ties between nodes of each pair of communities
+# 
+# # Calculate the percentage of nodes in each community connected to nodes in other communities
+# 
+# # Precompute community sizes
+# community_sizes <- sapply(1:vcount(supernodes_graph), function(i) {
+#   length(which(V(swg)$member2 == i))
+# })
+# # Precompute node names in each community
+# nodes_in_community <- list()
+# for(i in 1:vcount(supernodes_graph)){
+#   nodes_in_community_i <- V(swg)[which(V(swg)$member2 == i)]
+#   net_i <- induced_subgraph(swg, nodes_in_community_i)
+#   nodes_in_community[[i]] <- V(net_i)$name
+# }
+# 
+# # the loop starts here::
+# start.time <- Sys.time()
+# # simple sum of edges
+# weighted_edges1 <- matrix(NA, nrow = vcount(supernodes_graph), ncol = vcount(supernodes_graph))
+# # taking into acount the size of node
+# weighted_edges2 <- matrix(NA, nrow = vcount(supernodes_graph), ncol = vcount(supernodes_graph))
+# for (i in 2:nrow(weighted_edges1)) {
+#   for (j in 1:ncol(weighted_edges1)) {
+#     if (i != j) {
+#       nodes_in_c_i <- nodes_in_community[[i]]
+#       com_size_i <- community_sizes[[i]]
+#       print(c(i,j))
+#       nodes_in_c_j <- nodes_in_community[[j]]
+#       com_size_j <- community_sizes[[j]]
+#       
+#       # nodes_in_community_i <- V(swg)[which(V(swg)$member2 == i)]
+#       # com_i_size <- length(V(swg)$name[nodes_in_community_i])
+#       # net_i <- induced_subgraph(swg, nodes_in_community_i)
+#       # nodes_in_community_i <- V(net_i)$name
+#       # 
+#       # nodes_in_community_j <- V(swg)[which(V(swg)$member2 == j)]
+#       # com_j_size <- length(V(swg)$name[nodes_in_community_j])
+#       # net_j <- induced_subgraph(swg, nodes_in_community_j)#
+#       # nodes_in_community_j <- V(net_j)$name
+#       # Initialize a counter for the number of ties
+#       num_ties <- 0
+#       for (z in 1:length(E(swg))) {
+#         edge <- E(swg)[z]
+#         node_names <- ends(swg, edge)
+#         node_names_vector <- as.character(node_names)
+#         if ((node_names_vector[1] %in% nodes_in_c_i & node_names_vector[2] %in% nodes_in_c_j)|
+#             (node_names_vector[2] %in% nodes_in_c_i & node_names_vector[1] %in% nodes_in_c_j)){
+#           
+#           num_ties <- num_ties + 1
+#         }
+#       }
+#       W <- round(((num_ties/com_size_i) + (num_ties/com_size_j))/2, 2)
+#       weighted_edges1[i, j] <- num_ties # simple sum
+#       weighted_edges2[i, j] <- W # taking into account the size of communities
+#     }
+#   }}
+# end.time <- Sys.time()
+# time.taken <- round(end.time - start.time,2)
+# time.taken # 11.23 hours
+# write.xlsx(weighted_edges1, "weighted_edges1_oldcode.xlsx")
+# write.xlsx(weighted_edges2, "weighted_edges2_oldcode.xlsx")
