@@ -113,6 +113,10 @@ edge_list$V2 <- as.character(edge_list$V2)
 edge_list$edge_weights <- as.numeric(as.character(edge_list$edge_weight))
 ###Remove corr below x 
 
+drop_list <- edge_list[edge_list$edge_weights < 0.0,]
+class(drop_list)
+result <- setdiff(drop_list$V1, edge_list$V1)
+
 edge_list <- edge_list[edge_list$edge_weights >= 0.0,] 
 dim(edge_list)
 writexl::write_xlsx(edge_list, path = "full_link zeroed below 0.xlsx")
