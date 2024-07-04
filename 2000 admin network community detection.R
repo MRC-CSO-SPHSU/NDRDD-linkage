@@ -66,7 +66,7 @@ comm_df <- list()
 # algorithm. Higher resolution = more communities
 counter <- 1
 for (res in seq(from = 1, to = 5, by = 0.5)) {
-  set.seed(12331) # 55
+  set.seed(12331) 
   clust[[counter]] <- igraph::cluster_louvain(zero_g, resolution = res)
   V(zero_g)$community <- clust[[counter]]$membership
   print(table(clust[[counter]]$membership))

@@ -89,4 +89,4 @@ df_filtered <- df_filtered[,c(2,1,3)]
 names(df_filtered) <- c("Subsystem","'Number of factors'","Group")
 
 
-write.csv(df_filtered, file = "Subsystems by three groups.csv")
+write.csv(df_filtered, file = "Table 2 Subsystems by three groups.csv")

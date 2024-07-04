@@ -71,8 +71,7 @@ gsize(swg) # 1950
 
 is.weighted(swg)
 
-set.seed(3111) # 54 - Need to check how different the communities are with different resolutions and seeds
-set.seed(12331) # 55
+set.seed(12331) 
 CL <- igraph::cluster_louvain(swg) # add Res here if needed
 CL
 # the followig two steps are added to avoid some igraph vesrion related issues
@@ -86,13 +85,10 @@ CL
 # CL <- loadRData("CL_1.RData")
 
 
-length(unique(CL$membership)) # 55
+length(unique(CL$membership)) 
 # assign mebership as node attribute
 V(swg)$member <- CL$membership
 table(CL$membership)
-is_directed(swg)
-
-#plot(swg, vertex.color = V(swg)$member)
 
 ##########################
 # Supernodes
@@ -112,11 +108,10 @@ V(swg)$member2<- plyr::mapvalues(V(swg)$member,
                                          to = comnn)
 
 
-# supernodes - this is for simplyfied version!!! - no weights to ties bw supernodes
+# supernodes - this is for simplified version!!! - no weights to ties bw supernodes
 
 g2 = contract(swg, V(swg)$member2)
 g2 = simplify(g2)
-str(V(swg)$member2)
 # fix names
 
 V(g2)$name # the structure that one gets from CDAs
@@ -129,13 +124,10 @@ V(g2)$name <- V(g2)$supername
 V(g2)$true_name <- coms
 V(g2)$size <- size
 
-is_directed(g2)
 sdf <- as.data.frame(cbind(V(swg)$name, V(swg)$member2))
 colnames(sdf) <- c("node_names", "supernode")
-str(V(swg)$member2)
 
 cbind(V(g2)$name, V(g2)$true_name, V(g2)$size)
-str(V(swg)$member2)
 sdf$supernode <- as.numeric(sdf$supernode)
 newdata <- sdf[order(sdf$supernode),]
 head(newdata, 10)
@@ -147,19 +139,16 @@ sdf2 <- as.data.frame(cbind(V(g2)$true_name, V(g2)$size))
 colnames(sdf2) <- c("supernode_code", "N_of_nodes")
 head(sdf2)
 
-gorder(g2)# 55
-gsize(g2)# 162
-edge_density(g2) # 0.11
 V(g2)$degree <- degree(g2)
-sum(V(g2)$degree==0) # 30 isolated communities
-
+sum(V(g2)$degree==0) 
 
 # adding weights
 #  df   node - comm
 colnames(newdata)
 Node_names <- newdata$node_names
 Supernode_ <- newdata$supernode
-unique(Supernode_)
+
+matsize <- length(unique(Supernode_))
 
 #  el:  From_Node - To_Node
 el = igraph::as_data_frame(swg)
@@ -172,9 +161,9 @@ el$from_Com <- as.numeric(el$from_Com)
 colnames(el)
 # make an edge list of communities
 elc <- subset(el, select = c( from_Com, to_Com))
-str(elc)
+
 # via a loop - it takes around 5 minutes
-the_first_mat <- matrix(NA, nrow = 55, ncol = 55)
+the_first_mat <- matrix(NA, nrow = matsize, ncol = matsize)
 for (i in 1:nrow(the_first_mat)) {
   for (j in 1:ncol(the_first_mat)) {
     num_tie <-0
@@ -188,8 +177,6 @@ for (i in 1:nrow(the_first_mat)) {
     the_first_mat[i,j] <- num_tie
 
   }}
-isSymmetric(the_first_mat) # TRUE
-the_first_mat
 #mat <- as.matrix(table(el$from_Com, el$to_Com)) # includes isolates too
 mat <- the_first_mat
 
@@ -204,7 +191,7 @@ diag(mat) <- 0
 community_sizes <- sapply(1:length(Snodes), function(i) {
   length(which(V(swg)$member2 == i))
 })
-sum(community_sizes)
+
 
 sdf2 <- as.data.frame(cbind(Snodes, community_sizes, diag(mat_simple)))
 colnames(sdf2) <- c("supernode_code", "N_of_nodes", "Nties_in_com")
@@ -217,7 +204,7 @@ rownames(mat_simple)
 
 
 
-mat_2 <- matrix(NA, nrow = 55, ncol = 55)
+mat_2 <- matrix(NA, nrow = matsize, ncol = matsize)
 for (i in 1:nrow(mat_2)) {
   for (j in 1:ncol(mat_2)) {
     if (i != j) {
@@ -234,16 +221,7 @@ colnames(mat) <- Snodes
 
 rownames(mat_2) <- Snodes
 colnames(mat_2) <- Snodes
-str(Snodes)
-# sanity checks
-degree(g2, v= 2)
-degree(g2, v = 50)
-str(V(g2)$name)
-max(mat_2, na.rm = T) # 0.16 now
-# bc e.g. A community can have 2 nodes, they can have ties to more than 2 nodes in another community
-# that is: com size is not necesseraly bigger than num_ties between communities
-hist(mat_2)
-hist(mat) # just sums of links
+
 
 # POSSIBLE SENSITIVITY STRATEGIES
 # use N of ties in communities to normalize?
@@ -254,11 +232,6 @@ hist(mat) # just sums of links
 weighted_supernodes_graph <- graph_from_adjacency_matrix(mat_2, weighted = T, 
                                                          mode = "undirected",
                                                          diag = F)
-E(weighted_supernodes_graph)$weight
-diag(mat_2)
-
-isSymmetric(mat_2)
-
 
 # Plot the weighted supernodes graph
 set.seed(45389)
@@ -286,23 +259,26 @@ plot(weighted_supernodes_graph,
 
 pr_names<- utils::read.csv("Labelled Community strength sorted network resolution 1.csv")
 table(pr_names$community)
-head(pr_names)
 colnames(pr_names)
 colnames(newdata)
 pr_names$supernode <- NULL
 newdata$variable <- newdata$node_names
 
+head(pr_names)
+head(newdata)
+dim(pr_names)
+dim(newdata)
+
 pr_df <- merge(pr_names, newdata, by = "variable", all = T)
 dim(pr_df)
-dim(pr_names)
-pr_df <- pr_df[pr_names$Label !="",]
+head(pr_df)
+table(pr_df$Label)
+
+pr_df <- pr_df[pr_df$Label !="",]
 head(pr_df)
 pr_df <- dplyr::select(pr_df, c(community, Label, supernode))
 cbind(pr_df$community, pr_df$supernode)
 pr_df$community == pr_df$supernode # the same
-
-
-str(pr_names$community)
 
 
 # pr_df <- merge(pr_names, newdata, by = "supernode", all = T)
@@ -359,9 +335,7 @@ V(weighted_supernodes_graph)$size <-try2
 Isolated = which(degree(weighted_supernodes_graph)==0)
 length(Isolated)
 WSG = delete_vertices(weighted_supernodes_graph, Isolated)
-gorder(WSG) # 25
-gsize(WSG) # 160
-edge_density(WSG) # 0.53
+
 
 sdf2$Label <- try_new
 head(sdf2)
@@ -421,34 +395,30 @@ dev.off()
 ##Wrap text
 
 V(WSG)$Full_name <- c(
-  "NDRDD \n variables",
-  "Mental \n illness",
-  "Alcohol \n detox",
-  "Gastric and \n psychosis",
-  "Benzos \n & pain",
-  "Hepatitis & \n mental health",
-  "Respiratory, \n depression,\n  pain",
-  "Diabetes",
+  "DRD database",
+  "Mental health \n inpatient",                 
+  "Alcohol detox",
+  "Benzos \n  and pain",                                   
+  "Phlebitis, hepatitis, \n mental health, \n substance use",
+  "Diabetes",                                          
   "Epilepsy",
-  "Alcohol \n treatment",
-  "Allergy \n  & asthma",
-  "Self \n poisoning",
-  "Assault & \n self harm",
-  "Skin, \n migraine, \n sinuses",
-  "Cardiac \n arrest",
-  "Alcohol, \n antifungal, \n stomach",
-  "Methadone & \n general \n health",
-  "Leg \n ulcers",
-  "Eye drops \n and \n malnourishment",
-  "Morphine, \n pain, \n constipation",
-  "Respiratory \n disease",
-  "Skin \n cream",
-  "Mixed \n general health",
-  "Heart \n disease",
-  "Suboxone"
-  
+  "Liver cirrhosis, \n malnourishment",                   
+  "Alcohol \n gastritis","Allergy, \n asthma",                 
+   "Respiratory, \n depression, \n pain",
+  "Self poisoning",         
+   "Assault and \n self harm",
+  "Cardiac arrest",                                    
+   "Pregabalin, \n Duloxetine",
+  "Stomach, skin, \n antibiotics",                  
+   "Respiratory \n disease",
+  "Morphine, \n constipation",     
+   "Methadone \n common prescriptions",
+  "Skin cream",                                        
+   "Heart disease",
+  "Alcohol, fungal \n  stomach", 
+   "Skin, \nstomach, \n sinuses",
+  "Suboxone" 
 )
-
 
 
 
@@ -491,69 +461,3 @@ plot(WSG,
     
 dev.off()
 
-# # OLD CODE
-# 
-# # # THIS CODE IS EXTREMLY SLOW!!!
-# # Assuming 'swg' is your original graph and ''member2 is a vector indicating the community membership of each node
-# # 'supernodes_graph' is the graph where each supernode represents a community and ties exist between communities if there were any ties between nodes of each pair of communities
-# 
-# # Calculate the percentage of nodes in each community connected to nodes in other communities
-# 
-# # Precompute community sizes
-# community_sizes <- sapply(1:vcount(supernodes_graph), function(i) {
-#   length(which(V(swg)$member2 == i))
-# })
-# # Precompute node names in each community
-# nodes_in_community <- list()
-# for(i in 1:vcount(supernodes_graph)){
-#   nodes_in_community_i <- V(swg)[which(V(swg)$member2 == i)]
-#   net_i <- induced_subgraph(swg, nodes_in_community_i)
-#   nodes_in_community[[i]] <- V(net_i)$name
-# }
-# 
-# # the loop starts here::
-# start.time <- Sys.time()
-# # simple sum of edges
-# weighted_edges1 <- matrix(NA, nrow = vcount(supernodes_graph), ncol = vcount(supernodes_graph))
-# # taking into acount the size of node
-# weighted_edges2 <- matrix(NA, nrow = vcount(supernodes_graph), ncol = vcount(supernodes_graph))
-# for (i in 2:nrow(weighted_edges1)) {
-#   for (j in 1:ncol(weighted_edges1)) {
-#     if (i != j) {
-#       nodes_in_c_i <- nodes_in_community[[i]]
-#       com_size_i <- community_sizes[[i]]
-#       print(c(i,j))
-#       nodes_in_c_j <- nodes_in_community[[j]]
-#       com_size_j <- community_sizes[[j]]
-#       
-#       # nodes_in_community_i <- V(swg)[which(V(swg)$member2 == i)]
-#       # com_i_size <- length(V(swg)$name[nodes_in_community_i])
-#       # net_i <- induced_subgraph(swg, nodes_in_community_i)
-#       # nodes_in_community_i <- V(net_i)$name
-#       # 
-#       # nodes_in_community_j <- V(swg)[which(V(swg)$member2 == j)]
-#       # com_j_size <- length(V(swg)$name[nodes_in_community_j])
-#       # net_j <- induced_subgraph(swg, nodes_in_community_j)#
-#       # nodes_in_community_j <- V(net_j)$name
-#       # Initialize a counter for the number of ties
-#       num_ties <- 0
-#       for (z in 1:length(E(swg))) {
-#         edge <- E(swg)[z]
-#         node_names <- ends(swg, edge)
-#         node_names_vector <- as.character(node_names)
-#         if ((node_names_vector[1] %in% nodes_in_c_i & node_names_vector[2] %in% nodes_in_c_j)|
-#             (node_names_vector[2] %in% nodes_in_c_i & node_names_vector[1] %in% nodes_in_c_j)){
-#           
-#           num_ties <- num_ties + 1
-#         }
-#       }
-#       W <- round(((num_ties/com_size_i) + (num_ties/com_size_j))/2, 2)
-#       weighted_edges1[i, j] <- num_ties # simple sum
-#       weighted_edges2[i, j] <- W # taking into account the size of communities
-#     }
-#   }}
-# end.time <- Sys.time()
-# time.taken <- round(end.time - start.time,2)
-# time.taken # 11.23 hours
-# write.xlsx(weighted_edges1, "weighted_edges1_oldcode.xlsx")
-# write.xlsx(weighted_edges2, "weighted_edges2_oldcode.xlsx")
