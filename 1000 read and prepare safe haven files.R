@@ -117,7 +117,14 @@ drop_list <- edge_list[edge_list$edge_weights < 0.0,]
 class(drop_list)
 result <- setdiff(drop_list$V1, edge_list$V1)
 
-edge_list <- edge_list[edge_list$edge_weights >= 0.0,] 
+####This command removed the nodes that had zero or neg weights.
+#  edge_list <- edge_list[edge_list$edge_weights >= 0.0,] 
+## Change to fix edges at 9999, then
+#    in script 2000, remove the zero edges
+
+edge_list$edge_weights[edge_list$edge_weights < 0.0] <- 9999 
+
+
 dim(edge_list)
 writexl::write_xlsx(edge_list, path = "full_link zeroed below 0.xlsx")
 write.xlsx(edge_list, file = "full_link zeroed below 0.xlsx")

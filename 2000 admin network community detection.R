@@ -31,14 +31,11 @@ library(readxl)
 
 wd <- "T:/projects/CSO_DRD_S00359/Data"
 
-
-if (Sys.info()[4] == "DESKTOP-2CKTEEO") wd <- "C:/Users/mmc78h/OneDrive - University of Glasgow/DRD/GGMnonreg"
 setwd(wd)
 
 edge_list <- readxl::read_excel("full_link zeroed below 0.xlsx")
 edge_list <- read.xlsx("full_link zeroed below 0.xlsx")
 head(edge_list)
-str(edge_list)
 
 # edge_list <- readxl::read_excel("full_link zeroed below 0.05.xlsx")
 # setwd(paste0(wd,"/Below 5"))
@@ -46,12 +43,19 @@ str(edge_list)
 # edge_list <- readxl::read_excel("full_link zeroed below 0.08.xlsx")
 # setwd(paste0(wd,"/Below 8"))
 
+##Convert edgelist to igraph object
+zero_g <-  graph_from_data_frame(edge_list, directed = F )
+###Remove all negative and zero edges. These were coded 9999 in script 1000
+zero_g <- delete_edges(zero_g, E(zero_g)[E(zero_g)$edge_weights == 9999])
 
-hist(as.numeric(edge_list$edge_weights))
-table(as.numeric(edge_list$edge_weights))
+###Check which nodes have no co-occurrence
+Isolated = which(degree(zero_g)==0)
+length(Isolated)
+write.csv(Isolated, file = "Linked data nodes with no cooccurence.csv")
 
 
-zero_g <-  graph_from_data_frame(edge_list, directed = F)
+#isolates(zero_g)
+
 save(zero_g, file = "zero_g.RData")
 # create R object
 

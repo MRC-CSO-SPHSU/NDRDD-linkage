@@ -60,6 +60,8 @@ dim(table.df)
 table(table.df$Subsystem)
 table.df$X <- NULL
 
+table.df$Label <- gsub("Isolated component:", "", table.df$Label)
+
 write.csv(table.df, file = "Table 2 linked data subsystems and five factors.csv", row.names = F)
 
 
@@ -80,8 +82,6 @@ df_filtered <- df_filtered[,c("Number.of.factors","Label","Group")]
 
 df_filtered <- df_filtered %>%
   arrange(Group, desc(Number.of.factors))
-df_filtered$Label <- gsub("Isolated component:", "", df_filtered$Label)
-
 
 table(df_filtered$Label, df_filtered$Group)
 
