@@ -395,7 +395,7 @@ dev.off()
 ##Wrap text
 
 V(WSG)$Full_name <- c(
-  "DRD database",
+  "Mixed NDRDD \n variables",
   "Mental health \n inpatient",                 
   "Alcohol detox",
   "Benzos \n  and pain",                                   
