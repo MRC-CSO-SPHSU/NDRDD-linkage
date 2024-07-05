@@ -41,7 +41,6 @@ library(igraph)
 #     Load functions    #
 #                       #
 #########################
-# none
 
 wd <- "T:/projects/CSO_DRD_S00359/Data"
 
@@ -65,11 +64,6 @@ swg <- zero_g
 
 V(swg)$degree <- degree(swg)
 sum(V(swg)$degree==0) # 0
-gorder(swg) # 1229
-edge_density(swg) # 0.002
-gsize(swg) # 1950
-
-is.weighted(swg)
 
 set.seed(12331) 
 CL <- igraph::cluster_louvain(swg) # add Res here if needed
@@ -354,7 +348,7 @@ groups <- cluster_louvain(weighted_supernodes_graph, resolution = 1)
 
 #lay <- layout_in_circle(weighted_supernodes_graph, order = V(weighted_supernodes_graph)$circle.order)
 lay <- layout_in_circle(weighted_supernodes_graph, order = order(membership(groups)))
-color_gradient <- colorRampPalette(c("#ffff99", "#386cb0"))
+color_gradient <- colorRampPalette(c("#ffffcc", "#FF7593"))
 # Normalize node sizes for color mapping
 node_sizes <- (V(weighted_supernodes_graph)$size / 18) + 5
 normalized_sizes <- (node_sizes - min(node_sizes)) / (max(node_sizes) - min(node_sizes))
@@ -377,6 +371,7 @@ plot(weighted_supernodes_graph,
      #vertex.frame.color = "none",
      vertex.label.font = 1,
      vertex.label.cex = 0.8,
+     vertex.color = vertex_colors,
      arrow.mode = "-",
      edge.color = "gray",
      edge.width	= E(weighted_supernodes_graph)$weight*50, 
@@ -429,7 +424,7 @@ groups <- cluster_louvain(WSG, resolution = 1)
 
 #lay <- layout_in_circle(WSG, order = V(WSG)$circle.order)
 lay <- layout_in_circle(WSG, order = order(membership(groups)))
-color_gradient <- colorRampPalette(c("#ffff99", "#386cb0"))
+color_gradient <- colorRampPalette(c("#ffffcc", "#FF7593"))
 # Normalize node sizes for color mapping
 node_sizes <- (V(WSG)$size / 18) + 5
 normalized_sizes <- (node_sizes - min(node_sizes)) / (max(node_sizes) - min(node_sizes))

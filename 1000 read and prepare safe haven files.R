@@ -29,16 +29,10 @@ library(readxl)
 #                       #
 #########################
 
-if (Sys.info()[4] == "DESKTOP-2CKTEEO") wd <- "C:/Users/mmc78h/OneDrive - University of Glasgow/DRD/GGMnonreg"
-
 
 wd <- "T:/projects/CSO_DRD_S00359/Data"
 
 setwd(wd)
-getwd()
-# full_link_df <- read.csv("full_link weighted adjacency.csv")
-# full_link_df_cis <- read.csv("full_link weighted adjacency CIs.csv")
-# full_link_df_bootp <- read.csv("full_link weighted adjacency bootstrap proportions.csv")
 
 full_link_df       <- utils::read.csv("full_link weighted adjacency with obs above 20.csv")
 full_link_df_cis   <- utils::read.csv("full_link weighted adjacency CIs with obs above 20.csv")
@@ -62,9 +56,10 @@ names(full_link_df_cis) <- c("Tri_location", "lci", "uci")
 # 
 # rowSums(full_link_df) == rowSums(full_link_df_zeroed_ci)
 
-########################################################################################################
-# Set the values in the matrix to zero based on proportion of included edges in bootstrap replications #
-########################################################################################################
+################################################################################
+# Set the values in the matrix to zero based on proportion                     #
+#        of included edges in bootstrap replications                           #
+################################################################################
 
 dim(full_link_df_bootp)
 hist(full_link_df_bootp$eip)
@@ -83,23 +78,25 @@ full_link_df_zeroed_boot[upper_triangle_logical] <- full_link_df[upper_triangle_
 full_link_mat <- as.matrix(full_link_df)
 colnames(full_link_mat) <- colnames(full_link_df)
 rownames(full_link_mat) <- colnames(full_link_df)
-rawgraph <- graph_from_adjacency_matrix(as.matrix(full_link_mat), weighted = T, mode = "upper")
+rawgraph <- graph_from_adjacency_matrix(as.matrix(full_link_mat),
+                                        weighted = T,
+                                        mode = "upper")
 
 zeroed_boot_mat <- as.matrix(full_link_df_zeroed_boot)
 colnames(zeroed_boot_mat) <- colnames(full_link_df_zeroed_boot)
 rownames(zeroed_boot_mat) <- colnames(full_link_df_zeroed_boot)
-zerobootgraph <- graph_from_adjacency_matrix(as.matrix(zeroed_boot_mat), weighted = T, mode = "upper")
+zerobootgraph <- graph_from_adjacency_matrix(as.matrix(zeroed_boot_mat),
+                                             weighted = T,
+                                             mode = "upper")
+
+Isolates = which(degree(zerobootgraph)==0)
+write.csv(Isolates, file = "Linked data unconnected variables.csv")
 
 ###############
 # # Convert the graph object to an edge list
-# edge_list <- get.edgelist(rawgraph)
-# edge_weights <- E(rawgraph)$weight
-# edge_list <- cbind(edge_list, edge_weights)
-# edge_list <- as.data.frame(edge_list)
-# dim(edge_list)
 
 # Use the network after removing the non replicating edges
-edge_list <- get.edgelist(zerobootgraph)
+edge_list <- as_edgelist(zerobootgraph)
 edge_weights <- E(zerobootgraph)$weight
 edge_list <- cbind(edge_list, edge_weights)
 edge_list <- as.data.frame(edge_list)
@@ -107,15 +104,12 @@ dim(edge_list)
 str(edge_list)
 head(edge_list)
 
+
 edge_list$V1 <- as.character(edge_list$V1)
 edge_list$V2 <- as.character(edge_list$V2)
 
 edge_list$edge_weights <- as.numeric(as.character(edge_list$edge_weight))
 ###Remove corr below x 
-
-drop_list <- edge_list[edge_list$edge_weights < 0.0,]
-class(drop_list)
-result <- setdiff(drop_list$V1, edge_list$V1)
 
 ####This command removed the nodes that had zero or neg weights.
 #  edge_list <- edge_list[edge_list$edge_weights >= 0.0,] 
@@ -127,7 +121,15 @@ edge_list$edge_weights[edge_list$edge_weights < 0.0] <- 9999
 
 dim(edge_list)
 writexl::write_xlsx(edge_list, path = "full_link zeroed below 0.xlsx")
-write.xlsx(edge_list, file = "full_link zeroed below 0.xlsx")
+#write.xlsx(edge_list, file = "full_link zeroed below 0.xlsx")
+
+
+#Remove edges for plotting in yEd
+dim(edge_list)
+edge_list <- edge_list[edge_list$edge_weights != 9999,] 
+writexl::write_xlsx(edge_list, path = "full_link zeroed below 0 edges removed for yEd.xlsx")
+
+
 
 ##Set higher thresholds for sensitivity analysis
 

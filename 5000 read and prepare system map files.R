@@ -24,10 +24,7 @@ library("openxlsx")
 
 # Working directory as an object 
 getwd()
-
-if (Sys.info()[4] == "DESKTOP-2CKTEEO") wd <- "C:/Users/mmc78h/OneDrive - University of Glasgow/DRD/GGMnonreg"
-
-#wd <- "C:/Users/mmc78h/Downloads"
+wd <- "T:/projects/CSO_DRD_S00359/Data"
 
 setwd(wd)
 dir()

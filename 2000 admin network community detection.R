@@ -48,6 +48,9 @@ zero_g <-  graph_from_data_frame(edge_list, directed = F )
 ###Remove all negative and zero edges. These were coded 9999 in script 1000
 zero_g <- delete_edges(zero_g, E(zero_g)[E(zero_g)$edge_weights == 9999])
 
+##difference in numbers comparing igraph object and edgelist.
+
+
 ###Check which nodes have no co-occurrence
 Isolated = which(degree(zero_g)==0)
 length(Isolated)
