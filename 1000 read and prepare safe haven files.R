@@ -29,10 +29,9 @@ library(readxl)
 #                       #
 #########################
 
-
-wd <- "T:/projects/CSO_DRD_S00359/Data"
-
-setwd(wd)
+# Set the workspace path to the directory containing this script
+wd <- dirname(rstudioapi::getActiveDocumentContext()$path)
+setwd(paste0(wd,"/Data"))
 
 full_link_df       <- utils::read.csv("full_link weighted adjacency with obs above 20.csv")
 full_link_df_cis   <- utils::read.csv("full_link weighted adjacency CIs with obs above 20.csv")

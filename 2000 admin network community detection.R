@@ -29,35 +29,25 @@ library(readxl)
 #                       #
 #########################
 
-wd <- "T:/projects/CSO_DRD_S00359/Data"
+# Set the workspace path to the directory containing this script
+wd <- dirname(rstudioapi::getActiveDocumentContext()$path)
+setwd(paste0(wd,"/Data"))
 
-setwd(wd)
 
 edge_list <- readxl::read_excel("full_link zeroed below 0.xlsx")
 edge_list <- read.xlsx("full_link zeroed below 0.xlsx")
 head(edge_list)
 
-# edge_list <- readxl::read_excel("full_link zeroed below 0.05.xlsx")
-# setwd(paste0(wd,"/Below 5"))
-# 
-# edge_list <- readxl::read_excel("full_link zeroed below 0.08.xlsx")
-# setwd(paste0(wd,"/Below 8"))
-
 ##Convert edgelist to igraph object
 zero_g <-  graph_from_data_frame(edge_list, directed = F )
 ###Remove all negative and zero edges. These were coded 9999 in script 1000
 zero_g <- delete_edges(zero_g, E(zero_g)[E(zero_g)$edge_weights == 9999])
-
-##difference in numbers comparing igraph object and edgelist.
-
+##Difference in numbers comparing igraph object and edgelist.
 
 ###Check which nodes have no co-occurrence
 Isolated = which(degree(zero_g)==0)
 length(Isolated)
 write.csv(Isolated, file = "Linked data nodes with no cooccurence.csv")
-
-
-#isolates(zero_g)
 
 save(zero_g, file = "zero_g.RData")
 # create R object
@@ -447,7 +437,7 @@ plot(layer_graph,
      vertex.size = rescaled,                    # Set vertex size
      vertex.frame.width = 0,                    # Set vertex size
      edge.arrow.size = 0,
-     main = "Layered Graph without Labels and Edge Widths Based on Weight")
+     main = "Layered Graph with Labels and Edge Widths Based on Weight")
 dev.off()
 
 

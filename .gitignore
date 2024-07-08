@@ -49,8 +49,4 @@ po/*~
 rsconnect/
 
 # Outputs
-*.csv
-*.xls
-*.xlsx
-*.pdf
 

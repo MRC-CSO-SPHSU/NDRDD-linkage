@@ -1,4 +1,3 @@
-
 ################################
 #                              #
 #  Create supernode plots      #
@@ -22,7 +21,6 @@
 #    Load packages      #
 #                       #
 #########################
-###### PUT PACKAGES HERE
 
 library(data.table)
 library(readxl)
@@ -34,18 +32,9 @@ library(purrr)
 library(igraph)
 
 
+wd <- dirname(rstudioapi::getActiveDocumentContext()$path)
+setwd(paste0(wd,"/Data"))
 
-
-#########################
-#                       #
-#     Load functions    #
-#                       #
-#########################
-
-wd <- "T:/projects/CSO_DRD_S00359/Data"
-
-setwd(wd)
-getwd()
 packageVersion("igraph")
 # This analysis was run using igraph 2.0.3
 # older versions give different results
@@ -102,7 +91,7 @@ V(swg)$member2<- plyr::mapvalues(V(swg)$member,
                                          to = comnn)
 
 
-# supernodes - this is for simplified version!!! - no weights to ties bw supernodes
+# supernodes - One node per subsystem
 
 g2 = contract(swg, V(swg)$member2)
 g2 = simplify(g2)
@@ -309,7 +298,7 @@ pr_df$community == pr_df$supernode # the same
 Com_names <- pr_names$Label
 Com_codes <- pr_names$community
 
-try<- plyr::mapvalues(V(weighted_supernodes_graph)$name, from = Com_codes,
+try <- plyr::mapvalues(V(weighted_supernodes_graph)$name, from = Com_codes,
                       to = Com_names)
 try
 try_new <- gsub("Isolated component: ", "", try)
@@ -323,7 +312,7 @@ try2 <- plyr::mapvalues(V(weighted_supernodes_graph)$name, from = Com_codes,
                         to = Com_size)
 try2 <- as.numeric(try2)
 
-V(weighted_supernodes_graph)$size <-try2
+V(weighted_supernodes_graph)$size <-  try2
 
 # Create a graph without isolates
 Isolated = which(degree(weighted_supernodes_graph)==0)
@@ -333,12 +322,6 @@ WSG = delete_vertices(weighted_supernodes_graph, Isolated)
 
 sdf2$Label <- try_new
 head(sdf2)
-
-#write.xlsx(sdf2, "Some data about supernodes_communities.xlsx")
-# 
-#save(weighted_supernodes_graph, file = "supernodes_network.RData")
-#save(WSG, file = "supernodes_network_without_iso.RData")
-
 
 # simple plotting
 set.seed(321007)
