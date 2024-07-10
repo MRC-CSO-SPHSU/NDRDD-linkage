@@ -16,3 +16,8 @@ Scope refers to which code chunk has been feat/fix/refactored.
 Each code chunk has a number<br/>
 Lower number chunks run earlier in the workflow<br/>
 Chunk numbers increase in 1,000s to allow for the addition of intermediate steps later<br/>
+
+
+The .graphml files can be opened using the free software yEd. 
+
+https://www.yworks.com/products/yed
