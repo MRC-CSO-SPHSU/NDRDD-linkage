@@ -324,11 +324,11 @@ ggsave(paste0(wd,"/Data/System map social ecological levels plot.jpeg"),
 set.seed(428)
 cfg <- igraph::cluster_louvain(as.undirected(graph_raw_data), resolution = 1)
 V(graph_raw_data)$grp <- cfg$membership
-
+#V(graph_raw_data)$name[as.numeric(V(graph_raw_data)$grp) ==1]
 V(graph_raw_data)$grp <- factor(V(graph_raw_data)$grp,levels = 1:8,labels = c("Stigma",
 "Service experience",
-"Life experiences",
 "Public perspectives",
+"Life experiences",
 "Community",
 "Proximal causes of death",
 "Social influences",
@@ -660,10 +660,6 @@ comm6
 comm7
 dev.off()
 
-
-
-# Arrange the grobs into a 3x3 grid (leaving empty spaces if needed)
-grid.arrange(grobs = plot_grobs, ncol = 3)
 ##3 dimensional layout
 xyz <- layout_as_multilevel(
   graph_raw_data,
