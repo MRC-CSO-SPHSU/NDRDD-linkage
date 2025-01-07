@@ -25,6 +25,12 @@ library("stringr")
 library("tidygraph")
 library("psych")
 library("openxlsx")
+library("graphlayouts")
+library(igraph)
+library(graphlayouts) 
+library(ggraph)
+library(threejs)
+library("ggforce")
 
 #Set working directory
 wd <- dirname(rstudioapi::getActiveDocumentContext()$path)
@@ -93,6 +99,598 @@ V(graph_raw_data)$size <- igraph::degree(graph_raw_data,
 
 V(graph_raw_data)$name
 
+###Peer reviewer comment
+# Ultimately, the unregulated drug market constitutes a main driver of drug related deaths 
+# (excluding those attributable to alcohol), with influences ranging from proximal 
+# to political/structural, but receives surprisingly little focus in
+# the system map when compared to individual-level psychosocial factors.
+
+# The analysis below shows all the ways in which Criminalisation relates to death within the system map
+crim_to_death_paths <- all_simple_paths(
+  graph_raw_data,
+  from = which(V(graph_raw_data)$name == "Criminalisationof drugs") ,
+  to = which(V(graph_raw_data)$name == "Drug related death"),
+  mode = c("out"),
+  cutoff = -1
+)
+##And this shows the total number of possible paths 
+length(crim_to_death_paths)
+
+###Add multilayer visualisation to unpack upstream-downstream notion of a single
+#    ultimate cause versus several upstream-downstream causal subsystems
+set.seed(428)
+cfg <- igraph::cluster_louvain(as.undirected(graph_raw_data), resolution = 1)
+V(graph_raw_data)$grp <- cfg$membership
+
+V(graph_raw_data)$grp <- factor(V(graph_raw_data)$grp,levels = 1:8,labels = c("Stigma",
+"Service experience",
+"Life experiences",
+"Public perspectives",
+"Community",
+"Proximal causes of death",
+"Social influences",
+"Safe environments"
+))
+
+pre.att.comms <- table(V(graph_raw_data)$grp)
+
+write.csv(V(graph_raw_data)$name, file = "system map node labels.csv")
+
+se_levels <- read.csv("system map node labels and socio eco class.csv")
+se_levels$X <- NULL
+
+##Graphlayouts. Create node attribute with level id. 
+V(graph_raw_data)$class <- se_levels$class
+table(V(graph_raw_data)$class)
+
+V(graph_raw_data)$lvl <- factor(
+  V(graph_raw_data)$class,
+  levels = c(
+    "death",
+    "physical", 
+    "behavioural", 
+    "internal - psychosocial", 
+    "interpersonal", 
+    "social-organisational", 
+    "organisational", 
+    "environmental", 
+    "policy making"
+  )
+)
+
+levels(V(graph_raw_data)$lvl)   # Text labels in the correct order
+as.numeric(V(graph_raw_data)$lvl) # Numeric representation of the levels
+
+table(V(graph_raw_data)$lvl, 
+as.numeric(V(graph_raw_data)$lvl))
+
+
+##Wrapped text labels 
+V(graph_raw_data)$name <-  c(
+  "Workforce \n development", 
+  "Collaboration \nbetween services", 
+  "Internalised \nstigma", 
+  "Positive self\npresentation of PWUD", 
+  "Health vs \n criminal justice", 
+  "Criminalisation \nof drugs", 
+  "Poor treatment \nof PWUD", 
+  "Contact with criminal\njustice system", 
+  "Stigmatising\nlanguage and behaviour", 
+  "Value of professional\nversus peer evidence", 
+  "International \nevidence", 
+  "Lived experience \nrepresentation in policy", 
+  "Poverty", 
+  "Social Security \nPolicy", 
+  "Employment \nopportunities", 
+  "Stigmatising\nnorms around drugs", 
+  "Community\n relationships", 
+  "Knowledge of drugs and risk\namong PWUD", 
+  "Peer workers as\nlower status", 
+  "Negative public \n perceptions", 
+  "Knowledge of drugs \namong public", 
+  "Drug education\nin schools", 
+  "Positive \n aspirations", 
+  "Family\n relationships", 
+  "Peer \nrelationships", 
+  "Self worth", 
+  "Quality of life", 
+  "Trauma", 
+  "Mental health", 
+  "Initiation of\n drug use", 
+  "Control and regularity\nof substance use", 
+  "Harm reduction\n interventions", 
+  "Exploitation", 
+  "Feeling safe", 
+  "Availability \nof drugs", 
+  "Cost of \ndrugs", 
+  "Housing \nPolicy", 
+  "Profit in \ndrugs trade", 
+  "Social inclusion", 
+  "Hiding substance use\nfrom others", 
+  "Exposure to drugs", 
+  "Drug as \ncoping mechanism", 
+  "Community hubs", 
+  "Recovery cafes", 
+  "Warm spaces", 
+  "Community\n activities", 
+  "Drug type", 
+  "Continued use\n of drugs", 
+  "Treatment expectations", 
+  "Physical health", 
+  "Age", 
+  "Medication", 
+  "Pain", 
+  "Drug use as \n self-medication", 
+  "Retention \nin services", 
+  "ADP funding", 
+  "Availability\n of services", 
+  "Pressure \non services", 
+  "Attending \nservices", 
+  "Hoops to get help\nCriteria/bureaucracy", 
+  "Accessibility\n of services", 
+  "Quality of treatment planning", 
+  "Education on\n harms", 
+  "Value placed on\n peer workers", 
+  "Representation of \n lived experience", 
+  "Peer worker \npay differential", 
+  "Stigmatising reporting\nin the media", 
+  "Level of local\n health need", 
+  "Drug tolerance", 
+  "Drug toxicity", 
+  "Access to \nsafe supply", 
+  "Dependence \non drugs", 
+  "Drug use for \nrecreation", 
+  "Recovery capital", 
+  "Attitude to risk", 
+  "Lone versus group\nsubstance use", 
+  "Risk of harm occurring\nwhile using drugs", 
+  "Poly drug use", 
+  "Alarm raising", 
+  "Public versus private\ndrug taking", 
+  "Life-saving activity", 
+  "Drug poisoning", 
+  "Heart & \nlung health", 
+  "Sedatives", 
+  "Practical support", 
+  "Quality of patient/service\nrelationship", 
+  "Homelessness", 
+  "Frailty", 
+  "Ease of transitions\nbetween services", 
+  "Gender", 
+  "Near fatal\n overdose", 
+  "Organised crime\n groups", 
+  "Quality of \nhousing", 
+  "Risk of crime\nvictimisation", 
+  "Missed appointments", 
+  "Service Quality", 
+  "Amount of Public discourse\non drug issues", 
+  "Drug related death"
+)
+  
+V(graph_raw_data)$size <- scales::rescale(V(graph_raw_data)$size, to = c(1, 5))
+
+##2 dimensional layout
+xy <- layout_as_multilevel(graph_raw_data,
+                           type = "all",
+                           ignore_iso = F,
+                           alpha = 45,
+                           beta = 10
+                           )
+
+##Add some vertical jitter
+set.seed(233) 
+jitter_amount <- 0.15 # Set jitter amount
+xy[, 1] <- xy[, 1] + runif(nrow(xy), -jitter_amount, jitter_amount) # Add jitter to x
+xy[, 2] <- xy[, 2] + runif(nrow(xy), -jitter_amount, jitter_amount) # Add jitter to y
+
+
+level_plot <- ggraph(graph_raw_data, layout = "manual", x = xy[, 1], y = xy[, 2]) +
+   geom_node_text(aes(label = name), nudge_y = -0.1,
+                 check_overlap = F, 
+                 #repel = T,
+                 cex = 1.5) +
+  geom_edge_link0(
+    aes(filter = (node1.lvl == node2.lvl)),
+    edge_colour = "goldenrod3",
+    edge_width = 0.3,
+  ) + 
+  geom_edge_link0(
+    aes(filter = (node1.lvl != node2.lvl)),
+    alpha = 0.3,
+    edge_width = 0.1,
+    edge_colour = "black"
+  ) +
+  geom_node_point(aes(shape =  as.factor(lvl)), fill =  c("#7f0000", 
+  "#b30000",   "#d7301f", 
+  "#ef6548",   "#fc8d59",   "#fdbb84",   "#fdd49e", 
+  "#fee8c8",   "#fff7ec")[as.numeric(V(graph_raw_data)$lvl)],
+  size = V(graph_raw_data)$size
+  ) +
+  scale_shape_manual(values = rep(21,9)) +
+  theme_graph() +
+  coord_cartesian(clip = "off", expand = TRUE) +
+  theme(legend.position = "none")
+
+level_plot 
+
+ggsave(paste0(wd,"/Data/System map social ecological levels plot.pdf"),
+              device = "pdf", width = 13.9, height = 10.3, units = "in")
+
+ggsave(paste0(wd,"/Data/System map social ecological levels plot.jpeg"),
+       device = "jpeg", width = 13.9, height = 10.3, units = "in")
+
+
+####With subsystems
+set.seed(428)
+cfg <- igraph::cluster_louvain(as.undirected(graph_raw_data), resolution = 1)
+V(graph_raw_data)$grp <- cfg$membership
+
+V(graph_raw_data)$grp <- factor(V(graph_raw_data)$grp,levels = 1:8,labels = c("Stigma",
+"Service experience",
+"Life experiences",
+"Public perspectives",
+"Community",
+"Proximal causes of death",
+"Social influences",
+"Safe environments"
+))
+
+post.att.comms <- table(V(graph_raw_data)$grp)
+
+
+subsystem_level_plot <- ggraph(graph_raw_data, layout = "manual", x = xy[, 1], y = xy[, 2]) +
+  geom_node_text(aes(label = name), nudge_y = -0.1,
+                 check_overlap = F, 
+                 #repel = T,
+                 cex = 1.5) +
+  geom_edge_link0(
+    aes(filter = (node1.lvl == node2.lvl)),
+    edge_colour = "goldenrod3",
+    edge_width = 0.3
+  ) + 
+  geom_edge_link0(
+    aes(filter = (node1.lvl != node2.lvl)),
+    alpha = 0.3,
+    edge_width = 0.1,
+    edge_colour = "black"
+  ) +
+  geom_node_point(aes(shape =  as.factor(lvl)), fill =  c("#7f0000", 
+  "#b30000", 
+  "#d7301f", 
+  "#ef6548", 
+  "#fc8d59", 
+  "#fdbb84", 
+  "#fdd49e", 
+  "#fee8c8", 
+  "#fff7ec")[as.numeric(V(graph_raw_data)$lvl)],
+  size = V(graph_raw_data)$size
+  ) +
+  scale_shape_manual(values = rep(21,9)) +
+  theme_graph() +
+  coord_cartesian(clip = "off", expand = TRUE) +
+  theme(legend.position = "none") +
+  geom_mark_hull(
+        aes(x, y, group = grp, fill = grp, label = grp),
+        concavity = 4,
+        expand = unit(2, "mm"),
+        alpha = 0.25)
+
+subsystem_level_plot 
+
+ggsave(paste0(wd,"/Data/System map social ecological levels plot with subsystems.pdf"),
+              device = "pdf", width = 13.9, height = 10.3, units = "in")
+
+ggsave(paste0(wd,"/Data/System map social ecological levels plot with subsystems.jpeg"),
+       device = "jpeg", width = 13.9, height = 10.3, units = "in")
+
+
+#######Draw one community at a time with fixed layout
+V(graph_raw_data)$grp <- cfg$membership
+
+#######################
+#Group 1
+####################
+
+graph_filtered <- graph_raw_data %>%
+  induced_subgraph(V(graph_raw_data)$grp == 1)
+
+# Manually set coordinates (if needed) for the filtered graph
+xy_filtered <- xy[V(graph_raw_data)$grp == 1, ]
+
+comm1 <- ggraph(graph_filtered, layout = "manual", x = xy_filtered[, 1], y = xy_filtered[, 2]) +
+  # Draw node labels for filtered nodes
+  geom_node_text(aes(label = name), nudge_y = -0.1,
+                 check_overlap = F,
+                 cex = 1.5) +
+  # Draw edges between the filtered nodes
+  geom_edge_link0(
+    edge_colour = "goldenrod3",
+    edge_width = 0.3
+  ) + 
+  # Draw node points for filtered nodes
+  geom_node_point(aes(shape = as.factor(lvl)),
+                  fill = c("#7f0000", "#b30000", "#d7301f", "#ef6548", 
+                           "#fc8d59", "#fdbb84", "#fdd49e", "#fee8c8", "#fff7ec")[
+                             as.numeric(V(graph_filtered)$lvl)],
+                  size = V(graph_filtered)$size) +
+  scale_shape_manual(values = rep(21, 9)) +
+  theme_graph() +
+  coord_cartesian(clip = "off", expand = TRUE) +
+  theme(legend.position = "none") +
+  ggtitle("Stigma")
+
+####################
+
+#######################
+#Group 2
+####################
+
+graph_filtered <- graph_raw_data %>%
+  induced_subgraph(V(graph_raw_data)$grp == 2)
+
+# Manually set coordinates (if needed) for the filtered graph
+xy_filtered <- xy[V(graph_raw_data)$grp == 2, ]
+
+comm2 <- ggraph(graph_filtered, layout = "manual", x = xy_filtered[, 1], y = xy_filtered[, 2]) +
+  # Draw node labels for filtered nodes
+  geom_node_text(aes(label = name), nudge_y = -0.1,
+                 check_overlap = F,
+                 cex = 1.5) +
+  # Draw edges between the filtered nodes
+  geom_edge_link0(
+    edge_colour = "goldenrod3",
+    edge_width = 0.3
+  ) + 
+  # Draw node points for filtered nodes
+  geom_node_point(aes(shape = as.factor(lvl)),
+                  fill = c("#7f0000", "#b30000", "#d7301f", "#ef6548", 
+                           "#fc8d59", "#fdbb84", "#fdd49e", "#fee8c8", "#fff7ec")[
+                             as.numeric(V(graph_filtered)$lvl)],
+                  size = V(graph_filtered)$size) +
+  scale_shape_manual(values = rep(21, 9)) +
+  theme_graph() +
+  coord_cartesian(clip = "off", expand = TRUE) +
+  theme(legend.position = "none") +
+  ggtitle("Service experience")
+
+####################
+#######################
+#Group 3
+####################
+
+graph_filtered <- graph_raw_data %>%
+  induced_subgraph(V(graph_raw_data)$grp == 3)
+
+# Manually set coordinates (if needed) for the filtered graph
+xy_filtered <- xy[V(graph_raw_data)$grp == 3, ]
+
+comm3 <- ggraph(graph_filtered, layout = "manual", x = xy_filtered[, 1], y = xy_filtered[, 2]) +
+  # Draw node labels for filtered nodes
+  geom_node_text(aes(label = name), nudge_y = -0.1,
+                 check_overlap = F,
+                 cex = 1.5) +
+  # Draw edges between the filtered nodes
+  geom_edge_link0(
+    edge_colour = "goldenrod3",
+    edge_width = 0.3
+  ) + 
+  # Draw node points for filtered nodes
+  geom_node_point(aes(shape = as.factor(lvl)),
+                  fill = c("#7f0000", "#b30000", "#d7301f", "#ef6548", 
+                           "#fc8d59", "#fdbb84", "#fdd49e", "#fee8c8", "#fff7ec")[
+                             as.numeric(V(graph_filtered)$lvl)],
+                  size = V(graph_filtered)$size) +
+  scale_shape_manual(values = rep(21, 9)) +
+  theme_graph() +
+  coord_cartesian(clip = "off", expand = TRUE) +
+  theme(legend.position = "none") +
+  ggtitle("Life experience")
+
+####################
+#######################
+#Group 4
+####################
+
+graph_filtered <- graph_raw_data %>%
+  induced_subgraph(V(graph_raw_data)$grp == 4)
+
+# Manually set coordinates (if needed) for the filtered graph
+xy_filtered <- xy[V(graph_raw_data)$grp == 4, ]
+
+comm4 <- ggraph(graph_filtered, layout = "manual", x = xy_filtered[, 1], y = xy_filtered[, 2]) +
+  # Draw node labels for filtered nodes
+  geom_node_text(aes(label = name), nudge_y = -0.1,
+                 check_overlap = F,
+                 cex = 1.5) +
+  # Draw edges between the filtered nodes
+  geom_edge_link0(
+    edge_colour = "goldenrod3",
+    edge_width = 0.3
+  ) + 
+  # Draw node points for filtered nodes
+  geom_node_point(aes(shape = as.factor(lvl)),
+                  fill = c("#7f0000", "#b30000", "#d7301f", "#ef6548", 
+                           "#fc8d59", "#fdbb84", "#fdd49e", "#fee8c8", "#fff7ec")[
+                             as.numeric(V(graph_filtered)$lvl)],
+                  size = V(graph_filtered)$size) +
+  scale_shape_manual(values = rep(21, 9)) +
+  theme_graph() +
+  coord_cartesian(clip = "off", expand = TRUE) +
+  theme(legend.position = "none") +
+  ggtitle("Public perspectives")
+
+####################
+#######################
+#Group 5
+####################
+
+graph_filtered <- graph_raw_data %>%
+  induced_subgraph(V(graph_raw_data)$grp == 5)
+
+# Manually set coordinates (if needed) for the filtered graph
+xy_filtered <- xy[V(graph_raw_data)$grp == 5, ]
+
+comm5 <- ggraph(graph_filtered, layout = "manual", x = xy_filtered[, 1], y = xy_filtered[, 2]) +
+  # Draw node labels for filtered nodes
+  geom_node_text(aes(label = name), nudge_y = -0.1,
+                 check_overlap = F,
+                 cex = 1.5) +
+  # Draw edges between the filtered nodes
+  geom_edge_link0(
+    edge_colour = "goldenrod3",
+    edge_width = 0.3
+  ) + 
+  # Draw node points for filtered nodes
+  geom_node_point(aes(shape = as.factor(lvl)),
+                  fill = c("#7f0000", "#b30000", "#d7301f", "#ef6548", 
+                           "#fc8d59", "#fdbb84", "#fdd49e", "#fee8c8", "#fff7ec")[
+                             as.numeric(V(graph_filtered)$lvl)],
+                  size = V(graph_filtered)$size) +
+  scale_shape_manual(values = rep(21, 9)) +
+  theme_graph() +
+  coord_cartesian(clip = "off", expand = TRUE) +
+  theme(legend.position = "none") +
+  ggtitle("Community")
+
+####################
+#######################
+#Group 6
+####################
+
+graph_filtered <- graph_raw_data %>%
+  induced_subgraph(V(graph_raw_data)$grp == 6)
+
+# Manually set coordinates (if needed) for the filtered graph
+xy_filtered <- xy[V(graph_raw_data)$grp == 6, ]
+
+comm6 <- ggraph(graph_filtered, layout = "manual", x = xy_filtered[, 1], y = xy_filtered[, 2]) +
+  # Draw node labels for filtered nodes
+  geom_node_text(aes(label = name), nudge_y = -0.1,
+                 check_overlap = F,
+                 cex = 1.5) +
+  # Draw edges between the filtered nodes
+  geom_edge_link0(
+    edge_colour = "goldenrod3",
+    edge_width = 0.3
+  ) + 
+  # Draw node points for filtered nodes
+  geom_node_point(aes(shape = as.factor(lvl)),
+                  fill = c("#7f0000", "#b30000", "#d7301f", "#ef6548", 
+                           "#fc8d59", "#fdbb84", "#fdd49e", "#fee8c8", "#fff7ec")[
+                             as.numeric(V(graph_filtered)$lvl)],
+                  size = V(graph_filtered)$size) +
+  scale_shape_manual(values = rep(21, 9)) +
+  theme_graph() +
+  coord_cartesian(clip = "off", expand = TRUE) +
+  theme(legend.position = "none") +
+  ggtitle("Proximal causes")
+
+####################
+#######################
+#Group 7
+####################
+
+graph_filtered <- graph_raw_data %>%
+  induced_subgraph(V(graph_raw_data)$grp == 7)
+
+# Manually set coordinates (if needed) for the filtered graph
+xy_filtered <- xy[V(graph_raw_data)$grp == 7, ]
+
+comm7 <- ggraph(graph_filtered, layout = "manual", x = xy_filtered[, 1], y = xy_filtered[, 2]) +
+  # Draw node labels for filtered nodes
+  geom_node_text(aes(label = name), nudge_y = -0.1,
+                 check_overlap = F,
+                 cex = 1.5) +
+  # Draw edges between the filtered nodes
+  geom_edge_link0(
+    edge_colour = "goldenrod3",
+    edge_width = 0.3
+  ) + 
+  # Draw node points for filtered nodes
+  geom_node_point(aes(shape = as.factor(lvl)),
+                  fill = c("#7f0000", "#b30000", "#d7301f", "#ef6548", 
+                           "#fc8d59", "#fdbb84", "#fdd49e", "#fee8c8", "#fff7ec")[
+                             as.numeric(V(graph_filtered)$lvl)],
+                  size = V(graph_filtered)$size) +
+  scale_shape_manual(values = rep(21, 9)) +
+  theme_graph() +
+  coord_cartesian(clip = "off", expand = TRUE) +
+  theme(legend.position = "none") +
+  ggtitle("Social influences")
+
+#######################
+#Group 8
+####################
+
+graph_filtered <- graph_raw_data %>%
+  induced_subgraph(V(graph_raw_data)$grp == 8)
+
+# Manually set coordinates (if needed) for the filtered graph
+xy_filtered <- xy[V(graph_raw_data)$grp == 8, ]
+
+comm7 <- ggraph(graph_filtered, layout = "manual", x = xy_filtered[, 1], y = xy_filtered[, 2]) +
+  # Draw node labels for filtered nodes
+  geom_node_text(aes(label = name), nudge_y = -0.1,
+                 check_overlap = F,
+                 cex = 1.5) +
+  # Draw edges between the filtered nodes
+  geom_edge_link0(
+    edge_colour = "goldenrod3",
+    edge_width = 0.3
+  ) + 
+  # Draw node points for filtered nodes
+  geom_node_point(aes(shape = as.factor(lvl)),
+                  fill = c("#7f0000", "#b30000", "#d7301f", "#ef6548", 
+                           "#fc8d59", "#fdbb84", "#fdd49e", "#fee8c8", "#fff7ec")[
+                             as.numeric(V(graph_filtered)$lvl)],
+                  size = V(graph_filtered)$size) +
+  scale_shape_manual(values = rep(21, 9)) +
+  theme_graph() +
+  coord_cartesian(clip = "off", expand = TRUE) +
+  theme(legend.position = "none") +
+  ggtitle("Safe environments")
+
+pdf(file = "Multilayer plots per community.pdf")
+comm1
+comm2
+comm3
+comm4
+comm5
+comm6
+comm7
+dev.off()
+
+
+
+# Arrange the grobs into a 3x3 grid (leaving empty spaces if needed)
+grid.arrange(grobs = plot_grobs, ncol = 3)
+##3 dimensional layout
+xyz <- layout_as_multilevel(
+  graph_raw_data,
+  type = "all",
+  alpha = 25,beta = 45,
+  project2D = F
+)
+graph_raw_data$layout <- xyz
+
+V(graph_raw_data)$color <- c("#7f0000", 
+  "#b30000", 
+  "#d7301f", 
+  "#ef6548", 
+  "#fc8d59", 
+  "#fdbb84", 
+  "#fdd49e", 
+  "#fee8c8", 
+  "#fff7ec")[as.numeric(V(graph_raw_data)$lvl)]
+
+V(graph_raw_data)$vertex.label <- V(graph_raw_data)$name
+
+graphjs(graph_raw_data, bg = "black", vertex.shape = "sphere",
+         vertex.label = V(graph_raw_data)$vertex.label,
+        vertex.size = V(graph_raw_data)$size )
+
+
+
 # improve visualization 
 
 ggraph(graph_raw_data, layout = "fr") +
@@ -109,7 +707,7 @@ ggraph(graph_raw_data, layout = "fr") +
 set.seed(428)
 cfg <- igraph::cluster_louvain(as.undirected(graph_raw_data), resolution = 1)
 
-plot1 <- plot(cfg, as.undirected(graph_raw_data))
+#plot1 <- plot(cfg, as.undirected(graph_raw_data))
 
 V(graph_raw_data)$community <- cfg$membership
 V(graph_raw_data)$closeness <- igraph::closeness(graph_raw_data, 
@@ -368,7 +966,7 @@ write.csv(community_data_frame, paste0(wd,"/CoProducedCommunities.csv"))
 #      displaylabels = TRUE,
 #      boxed.labels = FALSE, 
 #      suppress.axes = FALSE, 
-#      label.cex = 1.2,  
+#      label.cex = 1.5,  
 #      vertex.col = 'SEM',
 #      xlab = "Indegree", 
 #      ylab = "Outdegree", 

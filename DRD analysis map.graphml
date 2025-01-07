@@ -274,10 +274,32 @@ connected subsystems isolates removed. png<y:LabelModel><y:SmartNodeLabelModel d
     <node id="n23">
       <data key="d6">
         <y:GenericNode configuration="com.yworks.flowchart.document">
-          <y:Geometry height="170.0" width="944.6807994833157" x="1038.1766637504056" y="2157.9799241286055"/>
+          <y:Geometry height="177.5" width="952.1807994833157" x="990.8671399823252" y="2433.184071859695"/>
           <y:Fill color="#00FFFF" color2="#00FFFF" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="74" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="94.6572265625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="888.458984375" x="28.110907554157848" xml:space="preserve" y="37.67138671875">NodesandSupernodes.xlsx</y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="66" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="84.8564453125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="833.0283203125" x="59.57623958540785" xml:space="preserve" y="46.32177734375">system map node labels.csv</y:NodeLabel>
+        </y:GenericNode>
+      </data>
+    </node>
+    <node id="n24">
+      <data key="d6">
+        <y:GenericNode configuration="com.yworks.flowchart.manualOperation">
+          <y:Geometry height="177.5" width="952.1807994833157" x="947.7809918999046" y="2712.1382195907845"/>
+          <y:Fill color="#E8EEF7" color2="#FFFFFF" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="65" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="163.2626953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="889.21240234375" x="31.484198569782848" xml:space="preserve" y="7.11865234375">Manual classification of nodes 
+to social ecological levels<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+        </y:GenericNode>
+      </data>
+    </node>
+    <node id="n25">
+      <data key="d6">
+        <y:GenericNode configuration="com.yworks.flowchart.document">
+          <y:Geometry height="177.5" width="952.1807994833157" x="947.7809918999046" y="2939.4556326279967"/>
+          <y:Fill color="#00FFFF" color2="#00FFFF" transparent="false"/>
+          <y:BorderStyle color="#000000" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="66" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="165.712890625" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="c" textColor="#000000" verticalTextPosition="bottom" visible="true" width="715.69140625" x="118.24469661665785" xml:space="preserve" y="5.8935546875">system map node labels
+and socio eco class.csv</y:NodeLabel>
         </y:GenericNode>
       </data>
     </node>
@@ -591,25 +613,46 @@ connected subsystems isolates removed. png<y:LabelModel><y:SmartNodeLabelModel d
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e27" source="n9" target="n23">
-      <data key="d11"/>
-      <data key="d12">
-        <y:PolyLineEdge>
-          <y:Path sx="241.79519987082892" sy="96.25" tx="0.0" ty="-85.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="none" target="standard"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e28" source="n8" target="n9">
-      <data key="d11"/>
+    <edge id="e27" source="n8" target="n9">
       <data key="d12">
         <y:PolyLineEdge>
           <y:Path sx="-365.50529980624333" sy="93.78125" tx="241.79519987082892" ty="-96.25">
             <y:Point x="2245.2776367016936" y="1906.7299241286057"/>
             <y:Point x="1510.5170252676544" y="1906.7299241286057"/>
           </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e28" source="n9" target="n23">
+      <data key="d11"/>
+      <data key="d12">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e29" source="n23" target="n24">
+      <data key="d11"/>
+      <data key="d12">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="standard"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e30" source="n24" target="n25">
+      <data key="d11"/>
+      <data key="d12">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="none" target="standard"/>
           <y:BendStyle smoothed="false"/>
