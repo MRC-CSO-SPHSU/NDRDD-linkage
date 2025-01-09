@@ -31,6 +31,7 @@ library(graphlayouts)
 library(ggraph)
 library(threejs)
 library("ggforce")
+library("dplyr")
 library("renv")
 
 ####Network community detection and visualisation algorithms may
