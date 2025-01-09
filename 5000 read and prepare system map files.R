@@ -31,6 +31,21 @@ library(graphlayouts)
 library(ggraph)
 library(threejs)
 library("ggforce")
+library("renv")
+
+####Network community detection and visualisation algorithms may
+#   exhibit some random variation. 
+#   Random number seeds are set in the code below, and the 
+#       renv package used to take a snapshop of the package versions
+#   as random number seeds vary with package numbers
+#  R version was 4.4.1
+#  R studio version was RStudio 2024.04.2+764 "Chocolate Cosmos" 
+
+# renv::snapshot() - this command took a snapshpot of the packages used.
+
+#To replicate the analysis on your own, run the restore command below
+
+renv::restore()
 
 #Set working directory
 wd <- dirname(rstudioapi::getActiveDocumentContext()$path)
