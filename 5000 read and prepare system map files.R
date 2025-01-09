@@ -41,7 +41,7 @@ library("renv")
 #  R version was 4.4.1
 #  R studio version was RStudio 2024.04.2+764 "Chocolate Cosmos" 
 
-# renv::snapshot() - this command took a snapshpot of the packages used.
+#renv::snapshot() # this command took a snapshpot of the package and R versions
 
 #To replicate the analysis on your own, run the restore command below
 
