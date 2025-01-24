@@ -644,7 +644,7 @@ graph_filtered <- graph_raw_data %>%
 # Manually set coordinates (if needed) for the filtered graph
 xy_filtered <- xy[V(graph_raw_data)$grp == 8, ]
 
-comm7 <- ggraph(graph_filtered, layout = "manual", x = xy_filtered[, 1], y = xy_filtered[, 2]) +
+comm8 <- ggraph(graph_filtered, layout = "manual", x = xy_filtered[, 1], y = xy_filtered[, 2]) +
   # Draw node labels for filtered nodes
   geom_node_text(aes(label = name), nudge_y = -0.1,
                  check_overlap = F,
@@ -674,6 +674,7 @@ comm4
 comm5
 comm6
 comm7
+comm8
 dev.off()
 
 ##3 dimensional layout
@@ -966,6 +967,78 @@ base::saveRDS(community_data_frame, paste0(wd,"/CoProducedCommunities.rds"))
 write.csv(community_data_frame, paste0(wd,"/CoProducedCommunities.csv"))
 
 
+######################################################
+## Analysis of community by Social ecological layer ##
+######################################################
+
+V(graph_raw_data)$se_level <- V(graph_raw_data)$class
+
+V(graph_raw_data)$se_level[V(graph_raw_data)$se_level == "death"] <- "physical"
+
+V(graph_raw_data)$se_level <- factor(
+  V(graph_raw_data)$se_level,
+  levels = c(
+    "policy making",
+    "environmental",
+    "organisational", 
+    "social-organisational", 
+    "interpersonal", 
+    "internal - psychosocial", 
+    "behavioural", 
+    "physical")
+    )
+
+
+
+table(V(graph_raw_data)$se_level)
+table(V(graph_raw_data)$grp)
+
+V(graph_raw_data)$grp <- factor(
+  V(graph_raw_data)$community,
+  levels = 1:8,
+  labels = c(
+    "Stigma",
+    "Service \nexperience",
+    "Public \nperspectives",
+    "Life \nexperiences",
+    "Community",
+    "Proximal causes\n of death",
+    "Social \ninfluences",
+    "Safe \nenvironments"
+  )
+)
+
+level_by_comm <- table(V(graph_raw_data)$se_level,V(graph_raw_data)$grp)
+level_by_comm <- table(V(graph_raw_data)$grp,V(graph_raw_data)$se_level)
+
+level_by_comm
+
+chisq.test(level_by_comm)
+chisq.test(level_by_comm)$expected
+# fisher.test(level_by_comm, simulate.p.value = T, B = 200000)
+# fisher.test(level_by_comm, simulate.p.value = T, B = 1000000)
+
+pdf("Mosaic plot of subsystem by soc eco level.pdf")
+par(mar = c(5, 1, 5, 1)) # Bottom, left, top, right
+mosaicplot(level_by_comm,
+           main = "Distribution of subsystem factors across \n levels of the social-ecological model",
+           color = TRUE,
+           las = 1,
+           cex.axis = 0.7
+)
+dev.off()
+
+write.csv(level_by_comm, file = "Sub system by soc eco level crosstab.csv")
+
+
+node_level_list <- data.frame(name  = V(graph_raw_data)$name,
+                              lvlnum = V(graph_raw_data)$se_level)
+head(node_level_list)
+node_level_list <- node_level_list[order(node_level_list$lvlnum),]
+write.csv(node_level_list, file = "Appendix table nodes and levels.csv")
+  ##########################################################
+# No longer used but here for reference
+##########################################################
 # ggsave(paste0(wd,"/Data/Figure 1 System map.pdf"),
 #          device = "pdf", width = 25, height = 15, units = "in")
 
@@ -996,6 +1069,7 @@ write.csv(community_data_frame, paste0(wd,"/CoProducedCommunities.csv"))
 #      edge.width = 0.1)
 # 
 # dev.off()
+
 # 
 # plotsave(paste0(wd,"/CoProducedCommunityDectection.pdf"),
 #        device = "pdf", width = 13.9, height = 10.3, units = "in")
@@ -1399,3 +1473,4 @@ write.csv(community_data_frame, paste0(wd,"/CoProducedCommunities.csv"))
 # 
 # 
 # 
+##########################################################

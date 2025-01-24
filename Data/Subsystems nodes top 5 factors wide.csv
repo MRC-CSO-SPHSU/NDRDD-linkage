@@ -1,9 +1,35 @@
 "","Subsystem","Number of factors","central_factor_1","central_factor__deg1","central_factor__btw1","central_factor_2","central_factor__deg2","central_factor__btw2","central_factor_3","central_factor__deg3","central_factor__btw3","central_factor_4","central_factor__deg4","central_factor__btw4","central_factor_5","central_factor__deg5","central_factor__btw5"
-"1",6,22,"Control and regularityof substance use",10,0.11,"Initiation of drug use",8,0.07,"Physical health",8,0.02,"Continueduse of drugs",7,0.06,"Drug related death",7,0
-"2",1,16,"Prevalence of stigmatisingnorms around drugs",18,0.14,"Quality of treatment planning",6,0.01,"Service Quality",6,0.02,"Workforce development",4,0,"Poor treatment of PWUD",4,0.04
-"3",4,16,"Mental health and wellbeing",17,0.09,"Poverty",14,0.03,"Criminalisationof drugs",12,0.03,"Positive future aspirations",11,0.03,"Contact with criminaljustice system",9,0.04
-"4",7,13,"Peer relationships",6,0,"Drug type",6,0.02,"Exposure to drugs",5,0.04,"Public versus private drug taking",5,0,"Knowledge of drugs and risk among general public",4,0
-"5",2,11,"Attending services",9,0.01,"Retention in services",6,0.06,"Collaboration between services",5,0,"Missed appointments",5,0.01,"Internalised stigma",4,0.01
-"6",5,8,"Trusting community relationships",12,0.03,"Trusting family relationships",7,0.05,"Recovery capital",5,0.02,"Practical support",3,0,"Community hubs",1,0
-"7",3,7,"Policy making environment: health focussed vs criminal justice",11,0.09,"Availability of services",5,0.01,"Harm reductioninterventions",4,0,"Relative value of professional versus peer evidence",3,0.07,"Lived experience representation in policy",3,0
-"8",8,5,"Feeling safe",6,0.01,"Homelessness",6,0.01,"Housing Policy",3,0,"Quality of housing",3,0,"Risk ofcrime victimisation",3,0
+"1",6,22,"Control and regularity
+of substance use",10,0.11,"Initiation of
+ drug use",8,0.07,"Physical health",8,0.02,"Continued use
+ of drugs",7,0.06,"Drug related death",7,0
+"2",1,16,"Stigmatising
+norms around drugs",18,0.14,"Quality of treatment planning",6,0.01,"Service Quality",6,0.02,"Workforce 
+ development",4,0,"Poor treatment 
+of PWUD",4,0.04
+"3",4,16,"Mental health",17,0.09,"Poverty",14,0.03,"Criminalisation 
+of drugs",12,0.03,"Positive 
+ aspirations",11,0.03,"Contact with criminal
+justice system",9,0.04
+"4",7,13,"Peer 
+relationships",6,0,"Drug type",6,0.02,"Exposure to drugs",5,0.04,"Public versus private
+drug taking",5,0,"Knowledge of drugs 
+among public",4,0
+"5",2,11,"Attending 
+services",9,0.01,"Retention 
+in services",6,0.06,"Collaboration 
+between services",5,0,"Missed appointments",5,0.01,"Internalised 
+stigma",4,0.01
+"6",5,8,"Community
+ relationships",12,0.03,"Family
+ relationships",7,0.05,"Recovery capital",5,0.02,"Practical support",3,0,"Community hubs",1,0
+"7",3,7,"Health vs 
+ criminal justice",11,0.09,"Availability
+ of services",5,0.01,"Harm reduction
+ interventions",4,0,"Value of professional
+versus peer evidence",3,0.07,"Lived experience 
+representation in policy",3,0
+"8",8,5,"Feeling safe",6,0.01,"Homelessness",6,0.01,"Housing 
+Policy",3,0,"Quality of 
+housing",3,0,"Risk of crime
+victimisation",3,0
