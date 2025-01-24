@@ -1,161 +1,161 @@
-"","name","class","lvlnum"
-"5","Health vs 
- criminal justice","policy making","policy making"
-"6","Criminalisation 
-of drugs","policy making","policy making"
-"14","Social Security 
-Policy","policy making","policy making"
-"37","Housing 
-Policy","policy making","policy making"
-"56","ADP funding","policy making","policy making"
-"13","Poverty","environmental","environmental"
-"15","Employment 
-opportunities","environmental","environmental"
-"16","Stigmatising
-norms around drugs","environmental","environmental"
-"32","Harm reduction
- interventions","environmental","environmental"
-"35","Availability 
-of drugs","environmental","environmental"
-"36","Cost of 
-drugs","environmental","environmental"
-"38","Profit in 
-drugs trade","environmental","environmental"
-"41","Exposure to drugs","environmental","environmental"
-"43","Community hubs","environmental","environmental"
-"44","Recovery cafes","environmental","environmental"
-"45","Warm spaces","environmental","environmental"
-"57","Availability
- of services","environmental","environmental"
-"58","Pressure 
-on services","environmental","environmental"
-"67","Stigmatising reporting
-in the media","environmental","environmental"
-"68","Level of local
- health need","environmental","environmental"
-"87","Homelessness","environmental","environmental"
-"93","Quality of 
-housing","environmental","environmental"
-"94","Risk of crime
-victimisation","environmental","environmental"
-"97","Amount of Public discourse
-on drug issues","environmental","environmental"
-"1","Workforce 
- development","organisational","organisational"
-"2","Collaboration 
-between services","organisational","organisational"
-"10","Value of professional
-versus peer evidence","organisational","organisational"
-"11","International 
-evidence","organisational","organisational"
-"12","Lived experience 
-representation in policy","organisational","organisational"
-"19","Peer workers as
-lower status","organisational","organisational"
-"62","Quality of treatment planning","organisational","organisational"
-"63","Education on
- harms","organisational","organisational"
-"64","Value placed on
- peer workers","organisational","organisational"
-"65","Representation of 
- lived experience","organisational","organisational"
-"66","Peer worker 
-pay differential","organisational","organisational"
-"92","Organised crime
- groups","organisational","organisational"
-"96","Service Quality","organisational","organisational"
-"8","Contact with criminal
-justice system","social-organisational","social-organisational"
-"22","Drug education
-in schools","social-organisational","social-organisational"
-"55","Retention 
-in services","social-organisational","social-organisational"
-"59","Attending 
-services","social-organisational","social-organisational"
-"60","Hoops to get help
-Criteria/bureaucracy","social-organisational","social-organisational"
-"61","Accessibility
- of services","social-organisational","social-organisational"
-"86","Quality of patient/service
-relationship","social-organisational","social-organisational"
-"89","Ease of transitions
-between services","social-organisational","social-organisational"
-"95","Missed appointments","social-organisational","social-organisational"
-"7","Poor treatment 
-of PWUD","interpersonal","interpersonal"
-"9","Stigmatising
-language and behaviour","interpersonal","interpersonal"
-"17","Community
- relationships","interpersonal","interpersonal"
-"20","Negative public 
- perceptions","interpersonal","interpersonal"
-"24","Family
- relationships","interpersonal","interpersonal"
-"25","Peer 
-relationships","interpersonal","interpersonal"
-"28","Trauma","interpersonal","interpersonal"
-"33","Exploitation","interpersonal","interpersonal"
-"39","Social inclusion","interpersonal","interpersonal"
-"46","Community
- activities","interpersonal","interpersonal"
-"71","Access to 
-safe supply","interpersonal","interpersonal"
-"74","Recovery capital","interpersonal","interpersonal"
-"76","Lone versus group
-substance use","interpersonal","interpersonal"
-"79","Alarm raising","interpersonal","interpersonal"
-"80","Public versus private
-drug taking","interpersonal","interpersonal"
-"81","Life-saving activity","interpersonal","interpersonal"
-"85","Practical support","interpersonal","interpersonal"
-"3","Internalised 
-stigma","internal - psychosocial","internal - psychosocial"
-"4","Positive self
-presentation of PWUD","internal - psychosocial","internal - psychosocial"
-"18","Knowledge of drugs and risk
-among PWUD","internal - psychosocial","internal - psychosocial"
-"21","Knowledge of drugs 
-among public","internal - psychosocial","internal - psychosocial"
-"23","Positive 
- aspirations","internal - psychosocial","internal - psychosocial"
-"26","Self worth","internal - psychosocial","internal - psychosocial"
-"27","Quality of life","internal - psychosocial","internal - psychosocial"
-"29","Mental health","internal - psychosocial","internal - psychosocial"
-"34","Feeling safe","internal - psychosocial","internal - psychosocial"
-"42","Drug as 
-coping mechanism","internal - psychosocial","internal - psychosocial"
-"49","Treatment expectations","internal - psychosocial","internal - psychosocial"
-"54","Drug use as 
- self-medication","internal - psychosocial","internal - psychosocial"
-"73","Drug use for 
-recreation","internal - psychosocial","internal - psychosocial"
-"75","Attitude to risk","internal - psychosocial","internal - psychosocial"
-"30","Initiation of
- drug use","behavioural","behavioural"
-"31","Control and regularity
-of substance use","behavioural","behavioural"
-"40","Hiding substance use
-from others","behavioural","behavioural"
-"47","Drug type","behavioural","behavioural"
-"48","Continued use
- of drugs","behavioural","behavioural"
-"78","Poly drug use","behavioural","behavioural"
-"50","Physical health","physical","physical"
-"51","Age","physical","physical"
-"52","Medication","physical","physical"
-"53","Pain","physical","physical"
-"69","Drug tolerance","physical","physical"
-"70","Drug toxicity","physical","physical"
+"","name","lvlnum"
+"98","Drug related death","death"
+"50","Physical health","physical"
+"51","Age","physical"
+"52","Medication","physical"
+"53","Pain","physical"
+"69","Drug tolerance","physical"
+"70","Drug toxicity","physical"
 "72","Dependence 
-on drugs","physical","physical"
+on drugs","physical"
 "77","Risk of harm occurring
-while using drugs","physical","physical"
-"82","Drug poisoning","physical","physical"
+while using drugs","physical"
+"82","Drug poisoning","physical"
 "83","Heart & 
-lung health","physical","physical"
-"84","Sedatives","physical","physical"
-"88","Frailty","physical","physical"
-"90","Gender","physical","physical"
+lung health","physical"
+"84","Sedatives","physical"
+"88","Frailty","physical"
+"90","Gender","physical"
 "91","Near fatal
- overdose","physical","physical"
-"98","Drug related death","death","physical"
+ overdose","physical"
+"30","Initiation of
+ drug use","behavioural"
+"31","Control and regularity
+of substance use","behavioural"
+"40","Hiding substance use
+from others","behavioural"
+"47","Drug type","behavioural"
+"48","Continued use
+ of drugs","behavioural"
+"78","Poly drug use","behavioural"
+"80","Public versus private
+drug taking","behavioural"
+"3","Internalised 
+stigma","internal - psychosocial"
+"4","Positive self
+presentation of PWUD","internal - psychosocial"
+"18","Knowledge of drugs and risk
+among PWUD","internal - psychosocial"
+"23","Positive 
+ aspirations","internal - psychosocial"
+"26","Self worth","internal - psychosocial"
+"27","Quality of life","internal - psychosocial"
+"29","Mental health","internal - psychosocial"
+"34","Feeling safe","internal - psychosocial"
+"42","Drug as 
+coping mechanism","internal - psychosocial"
+"49","Treatment expectations","internal - psychosocial"
+"54","Drug use as 
+ self-medication","internal - psychosocial"
+"73","Drug use for 
+recreation","internal - psychosocial"
+"75","Attitude to risk","internal - psychosocial"
+"7","Poor treatment 
+of PWUD","interpersonal"
+"9","Stigmatising
+language and behaviour","interpersonal"
+"24","Family
+ relationships","interpersonal"
+"25","Peer 
+relationships","interpersonal"
+"28","Trauma","interpersonal"
+"33","Exploitation","interpersonal"
+"39","Social inclusion","interpersonal"
+"71","Access to 
+safe supply","interpersonal"
+"74","Recovery capital","interpersonal"
+"76","Lone versus group
+substance use","interpersonal"
+"79","Alarm raising","interpersonal"
+"81","Life-saving activity","interpersonal"
+"85","Practical support","interpersonal"
+"17","Community
+ relationships","community"
+"43","Community hubs","community"
+"44","Recovery cafes","community"
+"45","Warm spaces","community"
+"46","Community
+ activities","community"
+"8","Contact with criminal
+justice system","social-organisational"
+"22","Drug education
+in schools","social-organisational"
+"55","Retention 
+in services","social-organisational"
+"59","Attending 
+services","social-organisational"
+"60","Hoops to get help
+Criteria/bureaucracy","social-organisational"
+"61","Accessibility
+ of services","social-organisational"
+"86","Quality of patient/service
+relationship","social-organisational"
+"89","Ease of transitions
+between services","social-organisational"
+"95","Missed appointments","social-organisational"
+"1","Workforce 
+ development","organisational"
+"2","Collaboration 
+between services","organisational"
+"10","Value of professional
+versus peer evidence","organisational"
+"19","Peer workers as
+lower status","organisational"
+"62","Quality of treatment planning","organisational"
+"63","Education on
+ harms","organisational"
+"64","Value placed on
+ peer workers","organisational"
+"65","Representation of 
+ lived experience","organisational"
+"66","Peer worker 
+pay differential","organisational"
+"96","Service Quality","organisational"
+"5","Health vs 
+ criminal justice","policy making"
+"6","Criminalisation 
+of drugs","policy making"
+"12","Lived experience 
+representation in policy","policy making"
+"14","Social Security 
+Policy","policy making"
+"37","Housing 
+Policy","policy making"
+"56","ADP funding","policy making"
+"11","International 
+evidence","environmental"
+"13","Poverty","environmental"
+"15","Employment 
+opportunities","environmental"
+"16","Stigmatising
+norms around drugs","environmental"
+"20","Negative public 
+ perceptions","environmental"
+"21","Knowledge of drugs 
+among public","environmental"
+"32","Harm reduction
+ interventions","environmental"
+"35","Availability 
+of drugs","environmental"
+"36","Cost of 
+drugs","environmental"
+"38","Profit in 
+drugs trade","environmental"
+"41","Exposure to drugs","environmental"
+"57","Availability
+ of services","environmental"
+"58","Pressure 
+on services","environmental"
+"67","Stigmatising reporting
+in the media","environmental"
+"68","Level of local
+ health need","environmental"
+"87","Homelessness","environmental"
+"92","Organised crime
+ groups","environmental"
+"93","Quality of 
+housing","environmental"
+"94","Risk of crime
+victimisation","environmental"
+"97","Amount of Public discourse
+on drug issues","environmental"

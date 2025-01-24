@@ -22,6 +22,7 @@ library("igraph")
 library("ggraph")
 library("ggplot2")
 library("stringr")
+library("stringi")
 library("tidygraph")
 library("psych")
 library("openxlsx")
@@ -32,6 +33,8 @@ library(ggraph)
 library(threejs)
 library("ggforce")
 library("dplyr")
+library("threejs")
+
 library("renv")
 
 ####Network community detection and visualisation algorithms may
@@ -61,7 +64,6 @@ edges_raw_data <- as.matrix(raw_data)[,1:2] [,1:2]
 
 # Need to tidy label names to split at first capital letter
 node_names <- data.frame(edges_raw_data) 
-
 node_names <- node_names %>%
   dplyr::rename(from = X1,
                 to = X2)
@@ -152,8 +154,38 @@ pre.att.comms <- table(V(graph_raw_data)$grp)
 
 write.csv(V(graph_raw_data)$name, file = "system map node labels.csv")
 
+
+##Read in manually labelled nodes
 se_levels <- read.csv("system map node labels and socio eco class.csv")
 se_levels$X <- NULL
+
+##Read in second coder's labels 
+se_levels2 <- read.csv("system map node labels and socio eco class KS.csv")
+se_levels2$X <- NULL
+
+dim(se_levels)
+dim(se_levels2)
+names(se_levels2)[3] <- "classKS" 
+names(se_levels)[2]  <- "classMMcC"
+
+
+table(se_levels$classMMcC)
+table(se_levels2$classKS)
+
+table(se_levels$classMMcC,
+      se_levels2$classKS)
+
+levels.df <- full_join(se_levels, se_levels2)
+names(levels.df)
+levels.df <- levels.df[,c(1,3,2,4)] 
+write.csv(levels.df, file = "system map with se_level coding MMcC KS.csv")
+
+tab <- table(levels.df$classMMcC, levels.df$classKS)
+write.csv(tab, file = "se_level crosstab MMcC KS.csv")
+
+se_levels <- read.csv("system map node labels and socio eco class consensus.csv")
+se_levels$X <- NULL
+
 
 ##Graphlayouts. Create node attribute with level id. 
 V(graph_raw_data)$class <- se_levels$class
@@ -167,10 +199,11 @@ V(graph_raw_data)$lvl <- factor(
     "behavioural", 
     "internal - psychosocial", 
     "interpersonal", 
+    "community",
     "social-organisational", 
     "organisational", 
-    "environmental", 
-    "policy making"
+    "policy making",
+    "environmental" 
   )
 )
 
@@ -286,16 +319,16 @@ V(graph_raw_data)$name <-  c(
 V(graph_raw_data)$size <- scales::rescale(V(graph_raw_data)$size, to = c(1, 5))
 
 ##2 dimensional layout
-xy <- layout_as_multilevel(graph_raw_data,
+xy <- graphlayouts::layout_as_multilevel(graph_raw_data,
                            type = "all",
                            ignore_iso = F,
-                           alpha = 45,
-                           beta = 10
+                           alpha = 25,
+                           beta = 15
                            )
 
 ##Add some vertical jitter
-set.seed(233) 
-jitter_amount <- 0.15 # Set jitter amount
+set.seed(2343) 
+jitter_amount <- 0.1 # Set jitter amount
 xy[, 1] <- xy[, 1] + runif(nrow(xy), -jitter_amount, jitter_amount) # Add jitter to x
 xy[, 2] <- xy[, 2] + runif(nrow(xy), -jitter_amount, jitter_amount) # Add jitter to y
 
@@ -316,13 +349,14 @@ level_plot <- ggraph(graph_raw_data, layout = "manual", x = xy[, 1], y = xy[, 2]
     edge_width = 0.1,
     edge_colour = "black"
   ) +
-  geom_node_point(aes(shape =  as.factor(lvl)), fill =  c("#7f0000", 
+  geom_node_point(aes(shape =  as.factor(lvl)), fill =  c("#660000",
+                                                          "#7f0000", 
   "#b30000",   "#d7301f", 
   "#ef6548",   "#fc8d59",   "#fdbb84",   "#fdd49e", 
   "#fee8c8",   "#fff7ec")[as.numeric(V(graph_raw_data)$lvl)],
   size = V(graph_raw_data)$size
   ) +
-  scale_shape_manual(values = rep(21,9)) +
+  scale_shape_manual(values = rep(21,10)) +
   theme_graph() +
   coord_cartesian(clip = "off", expand = TRUE) +
   theme(legend.position = "none")
@@ -370,7 +404,8 @@ subsystem_level_plot <- ggraph(graph_raw_data, layout = "manual", x = xy[, 1], y
     edge_width = 0.1,
     edge_colour = "black"
   ) +
-  geom_node_point(aes(shape =  as.factor(lvl)), fill =  c("#7f0000", 
+  geom_node_point(aes(shape =  as.factor(lvl)), fill =  c("#660000",
+                                                          "#7f0000", 
   "#b30000", 
   "#d7301f", 
   "#ef6548", 
@@ -381,7 +416,7 @@ subsystem_level_plot <- ggraph(graph_raw_data, layout = "manual", x = xy[, 1], y
   "#fff7ec")[as.numeric(V(graph_raw_data)$lvl)],
   size = V(graph_raw_data)$size
   ) +
-  scale_shape_manual(values = rep(21,9)) +
+  scale_shape_manual(values = rep(21,10)) +
   theme_graph() +
   coord_cartesian(clip = "off", expand = TRUE) +
   theme(legend.position = "none") +
@@ -425,7 +460,7 @@ comm1 <- ggraph(graph_filtered, layout = "manual", x = xy_filtered[, 1], y = xy_
   ) + 
   # Draw node points for filtered nodes
   geom_node_point(aes(shape = as.factor(lvl)),
-                  fill = c("#7f0000", "#b30000", "#d7301f", "#ef6548", 
+                  fill = c("#660000","#7f0000", "#b30000", "#d7301f", "#ef6548", 
                            "#fc8d59", "#fdbb84", "#fdd49e", "#fee8c8", "#fff7ec")[
                              as.numeric(V(graph_filtered)$lvl)],
                   size = V(graph_filtered)$size) +
@@ -459,7 +494,7 @@ comm2 <- ggraph(graph_filtered, layout = "manual", x = xy_filtered[, 1], y = xy_
   ) + 
   # Draw node points for filtered nodes
   geom_node_point(aes(shape = as.factor(lvl)),
-                  fill = c("#7f0000", "#b30000", "#d7301f", "#ef6548", 
+                  fill = c("#660000","#7f0000", "#b30000", "#d7301f", "#ef6548", 
                            "#fc8d59", "#fdbb84", "#fdd49e", "#fee8c8", "#fff7ec")[
                              as.numeric(V(graph_filtered)$lvl)],
                   size = V(graph_filtered)$size) +
@@ -492,7 +527,7 @@ comm3 <- ggraph(graph_filtered, layout = "manual", x = xy_filtered[, 1], y = xy_
   ) + 
   # Draw node points for filtered nodes
   geom_node_point(aes(shape = as.factor(lvl)),
-                  fill = c("#7f0000", "#b30000", "#d7301f", "#ef6548", 
+                  fill = c("#660000","#7f0000", "#b30000", "#d7301f", "#ef6548", 
                            "#fc8d59", "#fdbb84", "#fdd49e", "#fee8c8", "#fff7ec")[
                              as.numeric(V(graph_filtered)$lvl)],
                   size = V(graph_filtered)$size) +
@@ -525,7 +560,7 @@ comm4 <- ggraph(graph_filtered, layout = "manual", x = xy_filtered[, 1], y = xy_
   ) + 
   # Draw node points for filtered nodes
   geom_node_point(aes(shape = as.factor(lvl)),
-                  fill = c("#7f0000", "#b30000", "#d7301f", "#ef6548", 
+                  fill = c("#660000","#7f0000", "#b30000", "#d7301f", "#ef6548", 
                            "#fc8d59", "#fdbb84", "#fdd49e", "#fee8c8", "#fff7ec")[
                              as.numeric(V(graph_filtered)$lvl)],
                   size = V(graph_filtered)$size) +
@@ -558,7 +593,7 @@ comm5 <- ggraph(graph_filtered, layout = "manual", x = xy_filtered[, 1], y = xy_
   ) + 
   # Draw node points for filtered nodes
   geom_node_point(aes(shape = as.factor(lvl)),
-                  fill = c("#7f0000", "#b30000", "#d7301f", "#ef6548", 
+                  fill = c("#660000","#7f0000", "#b30000", "#d7301f", "#ef6548", 
                            "#fc8d59", "#fdbb84", "#fdd49e", "#fee8c8", "#fff7ec")[
                              as.numeric(V(graph_filtered)$lvl)],
                   size = V(graph_filtered)$size) +
@@ -591,7 +626,7 @@ comm6 <- ggraph(graph_filtered, layout = "manual", x = xy_filtered[, 1], y = xy_
   ) + 
   # Draw node points for filtered nodes
   geom_node_point(aes(shape = as.factor(lvl)),
-                  fill = c("#7f0000", "#b30000", "#d7301f", "#ef6548", 
+                  fill = c("#660000","#7f0000", "#b30000", "#d7301f", "#ef6548", 
                            "#fc8d59", "#fdbb84", "#fdd49e", "#fee8c8", "#fff7ec")[
                              as.numeric(V(graph_filtered)$lvl)],
                   size = V(graph_filtered)$size) +
@@ -624,7 +659,7 @@ comm7 <- ggraph(graph_filtered, layout = "manual", x = xy_filtered[, 1], y = xy_
   ) + 
   # Draw node points for filtered nodes
   geom_node_point(aes(shape = as.factor(lvl)),
-                  fill = c("#7f0000", "#b30000", "#d7301f", "#ef6548", 
+                  fill = c("#660000","#7f0000", "#b30000", "#d7301f", "#ef6548", 
                            "#fc8d59", "#fdbb84", "#fdd49e", "#fee8c8", "#fff7ec")[
                              as.numeric(V(graph_filtered)$lvl)],
                   size = V(graph_filtered)$size) +
@@ -656,7 +691,7 @@ comm8 <- ggraph(graph_filtered, layout = "manual", x = xy_filtered[, 1], y = xy_
   ) + 
   # Draw node points for filtered nodes
   geom_node_point(aes(shape = as.factor(lvl)),
-                  fill = c("#7f0000", "#b30000", "#d7301f", "#ef6548", 
+                  fill = c("#660000","#7f0000", "#b30000", "#d7301f", "#ef6548", 
                            "#fc8d59", "#fdbb84", "#fdd49e", "#fee8c8", "#fff7ec")[
                              as.numeric(V(graph_filtered)$lvl)],
                   size = V(graph_filtered)$size) +
@@ -686,7 +721,7 @@ xyz <- layout_as_multilevel(
 )
 graph_raw_data$layout <- xyz
 
-V(graph_raw_data)$color <- c("#7f0000", 
+V(graph_raw_data)$color <- c("#660000","#7f0000", 
   "#b30000", 
   "#d7301f", 
   "#ef6548", 
@@ -705,15 +740,15 @@ graphjs(graph_raw_data, bg = "black", vertex.shape = "sphere",
 
 
 # improve visualization 
-
-ggraph(graph_raw_data, layout = "fr") +
-  geom_edge_link(arrow = arrow(length = unit(4, 'mm')), 
-                 end_cap = circle(3, 'mm')) + 
-  geom_node_point(size = V(graph_raw_data)$size ) +
-  geom_node_text(aes(label = V(graph_raw_data)$name),
-                 repel = TRUE, max.overlaps = Inf, 
-                 color = "black", size = 2)
-
+# 
+# ggraph(graph_raw_data, layout = "fr") +
+#   geom_edge_link(arrow = arrow(length = unit(4, 'mm')), 
+#                  end_cap = circle(3, 'mm')) + 
+#   geom_node_point(size = V(graph_raw_data)$size ) +
+#   geom_node_text(aes(label = V(graph_raw_data)$name),
+#                  repel = TRUE, max.overlaps = Inf, 
+#                  color = "black", size = 2)
+# 
 
 # community detection and vertex attributes
 # cfg <- igraph::cluster_fast_greedy(as.undirected(graph_raw_data))

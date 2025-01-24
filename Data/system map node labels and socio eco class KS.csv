@@ -1,0 +1,99 @@
+,name,raw_class,class
+1,Workforce development,Workforce/organisational,Organisational
+2,Collaboration between services,Organisational/relational,Organisational
+3,Internalised stigma,Individual,Individual
+4,Positive self  presentation of PWUD,Individual,Individual
+5,Policy making environment: health focussed vs criminal justice,Policy environment,Policy
+6,Criminalisationof drugs,Policy environment,Policy
+7,Poor treatment of PWUD,Interpersonal/community,Interpersonal/community
+8,Contact with criminaljustice system,Interpersonal/organisational,Interpersonal/organisational
+9,Occurrence of stigmatising language and behaviour,Community level interpersonal,Interpersonal/community
+10,Relative value of professional versus peer evidence,Organisational ,Organisational
+11,International evidence,Contextual (evidence base),Contextual
+12,Lived experience representation in policy,Policy environment,Policy
+13,Poverty,ALL!,Contextual
+14,Social Security Policy,Policy environment,Policy
+15,Employment opportunities,Policy environment (community if it's about local areas),Policy
+16,Prevalence of stigmatisingnorms around drugs,Contextual,Contextual
+17,Trusting community relationships,Community/interpersonal ,Interpersonal/community
+18,Knowledge of drugs and risk among people who use drugs,Individual,Individual
+19,Peer workers perceived as lower grade/status by staff,Organisational,Organisational
+20,Negative public perceptionsof PWUD,Contextual ,Contextual
+21,Knowledge of drugs and risk among general public,Contextual ,Contextual
+22,Evidence-baseddrug education in schools,Organisational,Organisational
+23,Positive future aspirations,Individual,Individual
+24,Trusting family relationships,Interpersonal,Interpersonal/community
+25,Peer relationships,Interpersonal,Interpersonal/community
+26,Self worth,Individual,Individual
+27,Quality of life,Individual,Individual
+28,Traumatising experiences,Individual,Individual
+29,Mental health and wellbeing,Individual,Individual
+30,Initiation of drug use,Individual,Individual
+31,Control and regularityof substance use,Individual,Individual
+32,Harm reductioninterventions,"Policy environment, organisational",Policy
+33,Exploitation ,Interpersonal ,Interpersonal/community
+34,Feeling safe,Individual,Individual
+35,Availability of drugs,Contextual (drug context),Contextual
+36,Cost of drugs,Contextual (drug context),Contextual
+37,Housing Policy,Policy environment,Policy
+38,Profit in illicit drugs trade,Contextual (drug context),Contextual
+39,Social inclusion,Individual or community (I think individual here),Interpersonal/community
+40,Hiding substance use from others,Individual  ,Individual
+41,Exposure to drugs,Community,Community
+42,Drug use as coping mechanism,Individual,Individual
+43,Community hubs,Community,Community
+44,Recovery cafes,"Contextual (political, community, organisational)",Contextual
+45,Warm spaces,Community,Community
+46,Inclusive community activities,Community,Community
+47,Drug type,"Could be individual, also contextual",Individual
+48,Continueduse of drugs,Individual,Individual
+49,Treatment expectations,Individual,Individual
+50,Physical health,Individual,Individual
+51,Age,Biological ,Biological 
+52,Medication,Individual (but availability/access to is organisational and political),Individual
+53,Pain,Individual,Individual
+54,"Drug use as functionalto person's life, e.g. self-medication",Individual,Individual
+55,Retention in services,Organisational,Organisational
+56,ADP funding,Policy environment,Policy
+57,Availability of services,Policy environment ,Policy
+58,Pressure on services,Contextual (service context),Contextual
+59,Attending services,Individual,Individual
+60,Hoops to get helpCriteria/bureaucracy,Policy environment/contextual,Policy
+61,Accessibility of services ,Organisational,Organisational
+62,Quality of treatment planning,Interpersonal/organisational,Interpersonal/organisational
+63,Education on substance use and associated harms,Organisational (settings),Organisational
+64,Value placed on peer workers,Organisational ,Organisational
+65,Representation of lived/living experience of substance use in organisations,Orgnaisational,Organisational
+66,Peer worker pay differential,Orgnaisational,Organisational
+67,Stigmatising reporting in the media,Contextual,Contextual
+68,Level of localhealth need,Contextual,Contextual
+69,Drug tolerance,Individual,Individual
+70,Drug toxicity,Contextual (drug context),Contextual
+71,Access to safe supply of drugs,Individual ,Individual
+72,Dependence on drugs ,Individual,Individual
+73,Drug use forpleasure/recreation,Individual,Individual
+74,Recovery capital,Individual,Individual
+75,Attitude to risk,Individual,Individual
+76,Lone versus groupsubstance use,Individual,Individual
+77,Risk of harm occurring while using drugs,? Tricky! Is this harm OD? Wonder if this node makes sense as a separate one,Unsure
+78,Poly drug use,Individual,Individual
+79,Alarm raising,Community,Community
+80,Public versus private drug taking,Individual,Individual
+81,Life-saving activity,Community/interpersonal ,Interpersonal/community
+82,Drug poisoning,Individual,Individual
+83,Heart & lung health,Individual,Individual
+84,Sedatives,Medical,Unsure
+85,Practical support,Community,Community
+86,Quality of patient/servicerelationship,Interpersonal/organisational,Interpersonal/organisational
+87,Homelessness,If it's about prevalence then contextual; if it is the experience then individual,Contextual
+88,Frailty,Individual,Individual
+89,Ease/difficulty of transitionsbetween services ,Organisational (collaboration),Organisational
+90,Gender,Sex? (biological) gender as social construct… but think individaul either way in this case,Biological 
+91,Near fatal overdose,Individual experience ,Individual
+92,Organised crime groups,Contextual (criminal),Contextual
+93,Quality of housing,Generally - policy environment; as experienced - individual,Policy
+94,Risk ofcrime victimisation,Individual,Individual
+95,Missed appointments,Individual,Individual
+96,Service Quality,Organisational (experienced by individual),Organisational
+97,Amount of Public discourse on drug issues,Contextual,Contextual
+98,Drug related death,Individual,Death
