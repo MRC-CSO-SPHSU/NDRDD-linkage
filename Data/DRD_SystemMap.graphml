@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:java="http://www.yworks.com/xml/yfiles-common/1.0/java" xmlns:sys="http://www.yworks.com/xml/yfiles-common/markup/primitives/2.0" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:y="http://www.yworks.com/xml/graphml" xmlns:yed="http://www.yworks.com/xml/yed/3" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd">
-  <!--Created by yEd 3.22-->
+  <!--Created by yEd 3.23.2-->
   <key for="port" id="d0" yfiles.type="portgraphics"/>
   <key for="port" id="d1" yfiles.type="portgeometry"/>
   <key for="port" id="d2" yfiles.type="portuserdata"/>
@@ -21,10 +21,10 @@
       <data key="d5" xml:space="preserve"><![CDATA[adverse_childhood_experiences]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="146.29411764705884" width="146.29411764705884" x="2442.190603017206" y="862.8529411764706"/>
-          <y:Fill color="#99CC00" transparent="false"/>
+          <y:Geometry height="103.58823529411765" width="103.58823529411765" x="2463.5435441936766" y="884.2058823529412"/>
+          <y:Fill color="#7587BC" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.141441345214844" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="145.5113525390625" x="0.391382553998028" xml:space="preserve" y="63.57633815092197">Traumatising experiences<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="141.396484375" x="-18.90412454044099" xml:space="preserve" y="42.44353170955878">Traumatising experiences<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -35,10 +35,10 @@
       <data key="d5" xml:space="preserve"><![CDATA[quality_of_life]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="1567.955308899559" y="827.6176470588235"/>
-          <y:Fill color="#99CC00" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="1597.0729559583824" y="856.7352941176471"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="21" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="29.47820281982422" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="124.21173095703125" x="1.2764874626609526" xml:space="preserve" y="48.643251531264355">Quality of life<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="21" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="29.72705078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="125.3857421875" x="-28.428165211397072" xml:space="preserve" y="19.401180491727928">Quality of life<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -49,10 +49,10 @@
       <data key="d5" xml:space="preserve"><![CDATA[peer_worker_pay_differential]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="121.88235294117646" width="121.88235294117646" x="1993.3964853701473" y="70.05882352941171"/>
-          <y:Fill color="#999999" transparent="false"/>
+          <y:Geometry height="59.76470588235294" width="59.76470588235294" x="2024.455308899559" y="101.11764705882348"/>
+          <y:Fill color="#93969E" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="9" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="15.370437622070312" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="116.97474670410156" x="2.4538031185375075" xml:space="preserve" y="53.255957659553076">Peer worker pay differential<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="9" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="15.02587890625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="113.55126953125" x="-26.893281824448422" xml:space="preserve" y="22.369413488051464">Peer worker pay differential<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -63,10 +63,10 @@
       <data key="d5" xml:space="preserve"><![CDATA[levels_of_civic_engagment ]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="1663.955308899559" y="3211.4723309287974"/>
-          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="1693.0729559583824" y="3240.589977987621"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.51719665527344" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="127.88648986816406" x="-0.5608919929054537" xml:space="preserve" y="46.62375461353986">Lived experience 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="127.404296875" x="-29.437442555147072" xml:space="preserve" y="17.563534007353155">Lived experience 
 representation in policy<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -78,10 +78,10 @@ representation in policy<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y
       <data key="d5" xml:space="preserve"><![CDATA[service_quality]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="1982.955308899559" y="242.61764705882354"/>
-          <y:Fill color="#999999" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="2012.0729559583824" y="271.7352941176471"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="9" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="14.528182983398438" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="117.69514465332031" x="4.534780614516421" xml:space="preserve" y="56.118261449477245">Value placed on peer workers<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="9" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="15.02587890625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="123.06982421875" x="-27.270206227022072" xml:space="preserve" y="26.751766429227928">Value placed on peer workers<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -92,10 +92,10 @@ representation in policy<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y
       <data key="d5" xml:space="preserve"><![CDATA[international_evidence]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="117.0" width="117.0" x="1171.8376618407356" y="3221.354683869974"/>
-          <y:Fill color="#666600" transparent="false"/>
+          <y:Geometry height="51.0" width="51.0" x="1204.8376618407356" y="3254.354683869974"/>
+          <y:Fill color="#999999" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="18" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="48.75434875488281" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="109.60716247558594" x="3.6964187622070312" xml:space="preserve" y="34.122825622558594">International 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="18" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="48.103515625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="108.0712890625" x="-28.53564453125" xml:space="preserve" y="1.4482421875">International 
 evidence<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -107,10 +107,10 @@ evidence<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:M
       <data key="d5" xml:space="preserve"><![CDATA[hierarcy_in_source_of_evidence]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="1565.9553088995592" y="3073.4723309287974"/>
-          <y:Fill color="#666600" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="1595.0729559583826" y="3102.589977987621"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="48.50550079345703" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="119.10420227050781" x="3.8302518059226713" xml:space="preserve" y="39.12960254444806">Relative value 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="48.103515625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="118.064453125" x="-24.767520680147072" xml:space="preserve" y="10.212948069853155">Relative value 
 of professional 
 versus peer evidence<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
@@ -123,10 +123,10 @@ versus peer evidence<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Lab
       <data key="d5" xml:space="preserve"><![CDATA[quality_of_treatment_planning]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="141.41176470588235" width="141.41176470588235" x="2904.631779487794" y="1064.2941176470588"/>
-          <y:Fill color="#0099CC" transparent="false"/>
+          <y:Geometry height="94.82352941176471" width="94.82352941176471" x="2927.925897134853" y="1087.5882352941176"/>
+          <y:Fill color="#7B8AB6" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="43.96881103515625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="139.1197509765625" x="1.1460068646597392" xml:space="preserve" y="48.72147683536309">Quality of 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="43.203125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="136.53125" x="-20.853860294117567" xml:space="preserve" y="25.810202205882433">Quality of 
 treatment planning<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -138,10 +138,10 @@ treatment planning<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
       <data key="d5" xml:space="preserve"><![CDATA[harm_reduction ]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="131.64705882352942" width="131.64705882352942" x="1148.514132428971" y="3073.031154458209"/>
-          <y:Fill color="#0099CC" transparent="false"/>
+          <y:Geometry height="77.29411764705883" width="77.29411764705883" x="1175.6906030172063" y="3100.2076250464443"/>
+          <y:Fill color="#8790AA" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="18" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="47.108123779296875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="124.269775390625" x="3.688641716452139" xml:space="preserve" y="42.26946752211643">Harm reduction
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="18" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="48.103515625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="127.046875" x="-24.876378676470495" xml:space="preserve" y="14.595301011029278">Harm reduction
 interventions<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -153,10 +153,10 @@ interventions<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel
       <data key="d5" xml:space="preserve"><![CDATA[mental_health]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="195.11764705882354" width="195.11764705882354" x="1203.7788383113239" y="1007.4411764705883"/>
-          <y:Fill color="#33CCCC" transparent="false"/>
+          <y:Geometry height="191.23529411764707" width="191.23529411764707" x="1205.7200147819121" y="1009.3823529411766"/>
+          <y:Fill color="#3969F8" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="30" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="77.27615356445312" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="191.8632354736328" x="1.627205792595305" xml:space="preserve" y="58.92074674718515">Mental health 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="30" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="77.505859375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="192.4521484375" x="-0.6084271599265776" xml:space="preserve" y="56.86471737132342">Mental health 
 and wellbeing<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -168,10 +168,10 @@ and wellbeing<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel
       <data key="d5" xml:space="preserve"><![CDATA[poly_drug_use]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="136.52941176470588" width="136.52941176470588" x="1463.0729559583826" y="1886.735294117647"/>
-          <y:Fill color="#FFFFFF" transparent="false"/>
+          <y:Geometry height="86.05882352941177" width="86.05882352941177" x="1488.3082500760297" y="1911.9705882352941"/>
+          <y:Fill color="#818DB0" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.693374633789062" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="127.25035095214844" x="4.639530406278709" xml:space="preserve" y="53.9180185654584">Poly drug use<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="126.294921875" x="-20.118049172794144" xml:space="preserve" y="28.778435202205856">Poly drug use<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -182,10 +182,10 @@ and wellbeing<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel
       <data key="d5" xml:space="preserve"><![CDATA[trusting_family_relationships]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="146.29411764705884" width="146.29411764705884" x="1410.190603017206" y="857.8529411764706"/>
-          <y:Fill color="#FFFF00" transparent="false"/>
+          <y:Geometry height="103.58823529411765" width="103.58823529411765" x="1431.5435441936766" y="879.2058823529412"/>
+          <y:Fill color="#7587BC" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="21" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="55.1478271484375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="145.517822265625" x="0.3881476907170054" xml:space="preserve" y="45.57314524931064">Trusting family 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="21" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="55.4541015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="146.365234375" x="-21.388499540441217" xml:space="preserve" y="24.067066865808783">Trusting family 
 relationships<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -197,10 +197,10 @@ relationships<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel
       <data key="d5" xml:space="preserve"><![CDATA[access_to_resources ]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="1383.955308899559" y="680.6176470588235"/>
-          <y:Fill color="#99CC00" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="1413.0729559583824" y="709.7352941176471"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.180435180664062" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="120.60389709472656" x="3.0804043938132963" xml:space="preserve" y="51.79213535084443">Practical support<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="123.1640625" x="-27.317325367647072" xml:space="preserve" y="22.463924632352928">Practical support<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -211,10 +211,10 @@ relationships<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel
       <data key="d5" xml:space="preserve"><![CDATA[recovery_capital]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="136.52941176470588" width="136.52941176470588" x="1229.0729559583826" y="772.7352941176471"/>
-          <y:Fill color="#99CC00" transparent="false"/>
+          <y:Geometry height="86.05882352941177" width="86.05882352941177" x="1254.3082500760297" y="797.9705882352941"/>
+          <y:Fill color="#818DB0" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="17" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="24.845802307128906" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="129.78111267089844" x="3.374149546903709" xml:space="preserve" y="55.841804728788475">Recovery capital<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="17" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="24.82666015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="129.66552734375" x="-21.803351907169144" xml:space="preserve" y="30.616081686580856">Recovery capital<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -225,10 +225,10 @@ relationships<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel
       <data key="d5" xml:space="preserve"><![CDATA[service_quality]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="141.41176470588235" width="141.41176470588235" x="2820.631779487794" y="1230.2941176470588"/>
-          <y:Fill color="#0099CC" transparent="false"/>
+          <y:Geometry height="94.82352941176471" width="94.82352941176471" x="2843.925897134853" y="1253.5882352941176"/>
+          <y:Fill color="#7B8AB6" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.923080444335938" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="140.80377197265625" x="0.3039963666128642" xml:space="preserve" y="56.24434213077325">Service Quality<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="138.4921875" x="-21.834329044117567" xml:space="preserve" y="33.16078814338243">Service Quality<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -239,10 +239,10 @@ relationships<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel
       <data key="d5" xml:space="preserve"><![CDATA[quality_of_relationship_with_services]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="131.64705882352942" width="131.64705882352942" x="2762.5141324289707" y="1088.1764705882354"/>
-          <y:Fill color="#0099CC" transparent="false"/>
+          <y:Geometry height="77.29411764705883" width="77.29411764705883" x="2789.690603017206" y="1115.3529411764707"/>
+          <y:Fill color="#8790AA" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="11" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="32.06239318847656" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="129.4085235595703" x="1.1192676319797101" xml:space="preserve" y="49.79233281752636">Quality of patient/service
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="11" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="30.9521484375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="124.44677734375" x="-23.576329848345722" xml:space="preserve" y="23.170984604779505">Quality of patient/service
 relationship<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -254,10 +254,10 @@ relationship<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel>
       <data key="d5" xml:space="preserve"><![CDATA[alcohol_drug_partnership_funding_cuts]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="121.88235294117646" width="121.88235294117646" x="2617.3964853701473" y="1581.0588235294117"/>
-          <y:Fill color="#00FF00" transparent="false"/>
+          <y:Geometry height="59.76470588235294" width="59.76470588235294" x="2648.455308899559" y="1612.1176470588234"/>
+          <y:Fill color="#93969E" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="19" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="49.6348876953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="112.7125244140625" x="4.584914263557039" xml:space="preserve" y="36.12373262293204">Level of local
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="19" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="50.5537109375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="114.9013671875" x="-27.568330652573422" xml:space="preserve" y="4.605497472426578">Level of local
 health need<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -269,10 +269,10 @@ health need<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><
       <data key="d5" xml:space="preserve"><![CDATA[alcohol_drug_partnership_funding_cuts]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="2804.955308899559" y="1586.6176470588234"/>
-          <y:Fill color="#0099CC" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="2834.0729559583824" y="1615.7352941176468"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="21" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="56.33464050292969" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="112.027587890625" x="7.368558995864078" xml:space="preserve" y="35.215032689711734">Pressure 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="21" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="55.4541015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="110.2099609375" x="-20.840274586396845" xml:space="preserve" y="6.537655101102928">Pressure 
 on services<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -284,10 +284,10 @@ on services<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><
       <data key="d5" xml:space="preserve"><![CDATA[homelessness]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="141.41176470588235" width="141.41176470588235" x="1132.6317794877943" y="3665.294117647059"/>
-          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:Geometry height="94.82352941176471" width="94.82352941176471" x="1155.9258971348531" y="3688.588235294118"/>
+          <y:Fill color="#7B8AB6" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.980506896972656" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="137.7239227294922" x="1.8439209881951228" xml:space="preserve" y="56.21562890445466">Homelessness<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="135.162109375" x="-20.169289981617567" xml:space="preserve" y="33.16078814338243">Homelessness<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -298,10 +298,10 @@ on services<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><
       <data key="d5" xml:space="preserve"><![CDATA[poverty]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="185.3529411764706" width="185.3529411764706" x="2334.6611912525004" y="1217.3235294117646"/>
-          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:Geometry height="173.7058823529412" width="173.7058823529412" x="2340.4847206642653" y="1223.1470588235293"/>
+          <y:Fill color="#456FEC" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="53" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="68.48990631103516" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="182.4589385986328" x="1.4470012889187274" xml:space="preserve" y="58.43151743271778">Poverty<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="53" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="68.93017578125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="183.67724609375" x="-4.985681870404278" xml:space="preserve" y="52.387853285845495">Poverty<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -312,10 +312,10 @@ on services<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><
       <data key="d5" xml:space="preserve"><![CDATA[social_inclusion]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="136.52941176470588" width="136.52941176470588" x="1622.0729559583826" y="1734.735294117647"/>
-          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:Geometry height="86.05882352941177" width="86.05882352941177" x="1647.3082500760297" y="1759.9705882352941"/>
+          <y:Fill color="#818DB0" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="18" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="26.587738037109375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="131.0819091796875" x="2.723751292509178" xml:space="preserve" y="54.97083686379824">Social inclusion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="18" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="26.0517578125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="128.06640625" x="-21.003791360294144" xml:space="preserve" y="30.003532858455856">Social inclusion<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -326,10 +326,10 @@ on services<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><
       <data key="d5" xml:space="preserve"><![CDATA[availability_of_drugs]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="146.29411764705884" width="146.29411764705884" x="1224.1906030172063" y="3387.7076250464447"/>
-          <y:Fill color="#FFFFFF" transparent="false"/>
+          <y:Geometry height="103.58823529411765" width="103.58823529411765" x="1245.5435441936768" y="3409.0605662229154"/>
+          <y:Fill color="#7587BC" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.816734313964844" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="136.32473754882812" x="4.984690049115443" xml:space="preserve" y="61.738691666546856">Availability of drugs<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="133.228515625" x="-14.820140165441217" xml:space="preserve" y="40.60588522518401">Availability of drugs<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -340,10 +340,10 @@ on services<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><
       <data key="d5" xml:space="preserve"><![CDATA[criminal_justice_system]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="156.05882352941177" width="156.05882352941177" x="2421.3082500760297" y="1049.9705882352941"/>
-          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:Geometry height="121.11764705882354" width="121.11764705882354" x="2438.778838311324" y="1067.4411764705883"/>
+          <y:Fill color="#6981C8" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="41.97802734375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="146.989013671875" x="4.534904928768356" xml:space="preserve" y="57.040398092830856">Contact with criminal
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="43.203125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="151.6015625" x="-15.241957720588289" xml:space="preserve" y="38.95726102941171">Contact with criminal
 justice system<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -355,10 +355,10 @@ justice system<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMode
       <data key="d5" xml:space="preserve"><![CDATA[dwp]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="121.88235294117646" width="121.88235294117646" x="2599.3964853701473" y="999.0588235294117"/>
-          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:Geometry height="59.76470588235294" width="59.76470588235294" x="2630.455308899559" y="1030.1176470588234"/>
+          <y:Fill color="#93969E" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="17" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.117340087890625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="114.98731994628906" x="3.4475164974437575" xml:space="preserve" y="38.382506426642976">Social Security
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="17" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="45.6533203125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="116.43408203125" x="-28.334688074448422" xml:space="preserve" y="7.055692784926578">Social Security
  Policy<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -370,10 +370,10 @@ justice system<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMode
       <data key="d5" xml:space="preserve"><![CDATA[trusting_community_relationships]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="170.70588235294116" width="170.70588235294116" x="1678.4847206642648" y="1284.1470588235295"/>
-          <y:Fill color="#FFFF00" transparent="false"/>
+          <y:Geometry height="147.41176470588235" width="147.41176470588235" x="1690.1317794877943" y="1295.794117647059"/>
+          <y:Fill color="#5778DA" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="18" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="49.252044677734375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="170.2638397216797" x="0.22102131563065086" xml:space="preserve" y="60.72691883760331">Trusting community 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="18" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="48.103515625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="166.0439453125" x="-9.316090303308783" xml:space="preserve" y="49.65412454044122">Trusting community 
 relationships<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -385,10 +385,10 @@ relationships<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel
       <data key="d5" xml:space="preserve"><![CDATA[amount_of_public_discourse]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="117.0" width="117.0" x="1877.8376618407356" y="401.5"/>
-          <y:Fill color="#00FF00" transparent="false"/>
+          <y:Geometry height="51.0" width="51.0" x="1910.8376618407356" y="434.5"/>
+          <y:Fill color="#999999" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="56.31549835205078" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="111.59889221191406" x="2.7005538940429688" xml:space="preserve" y="30.34225082397461">Amount of 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="55.4541015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="109.8271484375" x="-29.41357421875" xml:space="preserve" y="-2.22705078125">Amount of 
 Public discourse 
 on drug issues<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
@@ -401,10 +401,10 @@ on drug issues<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMode
       <data key="d5" xml:space="preserve"><![CDATA[representation_in_organisations]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="2035.955308899559" y="455.61764705882354"/>
-          <y:Fill color="#999999" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="2065.0729559583824" y="484.7352941176471"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="63.1109619140625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="125.36123657226562" x="0.7017346550437651" xml:space="preserve" y="31.826871984145214">Representation of 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="62.8046875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="124.732421875" x="-28.101505055146845" xml:space="preserve" y="2.862362132352928">Representation of 
 lived/living experience 
 of substance use 
 in organisations<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -418,10 +418,10 @@ in organisations<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMo
       <data key="d5" xml:space="preserve"><![CDATA[availability_of_drugs]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="1381.9553088995592" y="3387.4723309287974"/>
-          <y:Fill color="#FFFFFF" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="1411.0729559583826" y="3416.589977987621"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="19" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="27.544845581054688" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="118.29901123046875" x="4.232847325942203" xml:space="preserve" y="49.609930150649234">Cost of drugs<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="19" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="27.27685546875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="116.998046875" x="-24.234317555147072" xml:space="preserve" y="20.626278147978155">Cost of drugs<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -432,10 +432,10 @@ in organisations<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMo
       <data key="d5" xml:space="preserve"><![CDATA[housing]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="981.9553088995591" y="3907.6176470588234"/>
-          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="1011.0729559583826" y="3936.735294117647"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="17" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="25.22864532470703" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="118.61276245117188" x="4.075971715590526" xml:space="preserve" y="50.76803027882306">Housing Policy<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="17" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="24.82666015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="116.4423828125" x="-23.956485523897072" xml:space="preserve" y="21.851375804228155">Housing Policy<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -446,10 +446,10 @@ in organisations<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMo
       <data key="d5" xml:space="preserve"><![CDATA[trusting_community_relationships]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="117.0" width="117.0" x="1705.337661840735" y="1039.9390334559012"/>
-          <y:Fill color="#FFFF00" transparent="false"/>
+          <y:Geometry height="51.0" width="51.0" x="1738.337661840735" y="1072.9390334559012"/>
+          <y:Fill color="#999999" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.4576416015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="110.916748046875" x="3.0416259765625" xml:space="preserve" y="47.77117919921875">Community hubs<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.1513671875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="109.041015625" x="-29.0205078125" xml:space="preserve" y="14.92431640625">Community hubs<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -460,10 +460,10 @@ in organisations<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMo
       <data key="d5" xml:space="preserve"><![CDATA[trusting_community_relationships]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="117.0" width="117.0" x="1434.2766952966367" y="1311.0000000000002"/>
-          <y:Fill color="#FFFF00" transparent="false"/>
+          <y:Geometry height="51.0" width="51.0" x="1467.2766952966367" y="1344.0000000000002"/>
+          <y:Fill color="#999999" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="24" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="63.76179504394531" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="113.7935791015625" x="1.60321044921875" xml:space="preserve" y="26.619102478027344">Recovery 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="24" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="62.8046875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="112.03515625" x="-30.517578125" xml:space="preserve" y="-5.90234375">Recovery 
 cafes<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -475,10 +475,10 @@ cafes<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:Mode
       <data key="d5" xml:space="preserve"><![CDATA[trusting_community_relationships]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="117.0" width="117.0" x="1705.3376618407356" y="1582.0609665440988"/>
-          <y:Fill color="#FFFF00" transparent="false"/>
+          <y:Geometry height="51.0" width="51.0" x="1738.3376618407356" y="1615.0609665440988"/>
+          <y:Fill color="#999999" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.984405517578125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="103.70697021484375" x="6.646514892578125" xml:space="preserve" y="46.50779724121094">Warm spaces<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="101.796875" x="-25.3984375" xml:space="preserve" y="13.69921875">Warm spaces<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -489,10 +489,10 @@ cafes<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:Mode
       <data key="d5" xml:space="preserve"><![CDATA[trusting_community_relationships]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="117.0" width="117.0" x="1976.3986283848344" y="1311.0"/>
-          <y:Fill color="#FFFF00" transparent="false"/>
+          <y:Geometry height="51.0" width="51.0" x="2009.3986283848344" y="1344.0"/>
+          <y:Fill color="#999999" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.785186767578125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="116.81925964355469" x="0.09037017822265625" xml:space="preserve" y="41.60740661621094">Inclusive community 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="115.369140625" x="-32.1845703125" xml:space="preserve" y="8.798828125">Inclusive community 
 activities<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -504,10 +504,10 @@ activities<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y
       <data key="d5" xml:space="preserve"><![CDATA[trusting_community_relationships]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="141.41176470588235" width="141.41176470588235" x="928.6317794877943" y="3575.294117647059"/>
-          <y:Fill color="#FFFF00" transparent="false"/>
+          <y:Geometry height="94.82352941176471" width="94.82352941176471" x="951.9258971348531" y="3598.588235294118"/>
+          <y:Fill color="#7B8AB6" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="25" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="34.07231903076172" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="137.7254180908203" x="1.8431733075310603" xml:space="preserve" y="53.66972283756013">Feeling safe<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="25" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="34.62744140625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="140.19384765625" x="-22.68515912224268" xml:space="preserve" y="30.098044002757433">Feeling safe<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -518,10 +518,10 @@ activities<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y
       <data key="d5" xml:space="preserve"><![CDATA[housing]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="883.9553088995591" y="3769.6176470588234"/>
-          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="913.0729559583826" y="3798.735294117647"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="26" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="67.81993103027344" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="121.26188659667969" x="2.75140964283662" xml:space="preserve" y="29.47238742603986">Quality of 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="26" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="67.705078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="121.05078125" x="-26.260684742647072" xml:space="preserve" y="0.4121668198531552">Quality of 
 housing<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -533,10 +533,10 @@ housing<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:Mo
       <data key="d5" xml:space="preserve"><![CDATA[housing]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="1123.955308899559" y="3861.6176470588234"/>
-          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="1153.0729559583824" y="3890.735294117647"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="38.302734375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="118.3515625" x="4.206571691176578" xml:space="preserve" y="44.23098575367658">Risk of
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="38.302734375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="118.3515625" x="-24.911075367647072" xml:space="preserve" y="15.113338694853155">Risk of
 crime victimisation<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -548,10 +548,10 @@ crime victimisation<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       <data key="d5" xml:space="preserve"><![CDATA[treatment_of_others]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="131.64705882352942" width="131.64705882352942" x="2873.5141324289707" y="869.1764705882354"/>
-          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:Geometry height="77.29411764705883" width="77.29411764705883" x="2900.690603017206" y="896.3529411764706"/>
+          <y:Fill color="#8790AA" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="39.8341064453125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="121.05712890625" x="5.294964958639866" xml:space="preserve" y="45.9064761891085">Poor treatment of 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="40.7529296875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="124.05859375" x="-23.382238051470722" xml:space="preserve" y="18.27059397977939">Poor treatment of 
 PWUD<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -563,10 +563,10 @@ PWUD<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:Model
       <data key="d5" xml:space="preserve"><![CDATA[internal_stigma]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="131.64705882352942" width="131.64705882352942" x="2731.5141324289707" y="946.1764705882354"/>
-          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:Geometry height="77.29411764705883" width="77.29411764705883" x="2758.690603017206" y="973.3529411764706"/>
+          <y:Fill color="#8790AA" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.649063110351562" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="124.91261291503906" x="3.367222954245335" xml:space="preserve" y="54.99899785658897">Internalised stigma<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.1513671875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="121.5029296875" x="-22.104406020220722" xml:space="preserve" y="28.07137522977939">Internalised stigma<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -578,7 +578,7 @@ PWUD<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:Model
       <data key="d8">
         <y:ShapeNode>
           <y:Geometry height="200.0" width="200.0" x="1637.3376618407356" y="440.0"/>
-          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:Fill color="#3366FF" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="43.203125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="190.7578125" x="4.62109375" xml:space="preserve" y="78.3984375">Prevalence of stigmatising
 norms around drugs<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
@@ -592,10 +592,10 @@ norms around drugs<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
       <data key="d5" xml:space="preserve"><![CDATA[workforce_development]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="131.64705882352942" width="131.64705882352942" x="3056.5141324289707" y="973.1764705882354"/>
-          <y:Fill color="#999999" transparent="false"/>
+          <y:Geometry height="77.29411764705883" width="77.29411764705883" x="3083.690603017206" y="1000.3529411764706"/>
+          <y:Fill color="#8790AA" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="11" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.68663787841797" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="121.97576904296875" x="4.835644890280491" xml:space="preserve" y="56.980210472555655">Workforce development<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="11" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.47607421875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="120.16064453125" x="-21.433263442095722" xml:space="preserve" y="29.90902171415439">Workforce development<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -606,10 +606,10 @@ norms around drugs<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Label
       <data key="d5" xml:space="preserve"><![CDATA[stigmatising_language]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="131.64705882352942" width="131.64705882352942" x="2600.5141324289707" y="804.1764705882354"/>
-          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:Geometry height="77.29411764705883" width="77.29411764705883" x="2627.690603017206" y="831.3529411764706"/>
+          <y:Fill color="#8790AA" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="51.66395568847656" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="133.0479278564453" x="-0.7004345164577899" xml:space="preserve" y="39.99155156752647">Occurrence of 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="51.77880859375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="133.35888671875" x="-28.032384535845722" xml:space="preserve" y="12.757654526654392">Occurrence of 
 stigmatising language 
 and behaviour<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
@@ -622,10 +622,10 @@ and behaviour<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel
       <data key="d5" xml:space="preserve"><![CDATA[service_quality]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="121.88235294117646" width="121.88235294117646" x="1840.3964853701473" y="94.05882352941171"/>
-          <y:Fill color="#999999" transparent="false"/>
+          <y:Geometry height="59.76470588235294" width="59.76470588235294" x="1871.455308899559" y="125.11764705882348"/>
+          <y:Fill color="#93969E" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="9" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="26.779159545898438" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="115.09963989257812" x="3.3913565242992263" xml:space="preserve" y="47.55159669763901">Peer workers perceived as
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="9" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="26.0517578125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="111.5517578125" x="-25.893525965073422" xml:space="preserve" y="16.856474034926464">Peer workers perceived as
  lower grade/status by staff<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -637,10 +637,10 @@ and behaviour<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel
       <data key="d5" xml:space="preserve"><![CDATA[stigmatising_language]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="121.88235294117646" width="121.88235294117646" x="1688.3964853701473" y="176.0588235294117"/>
-          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:Geometry height="59.76470588235294" width="59.76470588235294" x="1719.455308899559" y="207.11764705882348"/>
+          <y:Fill color="#93969E" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="11" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.756118774414062" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="116.70613098144531" x="2.5881109798656325" xml:space="preserve" y="45.0631170833812">Stigmatising reporting 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="11" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="30.9521484375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="113.44140625" x="-26.838350183823422" xml:space="preserve" y="14.406278722426464">Stigmatising reporting 
 in the media<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -652,10 +652,10 @@ in the media<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel>
       <data key="d5" xml:space="preserve"><![CDATA[stigmatising_language]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="1822.955308899559" y="257.61764705882354"/>
-          <y:Fill color="#FF99CC" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="1852.0729559583824" y="286.7352941176471"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="9" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="25.1329345703125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="109.95947265625" x="8.402616613051578" xml:space="preserve" y="50.815885656020214">Negative public perceptions
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="9" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="26.0517578125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="114.56640625" x="-23.018497242647072" xml:space="preserve" y="21.238826976102928">Negative public perceptions
 of PWUD<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -667,10 +667,10 @@ of PWUD<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:Mo
       <data key="d5" xml:space="preserve"><![CDATA[trusting_community_relationships]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="121.88235294117646" width="121.88235294117646" x="1615.3964853701473" y="308.0588235294117"/>
-          <y:Fill color="#FFFF00" transparent="false"/>
+          <y:Geometry height="59.76470588235294" width="59.76470588235294" x="1646.455308899559" y="339.1176470588235"/>
+          <y:Fill color="#93969E" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="58.61255645751953" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="122.13505554199219" x="-0.12635130040780496" xml:space="preserve" y="31.634898241828466">Evidence-based
+          <y:NodeLabel alignment="center" autoSizePolicy="node_width" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="59.12939453125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="123.2529296875" x="-31.744111902573422" xml:space="preserve" y="0.3176556755514639">Evidence-based
 drug education in 
 schools<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
@@ -683,10 +683,10 @@ schools<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:Mo
       <data key="d5" xml:space="preserve"><![CDATA[presentation_of_self]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="121.88235294117646" width="121.88235294117646" x="72.28677312717605" y="2031.000946156487"/>
-          <y:Fill color="#99CC00" transparent="false"/>
+          <y:Geometry height="59.76470588235294" width="59.76470588235294" x="103.34559665658782" y="2062.059769685899"/>
+          <y:Fill color="#93969E" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="19" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="72.2800521850586" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="116.57554626464844" x="2.653403338264013" xml:space="preserve" y="24.801150378058765">Positive self 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="19" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="73.83056640625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="119.1318359375" x="-29.683565027573536" xml:space="preserve" y="-7.032930261948422">Positive self 
  presentation 
 of PWUD<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
@@ -699,10 +699,10 @@ of PWUD<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:Mo
       <data key="d5" xml:space="preserve"><![CDATA[harm_being_hidden]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="304.06495475157055" y="1936.1866318802042"/>
-          <y:Fill color="#FFFFFF" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="333.1826018103941" y="1965.3042789390277"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.632049560546875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="119.63467407226562" x="3.5650159050436514" xml:space="preserve" y="46.56632816090314">Hiding substance use
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="118.73828125" x="-25.104434742647072" xml:space="preserve" y="17.563534007352928">Hiding substance use
  from others<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -714,10 +714,10 @@ of PWUD<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:Mo
       <data key="d5" xml:space="preserve"><![CDATA[hope]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="165.8235294117647" width="165.8235294117647" x="2128.425897134853" y="1009.0882352941177"/>
-          <y:Fill color="#99CC00" transparent="false"/>
+          <y:Geometry height="138.64705882352942" width="138.64705882352942" x="2142.0141324289707" y="1022.6764705882354"/>
+          <y:Fill color="#5D7BD4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="32" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="122.41334533691406" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="159.807861328125" x="3.007834041819933" xml:space="preserve" y="21.70509203742529">Positive 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="32" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="121.609375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="158.75" x="-10.051470588235134" xml:space="preserve" y="8.518841911764639">Positive 
 future 
 aspirations<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
@@ -730,10 +730,10 @@ aspirations<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><
       <data key="d5" xml:space="preserve"><![CDATA[treatment_expectations]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="131.64705882352942" width="131.64705882352942" x="2530.5141324289707" y="1269.1764705882354"/>
-          <y:Fill color="#99CC00" transparent="false"/>
+          <y:Geometry height="77.29411764705883" width="77.29411764705883" x="2557.690603017206" y="1296.3529411764707"/>
+          <y:Fill color="#8790AA" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="11" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.83977508544922" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="122.04916381835938" x="4.798947502585179" xml:space="preserve" y="56.90364186904003">Treatment expectations<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="11" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.47607421875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="118.94677734375" x="-20.826329848345722" xml:space="preserve" y="29.909021714154505">Treatment expectations<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -744,10 +744,10 @@ aspirations<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><
       <data key="d5" xml:space="preserve"><![CDATA[peer_relationships]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="141.41176470588235" width="141.41176470588235" x="1437.6317794877943" y="1734.2941176470588"/>
-          <y:Fill color="#FFFF00" transparent="false"/>
+          <y:Geometry height="94.82352941176471" width="94.82352941176471" x="1460.9258971348531" y="1757.5882352941176"/>
+          <y:Fill color="#7B8AB6" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.735557556152344" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="132.94589233398438" x="4.232936185949029" xml:space="preserve" y="58.838103574865045">Peer relationships<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="23.6015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="132.0703125" x="-18.623391544117567" xml:space="preserve" y="35.61098345588243">Peer relationships<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -758,10 +758,10 @@ aspirations<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><
       <data key="d5" xml:space="preserve"><![CDATA[internal_stigma]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="2624.955308899559" y="1131.6176470588234"/>
-          <y:Fill color="#99CC00" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="2654.0729559583824" y="1160.7352941176468"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="26" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="35.94824981689453" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="119.95094299316406" x="3.4068814445945463" xml:space="preserve" y="45.40822803272931">Self worth<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="26" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="35.8525390625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="119.603515625" x="-25.537051930146845" xml:space="preserve" y="16.338436351102928">Self worth<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -772,10 +772,10 @@ aspirations<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><
       <data key="d5" xml:space="preserve"><![CDATA[cardiovascular_disease]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="131.64705882352942" width="131.64705882352942" x="662.5141324289708" y="110.17647058823536"/>
-          <y:Fill color="#33CCCC" transparent="false"/>
+          <y:Geometry height="77.29411764705883" width="77.29411764705883" x="689.6906030172061" y="137.35294117647067"/>
+          <y:Fill color="#8790AA" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="21" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="55.377532958984375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="126.38255310058594" x="2.632252861471784" xml:space="preserve" y="38.13476293227251">Heart &amp; lung 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="21" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="55.4541015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="126.56494140625" x="-24.63541187959561" xml:space="preserve" y="10.92000804227942">Heart &amp; lung 
 health<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -787,10 +787,10 @@ health<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:Mod
       <data key="d5" xml:space="preserve"><![CDATA[drug_policy ]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="165.8235294117647" width="165.8235294117647" x="1356.4258971348534" y="3210.9429191640916"/>
-          <y:Fill color="#CC99FF" transparent="false"/>
+          <y:Geometry height="138.64705882352942" width="138.64705882352942" x="1370.014132428971" y="3224.531154458209"/>
+          <y:Fill color="#5D7BD4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="51.951087951660156" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="167.15615844726562" x="-0.6663145177503793" xml:space="preserve" y="56.936220730052355">Policy making environment: 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="51.77880859375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="166.56982421875" x="-13.961382697610361" xml:space="preserve" y="43.434125114889866">Policy making environment: 
 health focussed vs 
 criminal justice<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
@@ -803,10 +803,10 @@ criminal justice<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMo
       <data key="d5" xml:space="preserve"><![CDATA[market_forces]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="1519.9553088995592" y="3387.4723309287974"/>
-          <y:Fill color="#CC99FF" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="1549.0729559583826" y="3416.589977987621"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="21" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="54.918121337890625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="125.24763488769531" x="0.7585354973289213" xml:space="preserve" y="35.923292272231265">Profit in illicit 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="21" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="55.4541015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="126.52392578125" x="-28.997257008272072" xml:space="preserve" y="6.537655101103155">Profit in illicit 
 drugs trade<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -818,10 +818,10 @@ drugs trade<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><
       <data key="d5" xml:space="preserve"><![CDATA[organised_crime_group]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="121.88235294117646" width="121.88235294117646" x="1373.259191819335" y="2632.246075232615"/>
-          <y:Fill color="#CC99FF" transparent="false"/>
+          <y:Geometry height="59.76470588235294" width="59.76470588235294" x="1404.3180153487467" y="2663.304898762027"/>
+          <y:Fill color="#93969E" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="11" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.7823486328125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="124.0531005859375" x="-1.0853738223804612" xml:space="preserve" y="52.05000215418204">Organised crime groups<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="11" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="17.47607421875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="121.38525390625" x="-30.810274011948422" xml:space="preserve" y="21.144315831801578">Organised crime groups<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -832,10 +832,10 @@ drugs trade<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><
       <data key="d5" xml:space="preserve"><![CDATA[exploitation ]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="121.88235294117646" width="121.88235294117646" x="1222.2600705172717" y="2830.185924269468"/>
-          <y:Fill color="#CC99FF" transparent="false"/>
+          <y:Geometry height="59.76470588235294" width="59.76470588235294" x="1253.3188940466835" y="2861.24474779888"/>
+          <y:Fill color="#93969E" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="21" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="29.229354858398438" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="116.18968200683594" x="2.84633546717032" xml:space="preserve" y="46.32649904138907">Exploitation <y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="21" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="29.72705078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="118.40283203125" x="-29.319063074448422" xml:space="preserve" y="15.018827550551578">Exploitation <y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -846,10 +846,10 @@ drugs trade<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><
       <data key="d5" xml:space="preserve"><![CDATA[education]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="1344.955308899559" y="206.61764705882354"/>
-          <y:Fill color="#FFFFFF" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="1374.0729559583824" y="235.73529411764707"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="9" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="25.59234619140625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="117.17263793945312" x="4.796033971450015" xml:space="preserve" y="50.58617984547334">Education on substance use 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="9" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="26.0517578125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="119.58056640625" x="-25.525577320772072" xml:space="preserve" y="21.238826976102928">Education on substance use 
 and associated harms<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -861,10 +861,10 @@ and associated harms<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Lab
       <data key="d5" xml:space="preserve"><![CDATA[drug_knowledge_among_people_who_use_drugs]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="141.41176470588235" width="141.41176470588235" x="817.6317794877943" y="270.2941176470588"/>
-          <y:Fill color="#FFFFFF" transparent="false"/>
+          <y:Geometry height="94.82352941176471" width="94.82352941176471" x="840.9258971348531" y="293.5882352941176"/>
+          <y:Fill color="#7B8AB6" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.616806030273438" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="138.60769653320312" x="1.402034086339654" xml:space="preserve" y="56.39747933780444">Knowledge of drugs and risk
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="137.9794921875" x="-21.57798138786768" xml:space="preserve" y="33.160788143382376">Knowledge of drugs and risk
  among people who use drugs<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -876,10 +876,10 @@ and associated harms<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Lab
       <data key="d5" xml:space="preserve"><![CDATA[drug_tolerance]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="131.64705882352942" width="131.64705882352942" x="221.5141324289708" y="1078.2576396678676"/>
-          <y:Fill color="#FFFFFF" transparent="false"/>
+          <y:Geometry height="77.29411764705883" width="77.29411764705883" x="248.69060301720612" y="1105.434110256103"/>
+          <y:Fill color="#8790AA" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="29" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="75.43850708007812" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="123.94209289550781" x="3.8524829640107896" xml:space="preserve" y="28.104275871725577">Drug 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="29" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="75.0556640625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="123.29931640625" x="-23.00259937959561" xml:space="preserve" y="1.1192267922795054">Drug 
 tolerance<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -891,10 +891,10 @@ tolerance<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:
       <data key="d5" xml:space="preserve"><![CDATA[lone_drug_use]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="131.64705882352942" width="131.64705882352942" x="1469.514132428971" y="374.17647058823525"/>
-          <y:Fill color="#FFFFFF" transparent="false"/>
+          <y:Geometry height="77.29411764705883" width="77.29411764705883" x="1496.6906030172063" y="401.35294117647055"/>
+          <y:Fill color="#8790AA" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="39.757537841796875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="124.88299560546875" x="3.382031609030264" xml:space="preserve" y="45.94476049086626">Lone versus group
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="40.7529296875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="128.248046875" x="-25.476964613970495" xml:space="preserve" y="18.27059397977939">Lone versus group
 substance use<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -906,10 +906,10 @@ substance use<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel
       <data key="d5" xml:space="preserve"><![CDATA[drug_use]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="151.1764705882353" width="151.1764705882353" x="1033.749426546618" y="847.4117647058823"/>
-          <y:Fill color="#FFFFFF" transparent="false"/>
+          <y:Geometry height="112.35294117647058" width="112.35294117647058" x="1053.1611912525004" y="866.8235294117646"/>
+          <y:Fill color="#6F84C2" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="28" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="72.03120422363281" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="146.00067138671875" x="2.587899600758192" xml:space="preserve" y="39.572633182301274">Initiation of 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="28" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="72.60546875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="147.19921875" x="-17.42313878676464" xml:space="preserve" y="19.873736213235247">Initiation of 
 drug use<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -921,10 +921,10 @@ drug use<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:M
       <data key="d5" xml:space="preserve"><![CDATA[health]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="151.1764705882353" width="151.1764705882353" x="497.7494265466179" y="279.4117647058823"/>
-          <y:Fill color="#33CCCC" color2="#33CCCC" transparent="false"/>
+          <y:Geometry height="112.35294117647058" width="112.35294117647058" x="517.1611912525002" y="298.8235294117647"/>
+          <y:Fill color="#6F84C2" color2="#33CCCC" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="35" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="90.48423767089844" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="145.23924255371094" x="2.9686140172622117" xml:space="preserve" y="30.34611645866846">Physical 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="35" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="89.7568359375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="144.05126953125" x="-15.849164177389753" xml:space="preserve" y="11.298052619485304">Physical 
 health<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -936,10 +936,10 @@ health<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:Mod
       <data key="d5" xml:space="preserve"><![CDATA[sedatives]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="659.9553088995591" y="422.61764705882354"/>
-          <y:Fill color="#FFFFFF" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="689.0729559583826" y="451.7352941176471"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="26" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="35.75682830810547" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="117.83859252929688" x="4.463056676528026" xml:space="preserve" y="45.50393878712373">Sedatives<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="26" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="35.8525390625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="118.181640625" x="-24.826114430147072" xml:space="preserve" y="16.338436351102928">Sedatives<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -950,10 +950,10 @@ health<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:Mod
       <data key="d5" xml:space="preserve"><![CDATA[drug_type]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="141.41176470588235" width="141.41176470588235" x="795.4388293926559" y="1732.1831849646314"/>
-          <y:Fill color="#FFFFFF" transparent="false"/>
+          <y:Geometry height="94.82352941176471" width="94.82352941176471" x="818.7329470397146" y="1755.4773026116902"/>
+          <y:Fill color="#7B8AB6" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="30" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="41.288909912109375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="135.96023559570312" x="2.725764555089654" xml:space="preserve" y="50.06142739688653">Drug type<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="30" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="40.7529296875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="134.0634765625" x="-19.61997357536768" xml:space="preserve" y="27.035299862132433">Drug type<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -964,10 +964,10 @@ health<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:Mod
       <data key="d5" xml:space="preserve"><![CDATA[exposure_to_drugs]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="136.52941176470588" width="136.52941176470588" x="502.07295595838264" y="990.8164631972793"/>
-          <y:Fill color="#99CC00" transparent="false"/>
+          <y:Geometry height="86.05882352941177" width="86.05882352941177" x="527.3082500760297" y="1016.0517573149264"/>
+          <y:Fill color="#818DB0" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.606170654296875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="127.25753784179688" x="4.63593696145449" xml:space="preserve" y="56.96162055520449">Exposure to drugs<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.37646484375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="125.73583984375" x="-19.838508157169144" xml:space="preserve" y="31.841179342830856">Exposure to drugs<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -978,10 +978,10 @@ health<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:Mod
       <data key="d5" xml:space="preserve"><![CDATA[attitude_to_risk]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="141.41176470588235" width="141.41176470588235" x="345.63177948779435" y="200.29411764705878"/>
-          <y:Fill color="#FFCC00" transparent="false"/>
+          <y:Geometry height="94.82352941176471" width="94.82352941176471" x="368.9258971348532" y="223.5882352941176"/>
+          <y:Fill color="#7B8AB6" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.827369689941406" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="132.40182495117188" x="4.504969877355222" xml:space="preserve" y="56.29219750797046">Attitude to risk<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="20" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="130.71875" x="-17.947610294117624" xml:space="preserve" y="33.16078814338235">Attitude to risk<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -992,10 +992,10 @@ health<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:Mod
       <data key="d5" xml:space="preserve"><![CDATA[medication]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="119.95530889955899" y="826.6988161384558"/>
-          <y:Fill color="#FFFFFF" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="149.07295595838252" y="855.8164631972793"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="24" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.632049560546875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="120.96923828125" x="2.897733800551464" xml:space="preserve" y="46.566328160903026">Medication<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="24" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="120.0625" x="-25.766544117647072" xml:space="preserve" y="17.563534007352928">Medication<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -1006,10 +1006,10 @@ health<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:Mod
       <data key="d5" xml:space="preserve"><![CDATA[age]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="131.64705882352942" width="131.64705882352942" x="514.5141324289708" y="41.17647058823536"/>
-          <y:Fill color="#99CC00" transparent="false"/>
+          <y:Geometry height="77.29411764705883" width="77.29411764705883" x="541.6906030172061" y="68.35294117647067"/>
+          <y:Fill color="#8790AA" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="40" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="53.00390625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="75.171875" x="28.237591911764753" xml:space="preserve" y="39.321576286764696">Age<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="40" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="53.00390625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="75.171875" x="1.0611213235293917" xml:space="preserve" y="12.14510569852942">Age<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -1020,10 +1020,10 @@ health<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:Mod
       <data key="d5" xml:space="preserve"><![CDATA[gender]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="117.0" width="117.0" x="165.83766184073556" y="80.5"/>
-          <y:Fill color="#99CC00" transparent="false"/>
+          <y:Geometry height="51.0" width="51.0" x="198.83766184073556" y="113.5"/>
+          <y:Fill color="#999999" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="31" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="41.48033142089844" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="106.04389953613281" x="5.478050231933594" xml:space="preserve" y="37.75983428955078">Gender<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="31" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="41.97802734375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="107.39892578125" x="-28.199462890625" xml:space="preserve" y="4.510986328125">Gender<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -1034,10 +1034,10 @@ health<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:Mod
       <data key="d5" xml:space="preserve"><![CDATA[coping_mechanism]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="131.64705882352942" width="131.64705882352942" x="331.5141324289708" y="383.17647058823525"/>
-          <y:Fill color="#FFFFFF" transparent="false"/>
+          <y:Geometry height="77.29411764705883" width="77.29411764705883" x="358.6906030172061" y="410.35294117647055"/>
+          <y:Fill color="#8790AA" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="39.71925354003906" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="125.54377746582031" x="3.0516406788545396" xml:space="preserve" y="45.963902641745165">Drug use as 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="40.7529296875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="129.06103515625" x="-25.88345875459561" xml:space="preserve" y="18.27059397977939">Drug use as 
 coping mechanism<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -1049,10 +1049,10 @@ coping mechanism<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMo
       <data key="d5" xml:space="preserve"><![CDATA[instability]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="160.94117647058823" width="160.94117647058823" x="599.8670736054414" y="1148.610580844338"/>
-          <y:Fill color="#FFFFFF" transparent="false"/>
+          <y:Geometry height="129.88235294117646" width="129.88235294117646" x="615.3964853701473" y="1164.139992609044"/>
+          <y:Fill color="#637ECE" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="43.126556396484375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="156.66998291015625" x="2.1355967802160194" xml:space="preserve" y="58.90731003705196">Control and regularity
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="43.203125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="156.96875" x="-13.543198529411711" xml:space="preserve" y="43.33961397058829">Control and regularity
 of substance use<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -1064,10 +1064,10 @@ of substance use<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMo
       <data key="d5" xml:space="preserve"><![CDATA[missed_appointments]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="136.52941176470588" width="136.52941176470588" x="2673.0729559583824" y="1269.735294117647"/>
-          <y:Fill color="#0099CC" transparent="false"/>
+          <y:Geometry height="86.05882352941177" width="86.05882352941177" x="2698.3082500760293" y="1294.9705882352941"/>
+          <y:Fill color="#818DB0" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.979087829589844" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="134.9603729248047" x="0.7845194199508114" xml:space="preserve" y="57.775161967558006">Missed appointments<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="21.1513671875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="136.2890625" x="-25.115119485294144" xml:space="preserve" y="32.453728170955856">Missed appointments<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -1078,10 +1078,10 @@ of substance use<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelMo
       <data key="d5" xml:space="preserve"><![CDATA[importance_of_drugs]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="363.9553088995591" y="1102.6988161384556"/>
-          <y:Fill color="#FFFFFF" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="393.07295595838264" y="1131.816463197279"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="48.390647888183594" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="124.17984008789062" x="1.2924328972311514" xml:space="preserve" y="39.18702899708478">Drug use as functional
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="48.103515625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="123.40234375" x="-27.436465992647072" xml:space="preserve" y="10.212948069852928">Drug use as functional
 to person's life, 
 e.g. self-medication<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
@@ -1094,10 +1094,10 @@ e.g. self-medication<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Lab
       <data key="d5" xml:space="preserve"><![CDATA[drug_use_setting]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="136.52941176470588" width="136.52941176470588" x="543.9267209011626" y="1834.7803091707526"/>
-          <y:Fill color="#FFFFFF" transparent="false"/>
+          <y:Geometry height="86.05882352941177" width="86.05882352941177" x="569.1620150188097" y="1860.0156032883997"/>
+          <y:Fill color="#818DB0" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="42.13116455078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="132.03347778320312" x="2.2479669907513653" xml:space="preserve" y="47.1991236069623">Public versus 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="43.203125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="135.6328125" x="-24.786994485294144" xml:space="preserve" y="21.427849264705856">Public versus 
 private drug taking<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -1109,10 +1109,10 @@ private drug taking<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       <data key="d5" xml:space="preserve"><![CDATA[drug_chemistry]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="122.95530889955899" y="1318.6988161384556"/>
-          <y:Fill color="#FFFFFF" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="152.07295595838252" y="1347.816463197279"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="21" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="29.57391357421875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="118.84307861328125" x="3.960813634535839" xml:space="preserve" y="48.5953961540672">Drug toxicity<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="21" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="29.72705078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="119.53076171875" x="-25.500674977022072" xml:space="preserve" y="19.401180491727928">Drug toxicity<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -1123,10 +1123,10 @@ private drug taking<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       <data key="d5" xml:space="preserve"><![CDATA[drug_chemistry]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="83.95530889955899" y="1149.6988161384556"/>
-          <y:Fill color="#FFFFFF" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="113.07295595838252" y="1178.816463197279"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="17" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="25.19036102294922" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="120.34860229492188" x="3.2080517937155264" xml:space="preserve" y="50.78717242970197">Drug poisoning<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="17" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="24.82666015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="118.3515625" x="-24.911075367647072" xml:space="preserve" y="21.851375804227928">Drug poisoning<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -1137,10 +1137,10 @@ private drug taking<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       <data key="d5" xml:space="preserve"><![CDATA[drug_use]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="146.29411764705884" width="146.29411764705884" x="313.1906030172062" y="920.9341102561028"/>
-          <y:Fill color="#FFFFFF" transparent="false"/>
+          <y:Geometry height="103.58823529411765" width="103.58823529411765" x="334.5435441936768" y="942.2870514325734"/>
+          <y:Fill color="#7587BC" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="25" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="65.29316711425781" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="141.6715087890625" x="2.3113044289981417" xml:space="preserve" y="40.500475266400485">Continued
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="25" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="65.2548828125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="141.58544921875" x="-18.99860696231616" xml:space="preserve" y="19.166676240808783">Continued
 use of drugs<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -1152,10 +1152,10 @@ use of drugs<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel>
       <data key="d5" xml:space="preserve"><![CDATA[drug_use]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="121.88235294117646" width="121.88235294117646" x="28.396485370147275" y="982.1399926090439"/>
-          <y:Fill color="#FFFFFF" transparent="false"/>
+          <y:Geometry height="59.76470588235294" width="59.76470588235294" x="59.455308899559036" y="1013.1988161384556"/>
+          <y:Fill color="#93969E" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="40.676361083984375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="113.86097717285156" x="4.010687884162451" xml:space="preserve" y="40.6029959285961">Dependence on 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="15" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="40.7529296875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="114.09033203125" x="-27.16281307444853" xml:space="preserve" y="9.505888097426578">Dependence on 
 drugs <y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -1167,10 +1167,10 @@ drugs <y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:Mod
       <data key="d5" xml:space="preserve"><![CDATA[drug_use]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="162.9553088995591" y="402.61764705882354"/>
-          <y:Fill color="#FFFFFF" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="192.07295595838264" y="431.7352941176471"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="38.18788146972656" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="123.44648742675781" x="1.6591092277975577" xml:space="preserve" y="44.28841220631318">Drug use for
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="14" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="38.302734375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="123.84765625" x="-27.659122242647072" xml:space="preserve" y="15.113338694852928">Drug use for
 pleasure/recreation<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -1182,10 +1182,10 @@ pleasure/recreation<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       <data key="d5" xml:space="preserve"><![CDATA[access_to_safe_supply_of_drugs]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="361.9553088995591" y="1281.6988161384556"/>
-          <y:Fill color="#FFFFFF" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="391.07295595838264" y="1310.816463197279"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#C0C0C0" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="9" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="14.7196044921875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="122.671875" x="2.046415441176464" xml:space="preserve" y="56.02255069508283">Access to safe supply of drugs<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="9" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="15.02587890625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="126.0625" x="-28.766544117647072" xml:space="preserve" y="26.751766429227928">Access to safe supply of drugs<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -1196,10 +1196,10 @@ pleasure/recreation<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       <data key="d5" xml:space="preserve"><![CDATA[frailty]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="354.9553088995591" y="15.617647058823422"/>
-          <y:Fill color="#33CCCC" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="384.07295595838264" y="44.73529411764695"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="44" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="57.310890197753906" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="122.45687866210938" x="2.1539136101217764" xml:space="preserve" y="34.72690784229951">Frailty<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="44" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="57.904296875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="123.775390625" x="-27.622989430147072" xml:space="preserve" y="5.312557444852935">Frailty<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -1210,10 +1210,10 @@ pleasure/recreation<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       <data key="d5" xml:space="preserve"><![CDATA[pain]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="121.88235294117646" width="121.88235294117646" x="170.39648537014727" y="243.0588235294117"/>
-          <y:Fill color="#33CCCC" transparent="false"/>
+          <y:Geometry height="59.76470588235294" width="59.76470588235294" x="201.45530889955904" y="274.1176470588235"/>
+          <y:Fill color="#93969E" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="56" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="72.73946380615234" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="116.30096435546875" x="2.790694292853857" xml:space="preserve" y="24.57144456751206">Pain<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="56" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="72.60546875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="116.08203125" x="-28.158662683823536" xml:space="preserve" y="-6.420381433823536">Pain<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -1224,10 +1224,10 @@ pleasure/recreation<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       <data key="d5" xml:space="preserve"><![CDATA[drug_knowledge_among_people_who_use_drugs]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="131.64705882352942" width="131.64705882352942" x="1624.514132428971" y="34.17647058823536"/>
-          <y:Fill color="#FFFFFF" transparent="false"/>
+          <y:Geometry height="77.29411764705883" width="77.29411764705883" x="1651.6906030172063" y="61.35294117647066"/>
+          <y:Fill color="#8790AA" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="27.774551391601562" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="126.44052124023438" x="2.6032687916474515" xml:space="preserve" y="51.93625371596393">Knowledge of drugs and risk
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="10" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="28.501953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="130.1865234375" x="-26.446202895220495" xml:space="preserve" y="24.396082261029413">Knowledge of drugs and risk
  among general public<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -1239,10 +1239,10 @@ pleasure/recreation<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       <data key="d5" xml:space="preserve"><![CDATA[near_fatal_overdose]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="121.88235294117646" width="121.88235294117646" x="300.3964853701473" y="525.0588235294117"/>
-          <y:Fill color="#FFFFFF" transparent="false"/>
+          <y:Geometry height="59.76470588235294" width="59.76470588235294" x="331.45530889955904" y="556.1176470588234"/>
+          <y:Fill color="#93969E" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="20.041122436523438" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="118.26982116699219" x="1.8062658870921382" xml:space="preserve" y="50.92061525232657">Near fatal overdose<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="19.92626953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="117.45166015625" x="-28.843477136948536" xml:space="preserve" y="19.919218175551464">Near fatal overdose<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -1253,10 +1253,10 @@ pleasure/recreation<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       <data key="d5" xml:space="preserve"><![CDATA[silos]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="136.52941176470588" width="136.52941176470588" x="3146.0729559583824" y="1224.735294117647"/>
-          <y:Fill color="#0099CC" transparent="false"/>
+          <y:Geometry height="86.05882352941177" width="86.05882352941177" x="3171.3082500760293" y="1249.9705882352941"/>
+          <y:Fill color="#818DB0" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="34.091461181640625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="126.21282958984375" x="5.15829108743128" xml:space="preserve" y="51.218975291532615">Collaboration between
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="123.4140625" x="-18.677619485294144" xml:space="preserve" y="26.328239889705856">Collaboration between
  services<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -1268,10 +1268,10 @@ pleasure/recreation<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Labe
       <data key="d5" xml:space="preserve"><![CDATA[hoops_to_get_help]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="3040.955308899559" y="1372.6176470588234"/>
-          <y:Fill color="#0099CC" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="3070.0729559583824" y="1401.7352941176468"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.82347106933594" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="113.58857727050781" x="6.588064305922671" xml:space="preserve" y="46.47061740650861">Hoops to get help
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="33.40234375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="112.041015625" x="-21.755801930146845" xml:space="preserve" y="17.563534007352928">Hoops to get help
 Criteria/bureaucracy<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -1283,10 +1283,10 @@ Criteria/bureaucracy<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Lab
       <data key="d5" xml:space="preserve"><![CDATA[access_to_services]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="156.05882352941177" width="156.05882352941177" x="2847.3082500760297" y="1382.9705882352941"/>
-          <y:Fill color="#0099CC" transparent="false"/>
+          <y:Geometry height="121.11764705882354" width="121.11764705882354" x="2864.778838311324" y="1400.4411764705883"/>
+          <y:Fill color="#6981C8" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="18" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="25.80290985107422" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="149.4165496826172" x="3.321136923397262" xml:space="preserve" y="65.12795683916875">Attending services<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="18" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="26.0517578125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="151.076171875" x="-14.979262408088289" xml:space="preserve" y="47.53294462316171">Attending services<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -1297,10 +1297,10 @@ Criteria/bureaucracy<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:Lab
       <data key="d5" xml:space="preserve"><![CDATA[criminalisation]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="170.70588235294116" width="170.70588235294116" x="1521.2902829782047" y="2381.784565581056"/>
-          <y:Fill color="#CC99FF" transparent="false"/>
+          <y:Geometry height="147.41176470588235" width="147.41176470588235" x="1532.9373418017342" y="2393.4316244045854"/>
+          <y:Fill color="#5778DA" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="24" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="63.53208923339844" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="163.32969665527344" x="3.688092848833776" xml:space="preserve" y="53.5868965597715">Criminalisation
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="24" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="62.8046875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="161.3828125" x="-6.985523897058783" xml:space="preserve" y="42.30353860294099">Criminalisation
 of drugs<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -1312,10 +1312,10 @@ of drugs<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:M
       <data key="d5" xml:space="preserve"><![CDATA[availability_of_services]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="136.52941176470588" width="136.52941176470588" x="2517.0729559583824" y="1433.735294117647"/>
-          <y:Fill color="#0099CC" transparent="false"/>
+          <y:Geometry height="86.05882352941177" width="86.05882352941177" x="2542.3082500760293" y="1458.9705882352941"/>
+          <y:Fill color="#818DB0" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="26" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="67.85821533203125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="134.3634033203125" x="1.0830042221969052" xml:space="preserve" y="34.3355982163373">Availability 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="26" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="67.705078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="134.05078125" x="-23.995978860294144" xml:space="preserve" y="9.176872702205856">Availability 
 of services<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -1327,10 +1327,10 @@ of services<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><
       <data key="d5" xml:space="preserve"><![CDATA[alcohol_drug_partnership_funding_cuts]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="1409.9553088995592" y="3073.4723309287974"/>
-          <y:Fill color="#CC99FF" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="1439.0729559583826" y="3102.589977987621"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="21" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="29.32506561279297" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="120.06739807128906" x="3.3486539055320463" xml:space="preserve" y="48.71982013478009">ADP funding<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="21" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="29.72705078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="121.90966796875" x="-26.690128102022072" xml:space="preserve" y="19.401180491728155">ADP funding<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -1341,10 +1341,10 @@ of services<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><
       <data key="d5" xml:space="preserve"><![CDATA[retention_in_services]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="141.41176470588235" width="141.41176470588235" x="2694.631779487794" y="1423.2941176470588"/>
-          <y:Fill color="#0099CC" transparent="false"/>
+          <y:Geometry height="94.82352941176471" width="94.82352941176471" x="2717.925897134853" y="1446.5882352941176"/>
+          <y:Fill color="#7B8AB6" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="24" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="61.73272705078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="136.29745483398438" x="2.5571549359488017" xml:space="preserve" y="39.83951882755059">Retention in 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="24" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="62.8046875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="138.75390625" x="-21.965188419117567" xml:space="preserve" y="16.009420955882433">Retention in 
 services<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -1356,10 +1356,10 @@ services<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:M
       <data key="d5" xml:space="preserve"><![CDATA[accessibility_of_services ]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="2979.955308899559" y="1216.6176470588234"/>
-          <y:Fill color="#0099CC" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="3009.0729559583824" y="1245.7352941176468"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="19" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="50.017730712890625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="111.49697875976562" x="7.633863561293765" xml:space="preserve" y="38.373487584731265">Accessibility 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="19" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="50.5537109375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="112.7490234375" x="-22.109805836396845" xml:space="preserve" y="8.987850413602928">Accessibility 
 of services <y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -1371,10 +1371,10 @@ of services <y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel>
       <data key="d5" xml:space="preserve"><![CDATA[employment]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="1717.4123089593559" y="2175.4656843166695"/>
-          <y:Fill color="#00FF00" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="1746.5299560181793" y="2204.583331375493"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="21" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="54.918121337890625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="125.26792907714844" x="0.7483884026023588" xml:space="preserve" y="35.923292272231265">Employment 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="21" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="55.4541015625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="126.54443359375" x="-29.007510914522072" xml:space="preserve" y="6.537655101103155">Employment 
 opportunities<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -1386,10 +1386,10 @@ opportunities<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel
       <data key="d5" xml:space="preserve"><![CDATA[transitions_between_services ]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="121.88235294117646" width="121.88235294117646" x="3014.3964853701473" y="1510.0588235294117"/>
-          <y:Fill color="#0099CC" transparent="false"/>
+          <y:Geometry height="59.76470588235294" width="59.76470588235294" x="3045.455308899559" y="1541.1176470588234"/>
+          <y:Fill color="#93969E" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="9" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="26.740875244140625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="116.45811462402344" x="2.71211915857657" xml:space="preserve" y="47.570738848517976">Ease/difficulty of transitions
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="9" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="26.0517578125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="113.05029296875" x="-26.642793543198422" xml:space="preserve" y="16.856474034926578">Ease/difficulty of transitions
 between services <y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -1401,10 +1401,10 @@ between services <y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelM
       <data key="d5" xml:space="preserve"><![CDATA[risky_drug_use]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="136.52941176470588" width="136.52941176470588" x="490.07295595838264" y="560.7352941176471"/>
-          <y:Fill color="#FF3300" transparent="false"/>
+          <y:Geometry height="86.05882352941177" width="86.05882352941177" x="515.3082500760297" y="585.9705882352941"/>
+          <y:Fill color="#818DB0" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="18" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="69.92556762695312" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="128.6165771484375" x="3.956417308134178" xml:space="preserve" y="33.301922068876365">Risk of harm 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="18" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="70.1552734375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="129.05078125" x="-21.495978860294144" xml:space="preserve" y="7.951775045955856">Risk of harm 
 occurring while 
 using drugs<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
@@ -1417,10 +1417,10 @@ using drugs<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><
       <data key="d5" xml:space="preserve"><![CDATA[drug_related_deaths]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="146.29411764705884" width="146.29411764705884" x="660.1906030172062" y="253.8529411764706"/>
-          <y:Fill color="#FF3300" transparent="false"/>
+          <y:Geometry height="103.58823529411765" width="103.58823529411765" x="681.5435441936768" y="275.2058823529412"/>
+          <y:Fill color="#7587BC" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="23" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="61.12017822265625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="138.76400756835938" x="3.765055039349704" xml:space="preserve" y="42.58696971220127">Drug related 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="23" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="60.3544921875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="136.95751953125" x="-16.684642118566217" xml:space="preserve" y="21.61687155330884">Drug related 
 death<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
@@ -1432,10 +1432,10 @@ death<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:Mode
       <data key="d5" xml:space="preserve"><![CDATA[alarm_raising]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="131.64705882352942" width="131.64705882352942" x="1482.514132428971" y="159.17647058823525"/>
-          <y:Fill color="#FF3300" transparent="false"/>
+          <y:Geometry height="77.29411764705883" width="77.29411764705883" x="1509.6906030172063" y="186.35294117647055"/>
+          <y:Fill color="#8790AA" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="21" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="29.918472290039062" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="127.44589233398438" x="2.1005832447724515" xml:space="preserve" y="50.864293266745165">Alarm raising<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="21" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="29.72705078125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="126.5341796875" x="-24.620031020220495" xml:space="preserve" y="23.78353343290442">Alarm raising<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>
       </data>
@@ -1446,10 +1446,10 @@ death<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:Mode
       <data key="d5" xml:space="preserve"><![CDATA[alarm_raising]]></data>
       <data key="d8">
         <y:ShapeNode>
-          <y:Geometry height="126.76470588235294" width="126.76470588235294" x="1458.955308899559" y="21.617647058823422"/>
-          <y:Fill color="#FF3300" transparent="false"/>
+          <y:Geometry height="68.52941176470588" width="68.52941176470588" x="1488.0729559583824" y="50.73529411764695"/>
+          <y:Fill color="#8D93A4" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="23" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="59.205963134765625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="119.21961975097656" x="3.7725430656882963" xml:space="preserve" y="33.77937137379365">Life-saving 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="23" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="60.3544921875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="121.61669921875" x="-26.543643727022072" xml:space="preserve" y="4.087459788602928">Life-saving 
 activity<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="ellipse"/>
         </y:ShapeNode>

@@ -31,25 +31,25 @@ from others","behavioural"
 "80","Public versus private
 drug taking","behavioural"
 "3","Internalised 
-stigma","internal - psychosocial"
+stigma","cognitive - emotional"
 "4","Positive self
-presentation of PWUD","internal - psychosocial"
+presentation of PWUD","cognitive - emotional"
 "18","Knowledge of drugs and risk
-among PWUD","internal - psychosocial"
+among PWUD","cognitive - emotional"
 "23","Positive 
- aspirations","internal - psychosocial"
-"26","Self worth","internal - psychosocial"
-"27","Quality of life","internal - psychosocial"
-"29","Mental health","internal - psychosocial"
-"34","Feeling safe","internal - psychosocial"
+ aspirations","cognitive - emotional"
+"26","Self worth","cognitive - emotional"
+"27","Quality of life","cognitive - emotional"
+"29","Mental health","cognitive - emotional"
+"34","Feeling safe","cognitive - emotional"
 "42","Drug as 
-coping mechanism","internal - psychosocial"
-"49","Treatment expectations","internal - psychosocial"
+coping mechanism","cognitive - emotional"
+"49","Treatment expectations","cognitive - emotional"
 "54","Drug use as 
- self-medication","internal - psychosocial"
+ self-medication","cognitive - emotional"
 "73","Drug use for 
-recreation","internal - psychosocial"
-"75","Attitude to risk","internal - psychosocial"
+recreation","cognitive - emotional"
+"75","Attitude to risk","cognitive - emotional"
 "7","Poor treatment 
 of PWUD","interpersonal"
 "9","Stigmatising
@@ -77,22 +77,22 @@ substance use","interpersonal"
 "46","Community
  activities","community"
 "8","Contact with criminal
-justice system","social-organisational"
+justice system","service interaction"
 "22","Drug education
-in schools","social-organisational"
+in schools","service interaction"
 "55","Retention 
-in services","social-organisational"
+in services","service interaction"
 "59","Attending 
-services","social-organisational"
+services","service interaction"
 "60","Hoops to get help
-Criteria/bureaucracy","social-organisational"
+Criteria/bureaucracy","service interaction"
 "61","Accessibility
- of services","social-organisational"
+ of services","service interaction"
 "86","Quality of patient/service
-relationship","social-organisational"
+relationship","service interaction"
 "89","Ease of transitions
-between services","social-organisational"
-"95","Missed appointments","social-organisational"
+between services","service interaction"
+"95","Missed appointments","service interaction"
 "1","Workforce 
  development","organisational"
 "2","Collaboration 
@@ -112,50 +112,50 @@ lower status","organisational"
 pay differential","organisational"
 "96","Service Quality","organisational"
 "5","Health vs 
- criminal justice","policy making"
+ criminal justice","policy"
 "6","Criminalisation 
-of drugs","policy making"
+of drugs","policy"
 "12","Lived experience 
-representation in policy","policy making"
+representation in policy","policy"
 "14","Social Security 
-Policy","policy making"
+Policy","policy"
 "37","Housing 
-Policy","policy making"
-"56","ADP funding","policy making"
+Policy","policy"
+"56","ADP funding","policy"
 "11","International 
-evidence","environmental"
-"13","Poverty","environmental"
+evidence","wider context"
+"13","Poverty","wider context"
 "15","Employment 
-opportunities","environmental"
+opportunities","wider context"
 "16","Stigmatising
-norms around drugs","environmental"
+norms around drugs","wider context"
 "20","Negative public 
- perceptions","environmental"
+ perceptions","wider context"
 "21","Knowledge of drugs 
-among public","environmental"
+among public","wider context"
 "32","Harm reduction
- interventions","environmental"
+ interventions","wider context"
 "35","Availability 
-of drugs","environmental"
+of drugs","wider context"
 "36","Cost of 
-drugs","environmental"
+drugs","wider context"
 "38","Profit in 
-drugs trade","environmental"
-"41","Exposure to drugs","environmental"
+drugs trade","wider context"
+"41","Exposure to drugs","wider context"
 "57","Availability
- of services","environmental"
+ of services","wider context"
 "58","Pressure 
-on services","environmental"
+on services","wider context"
 "67","Stigmatising reporting
-in the media","environmental"
+in the media","wider context"
 "68","Level of local
- health need","environmental"
-"87","Homelessness","environmental"
+ health need","wider context"
+"87","Homelessness","wider context"
 "92","Organised crime
- groups","environmental"
+ groups","wider context"
 "93","Quality of 
-housing","environmental"
+housing","wider context"
 "94","Risk of crime
-victimisation","environmental"
+victimisation","wider context"
 "97","Amount of Public discourse
-on drug issues","environmental"
+on drug issues","wider context"
