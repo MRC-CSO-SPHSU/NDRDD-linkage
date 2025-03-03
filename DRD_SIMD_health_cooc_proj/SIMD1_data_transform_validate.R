@@ -1,5 +1,5 @@
 # ==================================================
-# Script: SIMD1_data_prep_metrics.R 
+# Script: SIMD1_data_transform_validate.R 
 # Desc: This script processes, filters, and validates
 #       co-occurrence data from the SIMD1 dataset. 
 # Author: Babak Mahdavi Ardestani
