@@ -1,0 +1,5 @@
+"index","condition1","condition2","weight","bootstrap","CI_lower","CI_upper"
+2738,"lossofchildcustody_rse","childcustodyissues_rse",0.69,0.95,0.045894999882409,0.129068155512485
+18111,"no_known_treatment_aa","BENDROFLUMETHIAZIDE_TAB.2.5MG",0.05,1,0.067761780600366,0.149140463381754
+90082,"chronic_pain_mc","conditions_total",0.5,0.98,0.0342354285658545,0.195690225585716
+94377,"epilepsy_seizures_mc","TEGRETOL.PROLONGED.RELEASE_TAB.200MG.M.R",0.06,0.96,0.0156748374825083,0.278794861122467
