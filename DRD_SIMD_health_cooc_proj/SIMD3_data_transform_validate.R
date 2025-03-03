@@ -11,9 +11,9 @@ renv::load("../")
 library(tidyverse)
 
 # Read datasets
-simd3_adj <- read.csv("data/SIMD 2 weighted adjacency with obs above 20.csv", row.names = 1)
-simd3_bootstrap <- read.csv("data/SIMD 2 weighted adjacency bootstrap proportions with obs above 20.csv")
-simd3_ci <- read.csv("data/SIMD 2 weighted adjacency CIs with obs above 20.csv")
+simd3_adj <- read.csv("data/SIMD 3 weighted adjacency with obs above 20.csv", row.names = 1)
+simd3_bootstrap <- read.csv("data/SIMD 3 weighted adjacency bootstrap proportions with obs above 20.csv")
+simd3_ci <- read.csv("data/SIMD 3 weighted adjacency CIs with obs above 20.csv")
 
 # Generate condition pairs
 simd3_adj_long <- simd3_adj %>%

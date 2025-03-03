@@ -1,3 +1,2 @@
 "index","condition1","condition2","weight","bootstrap","CI_lower","CI_upper"
-3483,"relapse_rse","conditions_total",0.45,1,0.5908422425758,0.695346826810739
-41571,"homeless_accomodation_lw","conditions_total",0.16,0.95,0.0384067021230651,0.41123516444231
+49723,"conditions_total","schizophrenia_pc",0.18,0.98,0.078623830648268,0.46223432882514
