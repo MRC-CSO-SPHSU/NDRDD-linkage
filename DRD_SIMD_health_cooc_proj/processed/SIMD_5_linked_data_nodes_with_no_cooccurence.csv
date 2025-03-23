@@ -1,0 +1,16 @@
+"variable","node_index"
+"mental_health_services_chnd",1
+"no_known_contact_chnd",2
+"no_evidence_of_drug_taking_or_alcohol_consumption_edu",4
+"employed_paid_unpaid_es",5
+"long_term_sick_disabled_es",6
+"retired_es",7
+"living_alone_lww",11
+"depression_low_mood_pc",15
+"others_home_pdu",16
+"social_work_chnd",23
+"not_currently_prescribed_a_substitute_drug_cp",24
+"oral_consumption_edu",26
+"unemployed_es",27
+"with_spouse_partner_lww",30
+"no_known_psychiatric_conditions_pc",33
