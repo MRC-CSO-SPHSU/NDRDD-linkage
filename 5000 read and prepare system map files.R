@@ -49,7 +49,7 @@ library("renv")
 
 #To replicate the analysis on your own, run the restore command below
 
-renv::restore()
+#renv::restore()
 
 #Set working directory
 wd <- dirname(rstudioapi::getActiveDocumentContext()$path)
@@ -116,35 +116,67 @@ V(graph_raw_data)$size <- igraph::degree(graph_raw_data,
 
 V(graph_raw_data)$name
 
-###Peer reviewer comment
-# Ultimately, the unregulated drug market constitutes a main driver of drug related deaths 
-# (excluding those attributable to alcohol), with influences ranging from proximal 
-# to political/structural, but receives surprisingly little focus in
-# the system map when compared to individual-level psychosocial factors.
 
 # The analysis below shows all the ways in which Criminalisation relates to death within the system map
-crim_to_death_paths <- all_simple_paths(
-  graph_raw_data,
-  from = which(V(graph_raw_data)$name == "Criminalisationof drugs") ,
-  to = which(V(graph_raw_data)$name == "Drug related death"),
-  mode = c("out"),
-  cutoff = -1
-)
+# crim_to_death_paths <- all_simple_paths(
+#   graph_raw_data,
+#   from = which(V(graph_raw_data)$name == "Criminalisationof drugs") ,
+#   to = which(V(graph_raw_data)$name == "Drug related death"),
+#   mode = c("out"),
+#   cutoff = -1
+# )
+
+# The analysis below shows all the ways in which Criminalisation relates to death within the system map
+# stigma_to_death_paths <- all_simple_paths(
+#   graph_raw_data,
+#   from = which(V(graph_raw_data)$name == "Prevalence of stigmatisingnorms around drugs") ,
+#   to = which(V(graph_raw_data)$name == "Drug related death"),
+#   mode = c("out"),
+#   cutoff = -1
+# )
+# crim_to_death_paths <- all_simple_paths(
+#   graph_raw_data,
+#   from = which(V(graph_raw_data)$name == "Prevalence of stigmatisingnorms around drugs") ,
+#   to = which(V(graph_raw_data)$name == "Harm reductioninterventions"),
+#   mode = c("out"),
+#   cutoff = -1
+# )
 ##And this shows the total number of possible paths 
-length(crim_to_death_paths)
+#length(stigma_to_death_paths)
+#length(crim_to_death_paths)
 ##You can inspect each path
-crim_to_death_paths[[1]]
-crim_to_death_paths[[2]]
-crim_to_death_paths[[3]]
-
-plot(induced_subgraph(graph_raw_data , crim_to_death_paths[[773]]))
-plot(induced_subgraph(graph_raw_data , crim_to_death_paths[[45]]))
-
+# crim_to_death_paths[[1]]
+# crim_to_death_paths[[2]]
+# crim_to_death_paths[[3]]
+# stigma_to_death_paths[[1]]
+# plot(induced_subgraph(graph_raw_data , stigma_to_death_paths[[1]]),
+#      edge.color = "black",  
+#      edge.width = 1,        
+#      edge.arrow.size = 0.05)
+# plot(induced_subgraph(graph_raw_data , crim_to_death_paths[[2]]),
+#      edge.color = "black",  
+#      edge.width = 1,        
+#      edge.arrow.size = 0.05)
+# 
+# plot(induced_subgraph(graph_raw_data , crim_to_death_paths[[73]]),
+#      edge.color = "black",  
+#      edge.width = 1,        
+#      edge.arrow.size = 0.05)
+# 
+# 
+# plot(induced_subgraph(graph_raw_data , crim_to_death_paths[[2773]]),
+#      edge.color = "black",  
+#      edge.width = 1,        
+#      edge.arrow.size = 0.05)
+# 
+# 
+# plot(induced_subgraph(graph_raw_data , crim_to_death_paths[[45]]))
+# 
 
 ###Add multilayer visualisation to unpack upstream-downstream notion of a single
 #    ultimate cause versus several upstream-downstream causal subsystems
 set.seed(428)
-cfg <- igraph::cluster_louvain(as.undirected(graph_raw_data), resolution = 1)
+cfg <- igraph::cluster_louvain(as_undirected(graph_raw_data), resolution = 1)
 V(graph_raw_data)$grp <- cfg$membership
 
 V(graph_raw_data)$grp <- factor(V(graph_raw_data)$grp,levels = 1:8,labels = c("Stigma",
@@ -447,14 +479,17 @@ finplot <- subsystem_level_plot +
            label = lev_labels[10], hjust = -0.1)
 
 finplot
+unlink(paste0(wd,"/Data/Figure 1 System map social ecological levels plot with subsystems.pdf"))
+       
+ggsave(paste0(wd,"/Data/part of Figure 1 System map social ecological levels plot with subsystems.pdf"),
+       device = "pdf", width = 13.9, height = 10.3, units = "in")
 
-ggsave(paste0(wd,"/Data/Figure 1 System map social ecological levels plot with subsystems.pdf"),
-              device = "pdf", width = 13.9, height = 10.3, units = "in")
-
-ggsave(paste0(wd,"/Data/Figure 1 System map social ecological levels plot with subsystems.jpeg"),
+ggsave(paste0(wd,"/Data/part of Figure 1 System map social ecological levels plot with subsystems.jpeg"),
        device = "jpeg", width = 13.9, height = 10.3, units = "in")
 
 table(round(xy[,2],1))
+
+
 
 #######Draw with convex hulls around communities
 subsystem_level_plot <- ggraph(graph_raw_data, layout = "manual", x = xy[, 1], y = xy[, 2]) +
@@ -488,11 +523,71 @@ subsystem_level_plot <- ggraph(graph_raw_data, layout = "manual", x = xy[, 1], y
 
 subsystem_level_plot 
 
-ggsave(paste0(wd,"/Data/System map social ecological levels plot with subsystems and hull.pdf"),
+ggsave(paste0(wd,"/Data/other part of fig 1 System map social ecological levels plot with subsystems and hull.pdf"),
               device = "pdf", width = 13.9, height = 10.3, units = "in")
 
-ggsave(paste0(wd,"/Data/System map social ecological levels plot with subsystems and hull.jpeg"),
+ggsave(paste0(wd,"/Data/other part of fig 1 System map social ecological levels plot with subsystems and hull.jpeg"),
        device = "jpeg", width = 13.9, height = 10.3, units = "in")
+
+###Combine main plot and inset
+
+#######Draw with convex hulls around communities - remove labels
+subsystem_level_plot <- ggraph(graph_raw_data, layout = "manual", x = xy[, 1], y = xy[, 2]) +
+  # geom_node_text(aes(label = name), nudge_y = -0.1,
+  #                check_overlap = F, 
+  #                #repel = T,
+  #                cex = 1.5) 
+    geom_edge_link0(
+    aes(filter = (node1.lvl == node2.lvl)),
+    edge_colour = "goldenrod3",
+    edge_width = 0.3
+  ) + 
+  geom_edge_link0(
+    aes(filter = (node1.lvl != node2.lvl)),
+    alpha = 0.3,
+    edge_width = 0.1,
+    edge_colour = "black"
+  ) +
+  geom_node_point(aes(shape =  as.factor(lvl)), fill =  colrs_vertex[V(graph_raw_data)$grp],
+  size = V(graph_raw_data)$size
+  ) +
+  scale_shape_manual(values = rep(21,10)) +
+  theme_graph() +
+  coord_cartesian(clip = "off", expand = TRUE) +
+  theme(legend.position = "none") +
+  geom_mark_hull(
+        aes(x, y, group = grp, fill = grp, label = grp),
+        concavity = 4,
+        expand = unit(2, "mm"),
+        alpha = 0.25)
+
+
+
+# install.packages("cowplot") # if needed
+library(cowplot)
+
+sub_inset <- subsystem_level_plot +
+  theme(legend.position = "none",
+        plot.margin = margin(1, 1, 1, 1),
+        text = element_text(size = 8))
+
+p <- ggdraw(finplot) +
+  draw_plot(
+    sub_inset,
+    x = 0.03, y = 0.03,   # bottom-left anchor position
+    width  = 0.25,        # width as fraction of main canvas
+    height = 0.25,
+    hjust = 0, vjust = 0
+  )
+
+ggsave(
+  "Figure 1 System map levels with subset of systems.pdf",
+  plot = p,
+  width = 13, height = 6, units = "in",
+  device = cairo_pdf
+)
+
+
 
 
 #######Draw one community at a time with fixed layout
