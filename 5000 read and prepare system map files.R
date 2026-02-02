@@ -581,7 +581,7 @@ p <- ggdraw(finplot) +
   )
 
 ggsave(
-  "Figure 1 System map levels with subset of systems.pdf",
+  "Figure 1 System map levels with inset of subsystems.pdf",
   plot = p,
   width = 13, height = 6, units = "in",
   device = cairo_pdf
